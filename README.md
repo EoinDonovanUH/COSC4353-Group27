@@ -9,6 +9,6 @@ The overall goal of our software application is to calculate the rate of fuel th
 We will be using Agile as our development methodology. We will be using Agile for this project because this project will involve incremental design changes and on of Agile’s characteristics is that of rapid, incremental delivery of software. This will allow us to develop the software iteratively and continue to better our software without extended periods of time it takes to develop a system.
 ![4351 layout](https://user-images.githubusercontent.com/112830731/216190055-6f726232-02e8-4084-9919-db99e4f59984.jpeg)
 
-## Question 3: High-level Architecture
+## Question 3: High-Level Architecture
 
 Here is the high-level architecture diagram that we developed to design our solution.
