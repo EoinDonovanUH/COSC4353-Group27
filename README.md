@@ -12,3 +12,4 @@ We will be using Agile as our development methodology. We will be using Agile fo
 ## Question 3: High-Level Architecture
 
 Here is the high-level architecture diagram that we developed to design our solution.
+![Architecture](https://user-images.githubusercontent.com/82556918/218174865-b9f9b73d-a6c1-4556-b865-a3c2abb3ad1f.jpeg)
