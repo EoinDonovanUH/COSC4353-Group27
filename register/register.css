@@ -4,7 +4,7 @@ body{
   font-family: montserrat;
   height: 100vh;
   overflow: hidden;
-  background: black;
+  background: #03422D;
 }
 .center{
   position: absolute;
