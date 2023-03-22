@@ -35,6 +35,11 @@ app.use("/users", require("./routes/userRoutes"));
 // ClientInformation
 app.use("/clients", require("./routes/clientRoutes"));
 // TODO FuelQuote
+app.use("/profile", require("./routes/profileRoutes"));
+app.use("/register", require("./routes/registerRoutes"));
+app.use("/login", require("./routes/loginRoutes"));
+app.use("/quoteform", require("./routes/fuelQuoteFormRoutes"));
+app.use("/quoteHistory", require("./routes/fuelQuoteHistoryRoutes"));
 
 app.all("*", (req, res) => {
   res.status(404);
