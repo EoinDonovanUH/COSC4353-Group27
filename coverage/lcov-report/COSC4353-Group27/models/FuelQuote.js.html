@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for COSC4353-Group27/middleware/logger.js</title>
+    <title>Code coverage report for COSC4353-Group27/models/FuelQuote.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../prettify.css" />
     <link rel="stylesheet" href="../../base.css" />
@@ -19,34 +19,34 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../index.html">All files</a> / <a href="index.html">COSC4353-Group27/middleware</a> logger.js</h1>
+        <h1><a href="../../index.html">All files</a> / <a href="index.html">COSC4353-Group27/models</a> FuelQuote.js</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">88.88% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>16/18</span>
+                <span class='fraction'>3/3</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">50% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>1/2</span>
+                <span class='fraction'>0/0</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>2/2</span>
+                <span class='fraction'>0/0</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">88.88% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>16/18</span>
+                <span class='fraction'>3/3</span>
             </div>
         
             
@@ -97,75 +97,90 @@
 <a name='L32'></a><a href='#L32'>32</a>
 <a name='L33'></a><a href='#L33'>33</a>
 <a name='L34'></a><a href='#L34'>34</a>
-<a name='L35'></a><a href='#L35'>35</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a>
+<a name='L37'></a><a href='#L37'>37</a>
+<a name='L38'></a><a href='#L38'>38</a>
+<a name='L39'></a><a href='#L39'>39</a>
+<a name='L40'></a><a href='#L40'>40</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span></td><td class="text"><pre class="prettyprint lang-js">const { format } = require('date-fns')
-const { v4: uuid } = require('uuid')
-const fs = require('fs')
-const fsPromises = require('fs').promises
-const path = require('path')
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">const mongoose = require("mongoose");
 &nbsp;
-const logEvents = async (message, logFileName) =&gt; {
-    const dateTime = `${format(new Date(), 'yyyMMdd\tHH:mm:ss')}`
-    const logItem = `${dateTime}\t${uuid()}\t${message}\n`
-    
-    try {
-        // if directory dne, create it
-        <span class="missing-if-branch" title="if path not taken" >I</span>if(!fs.existsSync(path.join(__dirname, '..', 'logs'))) {
-<span class="cstat-no" title="statement not covered" >            await fsPromises.mkdir(path.join(__dirname, '..', 'logs'))</span>
-        }
-        // save logItem to logFile in logs directory
-        await fsPromises.appendFile(path.join(__dirname, '..', 'logs', logFileName), logItem)
-    } catch (err) {
-<span class="cstat-no" title="statement not covered" >        console.log(err)</span>
-    }
-} 
+const fuelQuotes = [
+  {
+    gallons: "100",
+    date: "2023-3-31",
+  },
+];
 &nbsp;
-const logger = (req, res, next) =&gt; {
-    // this logs every req, consider adding conditions to reduce logEvents
-    // perhaps log if not coming from our own url or only specific req methods
-    logEvents(`${req.method}\t${req.url}\t${req.headers.origin}`, 'reqLog.log')
-    
-    // will see in the log of node.js as we are running our server to help during dev 
-    console.log(`${req.method} ${req.path}`)
+// const fuelQuoteSchema = mongoose.Schema({
+//   gallonsRequested: {
+//     type: Number,
+//     required: true,
+//   },
+//   deliveryAddress: {
+//     // non-editable, comes from client profile
+//     type: mongoose.Schema.Types.ObjectId,
+//     required: true,
+//     ref: "ClientInformation",
+//   },
+//   deliveryDate: {
+//     type: Date,
+//     required: true,
+//   },
+//   suggestedPrice: {
+//     // non-editable, calculated by pricing model
+//     type: Number,
+//     required: true,
+//   },
+//   totalAmountDue: {
+//     // non-editable, gallonsRequested * suggestedPrice
+//     type: Number,
+//     required: true,
+//   },
+// });
 &nbsp;
-    // move to the next piece of middleware or controller
-    next()
-}
+module.exports = fuelQuotes;
 &nbsp;
-module.exports = { logEvents, logger }</pre></td></tr></table></pre>
+// module.exports = mongoose.model("FuelQuote", fuelQuoteSchema);
+&nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->

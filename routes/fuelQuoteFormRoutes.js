@@ -11,7 +11,7 @@ router
   .route("/:id")
   // HTTP method                    // CRUD operation
   .get(fuelQuoteFormController.getFuelQuoteForm) // read
-  .post() // create
+  .post(fuelQuoteFormController.fillFuelQuoteForm) // create
   .patch() // update
   .delete(); // delete
 

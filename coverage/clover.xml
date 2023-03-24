@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1679672609152" clover="3.2.0">
-  <project timestamp="1679672609152" name="All files">
-    <metrics statements="379" coveredstatements="180" conditionals="150" coveredconditionals="24" methods="34" coveredmethods="10" elements="563" coveredelements="214" complexity="0" loc="379" ncloc="379" packages="6" files="22" classes="22"/>
+<coverage generated="1679677640233" clover="3.2.0">
+  <project timestamp="1679677640233" name="All files">
+    <metrics statements="392" coveredstatements="191" conditionals="158" coveredconditionals="30" methods="35" coveredmethods="11" elements="585" coveredelements="232" complexity="0" loc="392" ncloc="392" packages="6" files="23" classes="23"/>
     <package name="COSC4353-Group27">
       <metrics statements="37" coveredstatements="30" conditionals="10" coveredconditionals="4" methods="2" coveredmethods="0"/>
-      <file name="server.js" path="/Users/master/Desktop/repos/COSC4353-Group27/server.js">
+      <file name="server.js" path="/Users/master/iCloud Drive (Archive)/Desktop/repos/COSC4353-Group27/server.js">
         <metrics statements="37" coveredstatements="30" conditionals="10" coveredconditionals="4" methods="2" coveredmethods="0"/>
         <line num="1" count="2" type="stmt"/>
         <line num="2" count="2" type="stmt"/>
@@ -47,28 +47,28 @@
     </package>
     <package name="COSC4353-Group27.config">
       <metrics statements="9" coveredstatements="8" conditionals="4" coveredconditionals="3" methods="1" coveredmethods="1"/>
-      <file name="allowedOrigins.js" path="/Users/master/Desktop/repos/COSC4353-Group27/config/allowedOrigins.js">
+      <file name="allowedOrigins.js" path="/Users/master/iCloud Drive (Archive)/Desktop/repos/COSC4353-Group27/config/allowedOrigins.js">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="2" type="stmt"/>
         <line num="3" count="2" type="stmt"/>
         <line num="7" count="2" type="stmt"/>
       </file>
-      <file name="corsOptions.js" path="/Users/master/Desktop/repos/COSC4353-Group27/config/corsOptions.js">
+      <file name="corsOptions.js" path="/Users/master/iCloud Drive (Archive)/Desktop/repos/COSC4353-Group27/config/corsOptions.js">
         <metrics statements="6" coveredstatements="5" conditionals="4" coveredconditionals="3" methods="1" coveredmethods="1"/>
         <line num="1" count="2" type="stmt"/>
         <line num="3" count="2" type="stmt"/>
-        <line num="8" count="5" type="cond" truecount="3" falsecount="1"/>
-        <line num="9" count="5" type="stmt"/>
+        <line num="8" count="6" type="cond" truecount="3" falsecount="1"/>
+        <line num="9" count="6" type="stmt"/>
         <line num="11" count="0" type="stmt"/>
         <line num="20" count="2" type="stmt"/>
       </file>
-      <file name="dbConn.js" path="/Users/master/Desktop/repos/COSC4353-Group27/config/dbConn.js">
+      <file name="dbConn.js" path="/Users/master/iCloud Drive (Archive)/Desktop/repos/COSC4353-Group27/config/dbConn.js">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
     </package>
     <package name="COSC4353-Group27.controllers">
-      <metrics statements="247" coveredstatements="63" conditionals="132" coveredconditionals="15" methods="23" coveredmethods="6"/>
-      <file name="clientsController.js" path="/Users/master/Desktop/repos/COSC4353-Group27/controllers/clientsController.js">
+      <metrics statements="257" coveredstatements="71" conditionals="140" coveredconditionals="21" methods="24" coveredmethods="7"/>
+      <file name="clientsController.js" path="/Users/master/iCloud Drive (Archive)/Desktop/repos/COSC4353-Group27/controllers/clientsController.js">
         <metrics statements="46" coveredstatements="18" conditionals="28" coveredconditionals="15" methods="5" coveredmethods="4"/>
         <line num="1" count="2" type="stmt"/>
         <line num="2" count="2" type="stmt"/>
@@ -117,19 +117,29 @@
         <line num="98" count="0" type="stmt"/>
         <line num="101" count="2" type="stmt"/>
       </file>
-      <file name="fuelQuoteFormController.js" path="/Users/master/Desktop/repos/COSC4353-Group27/controllers/fuelQuoteFormController.js">
-        <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="fuelQuoteFormController.js" path="/Users/master/iCloud Drive (Archive)/Desktop/repos/COSC4353-Group27/controllers/fuelQuoteFormController.js">
+        <metrics statements="19" coveredstatements="17" conditionals="8" coveredconditionals="6" methods="3" coveredmethods="3"/>
         <line num="1" count="2" type="stmt"/>
         <line num="2" count="2" type="stmt"/>
         <line num="3" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
         <line num="8" count="2" type="stmt"/>
         <line num="9" count="1" type="stmt"/>
         <line num="10" count="1" type="stmt"/>
         <line num="11" count="1" type="stmt"/>
         <line num="13" count="1" type="stmt"/>
-        <line num="20" count="2" type="stmt"/>
+        <line num="22" count="2" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="29" count="1" type="cond" truecount="3" falsecount="1"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="34" count="1" type="cond" truecount="3" falsecount="1"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
+        <line num="44" count="2" type="stmt"/>
       </file>
-      <file name="loginController.js" path="/Users/master/Desktop/repos/COSC4353-Group27/controllers/loginController.js">
+      <file name="loginController.js" path="/Users/master/iCloud Drive (Archive)/Desktop/repos/COSC4353-Group27/controllers/loginController.js">
         <metrics statements="48" coveredstatements="9" conditionals="26" coveredconditionals="0" methods="4" coveredmethods="0"/>
         <line num="1" count="2" type="stmt"/>
         <line num="2" count="2" type="stmt"/>
@@ -180,7 +190,7 @@
         <line num="109" count="0" type="stmt"/>
         <line num="112" count="2" type="stmt"/>
       </file>
-      <file name="profileController.js" path="/Users/master/Desktop/repos/COSC4353-Group27/controllers/profileController.js">
+      <file name="profileController.js" path="/Users/master/iCloud Drive (Archive)/Desktop/repos/COSC4353-Group27/controllers/profileController.js">
         <metrics statements="48" coveredstatements="9" conditionals="26" coveredconditionals="0" methods="4" coveredmethods="0"/>
         <line num="1" count="2" type="stmt"/>
         <line num="2" count="2" type="stmt"/>
@@ -231,7 +241,7 @@
         <line num="109" count="0" type="stmt"/>
         <line num="112" count="2" type="stmt"/>
       </file>
-      <file name="registerController.js" path="/Users/master/Desktop/repos/COSC4353-Group27/controllers/registerController.js">
+      <file name="registerController.js" path="/Users/master/iCloud Drive (Archive)/Desktop/repos/COSC4353-Group27/controllers/registerController.js">
         <metrics statements="48" coveredstatements="9" conditionals="26" coveredconditionals="0" methods="4" coveredmethods="0"/>
         <line num="1" count="2" type="stmt"/>
         <line num="2" count="2" type="stmt"/>
@@ -282,7 +292,7 @@
         <line num="109" count="0" type="stmt"/>
         <line num="112" count="2" type="stmt"/>
       </file>
-      <file name="usersController.js" path="/Users/master/Desktop/repos/COSC4353-Group27/controllers/usersController.js">
+      <file name="usersController.js" path="/Users/master/iCloud Drive (Archive)/Desktop/repos/COSC4353-Group27/controllers/usersController.js">
         <metrics statements="48" coveredstatements="9" conditionals="26" coveredconditionals="0" methods="4" coveredmethods="0"/>
         <line num="1" count="2" type="stmt"/>
         <line num="2" count="2" type="stmt"/>
@@ -336,7 +346,7 @@
     </package>
     <package name="COSC4353-Group27.middleware">
       <metrics statements="26" coveredstatements="24" conditionals="4" coveredconditionals="2" methods="3" coveredmethods="3"/>
-      <file name="errorHandler.js" path="/Users/master/Desktop/repos/COSC4353-Group27/middleware/errorHandler.js">
+      <file name="errorHandler.js" path="/Users/master/iCloud Drive (Archive)/Desktop/repos/COSC4353-Group27/middleware/errorHandler.js">
         <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
         <line num="1" count="2" type="stmt"/>
         <line num="3" count="2" type="stmt"/>
@@ -347,7 +357,7 @@
         <line num="15" count="3" type="stmt"/>
         <line num="18" count="2" type="stmt"/>
       </file>
-      <file name="logger.js" path="/Users/master/Desktop/repos/COSC4353-Group27/middleware/logger.js">
+      <file name="logger.js" path="/Users/master/iCloud Drive (Archive)/Desktop/repos/COSC4353-Group27/middleware/logger.js">
         <metrics statements="18" coveredstatements="16" conditionals="2" coveredconditionals="1" methods="2" coveredmethods="2"/>
         <line num="1" count="2" type="stmt"/>
         <line num="2" count="2" type="stmt"/>
@@ -355,29 +365,35 @@
         <line num="4" count="2" type="stmt"/>
         <line num="5" count="2" type="stmt"/>
         <line num="7" count="2" type="stmt"/>
-        <line num="8" count="8" type="stmt"/>
-        <line num="9" count="8" type="stmt"/>
-        <line num="11" count="8" type="stmt"/>
-        <line num="13" count="8" type="cond" truecount="1" falsecount="1"/>
+        <line num="8" count="9" type="stmt"/>
+        <line num="9" count="9" type="stmt"/>
+        <line num="11" count="9" type="stmt"/>
+        <line num="13" count="9" type="cond" truecount="1" falsecount="1"/>
         <line num="14" count="0" type="stmt"/>
-        <line num="17" count="8" type="stmt"/>
+        <line num="17" count="9" type="stmt"/>
         <line num="19" count="0" type="stmt"/>
         <line num="23" count="2" type="stmt"/>
-        <line num="26" count="5" type="stmt"/>
-        <line num="29" count="5" type="stmt"/>
-        <line num="32" count="5" type="stmt"/>
+        <line num="26" count="6" type="stmt"/>
+        <line num="29" count="6" type="stmt"/>
+        <line num="32" count="6" type="stmt"/>
         <line num="35" count="2" type="stmt"/>
       </file>
     </package>
     <package name="COSC4353-Group27.models">
-      <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="ClientInformation.js" path="/Users/master/Desktop/repos/COSC4353-Group27/models/ClientInformation.js">
+      <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="ClientInformation.js" path="/Users/master/iCloud Drive (Archive)/Desktop/repos/COSC4353-Group27/models/ClientInformation.js">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="2" type="stmt"/>
         <line num="5" count="2" type="stmt"/>
         <line num="67" count="2" type="stmt"/>
       </file>
-      <file name="UserCredentials.js" path="/Users/master/Desktop/repos/COSC4353-Group27/models/UserCredentials.js">
+      <file name="FuelQuote.js" path="/Users/master/iCloud Drive (Archive)/Desktop/repos/COSC4353-Group27/models/FuelQuote.js">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="37" count="2" type="stmt"/>
+      </file>
+      <file name="UserCredentials.js" path="/Users/master/iCloud Drive (Archive)/Desktop/repos/COSC4353-Group27/models/UserCredentials.js">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="2" type="stmt"/>
         <line num="3" count="2" type="stmt"/>
@@ -386,7 +402,7 @@
     </package>
     <package name="COSC4353-Group27.routes">
       <metrics statements="54" coveredstatements="49" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="0"/>
-      <file name="clientRoutes.js" path="/Users/master/Desktop/repos/COSC4353-Group27/routes/clientRoutes.js">
+      <file name="clientRoutes.js" path="/Users/master/iCloud Drive (Archive)/Desktop/repos/COSC4353-Group27/routes/clientRoutes.js">
         <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="2" type="stmt"/>
         <line num="2" count="2" type="stmt"/>
@@ -394,7 +410,7 @@
         <line num="5" count="2" type="stmt"/>
         <line num="11" count="2" type="stmt"/>
       </file>
-      <file name="fuelQuoteFormRoutes.js" path="/Users/master/Desktop/repos/COSC4353-Group27/routes/fuelQuoteFormRoutes.js">
+      <file name="fuelQuoteFormRoutes.js" path="/Users/master/iCloud Drive (Archive)/Desktop/repos/COSC4353-Group27/routes/fuelQuoteFormRoutes.js">
         <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="2" type="stmt"/>
         <line num="2" count="2" type="stmt"/>
@@ -403,7 +419,7 @@
         <line num="10" count="2" type="stmt"/>
         <line num="18" count="2" type="stmt"/>
       </file>
-      <file name="fuelQuoteHistoryRoutes.js" path="/Users/master/Desktop/repos/COSC4353-Group27/routes/fuelQuoteHistoryRoutes.js">
+      <file name="fuelQuoteHistoryRoutes.js" path="/Users/master/iCloud Drive (Archive)/Desktop/repos/COSC4353-Group27/routes/fuelQuoteHistoryRoutes.js">
         <metrics statements="8" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="1" count="2" type="stmt"/>
         <line num="2" count="2" type="stmt"/>
@@ -414,7 +430,7 @@
         <line num="10" count="2" type="stmt"/>
         <line num="18" count="2" type="stmt"/>
       </file>
-      <file name="loginRoutes.js" path="/Users/master/Desktop/repos/COSC4353-Group27/routes/loginRoutes.js">
+      <file name="loginRoutes.js" path="/Users/master/iCloud Drive (Archive)/Desktop/repos/COSC4353-Group27/routes/loginRoutes.js">
         <metrics statements="8" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="1" count="2" type="stmt"/>
         <line num="2" count="2" type="stmt"/>
@@ -425,7 +441,7 @@
         <line num="10" count="2" type="stmt"/>
         <line num="18" count="2" type="stmt"/>
       </file>
-      <file name="profileRoutes.js" path="/Users/master/Desktop/repos/COSC4353-Group27/routes/profileRoutes.js">
+      <file name="profileRoutes.js" path="/Users/master/iCloud Drive (Archive)/Desktop/repos/COSC4353-Group27/routes/profileRoutes.js">
         <metrics statements="8" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="1" count="2" type="stmt"/>
         <line num="2" count="2" type="stmt"/>
@@ -436,7 +452,7 @@
         <line num="10" count="2" type="stmt"/>
         <line num="18" count="2" type="stmt"/>
       </file>
-      <file name="registerRoutes.js" path="/Users/master/Desktop/repos/COSC4353-Group27/routes/registerRoutes.js">
+      <file name="registerRoutes.js" path="/Users/master/iCloud Drive (Archive)/Desktop/repos/COSC4353-Group27/routes/registerRoutes.js">
         <metrics statements="8" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="1" count="2" type="stmt"/>
         <line num="2" count="2" type="stmt"/>
@@ -447,7 +463,7 @@
         <line num="10" count="2" type="stmt"/>
         <line num="18" count="2" type="stmt"/>
       </file>
-      <file name="root.js" path="/Users/master/Desktop/repos/COSC4353-Group27/routes/root.js">
+      <file name="root.js" path="/Users/master/iCloud Drive (Archive)/Desktop/repos/COSC4353-Group27/routes/root.js">
         <metrics statements="6" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="1" count="2" type="stmt"/>
         <line num="2" count="2" type="stmt"/>
@@ -456,7 +472,7 @@
         <line num="6" count="0" type="stmt"/>
         <line num="9" count="2" type="stmt"/>
       </file>
-      <file name="userRoutes.js" path="/Users/master/Desktop/repos/COSC4353-Group27/routes/userRoutes.js">
+      <file name="userRoutes.js" path="/Users/master/iCloud Drive (Archive)/Desktop/repos/COSC4353-Group27/routes/userRoutes.js">
         <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="2" type="stmt"/>
         <line num="2" count="2" type="stmt"/>
