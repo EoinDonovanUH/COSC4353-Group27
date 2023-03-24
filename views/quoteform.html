@@ -14,10 +14,10 @@
   <div id="wrapper">
     <head>
       <meta charset="UTF-8" />
-      <link rel="stylesheet" href="css/quoteform.css" />
+      <link rel="stylesheet" href="/css/quoteform.css" />
       <header><title>Quote Form</title></header>
       <img
-        src="img/fuel-pump.png"
+        src="/img/fuel-pump.png"
         alt="fuel"
         width="175"
         height="100"
@@ -28,7 +28,7 @@
       <main>
         <h1>Fuel Quote Form</h1>
         <fieldset>
-          <form action="url to send info" method="get">
+          <form action="url to send info" method="post">
             <p>
               <label for="galsReqd"><b>Gallons Requested:</b> </label>
               <input
@@ -54,7 +54,7 @@
         </fieldset>
         <p><br /></p>
         <fieldset>
-          <p><b>Address: output here</b></p>
+          <p><b id="address">Address: output here</b></p>
           <p><b>Suggested price:</b></p>
           <p><b>Total:</b></p>
         </fieldset>

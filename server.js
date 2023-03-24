@@ -64,3 +64,5 @@ app.use(errorHandler);
 //   logEvents`${err.no}: ${err.code}\t${err.syscall}\t${err.hostname}`,
 //     "mongoErrLog.log";
 // });
+
+module.exports = app;
