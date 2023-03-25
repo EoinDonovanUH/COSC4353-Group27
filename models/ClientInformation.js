@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+// const mongoose = require("mongoose");
 
 // https://mongoosejs.com/docs/validation.html
 
@@ -10,6 +10,14 @@ const clients = [
     city: "Houston",
     state: "TX",
     zipCode: "12345",
+  },
+  {
+    userCredentials: 2,
+    fullName: "Clyde Jackson",
+    address1: "1500 Riverdale Rd",
+    city: "Houston",
+    state: "TX",
+    zipCode: "23456",
   },
 ];
 
