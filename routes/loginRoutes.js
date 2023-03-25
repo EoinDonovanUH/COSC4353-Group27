@@ -1,17 +1,17 @@
 const express = require("express");
 const router = express.Router();
 const path = require("path");
-const fuelQuoteHistoryController = require("../controllers/loginController");
+const loginController = require("../controllers/loginController");
 
-router.get("^/$|/login(.html)?", (req, res) => {
-  res.sendFile(path.join(__dirname, "..", "views", "login.html"));
-});
+// router.get("^/$|/login(.html)?", (req, res) => {
+//   res.sendFile(path.join(__dirname, "..", "views", "login.html"));
+// });
 
 router
   .route("/")
   // HTTP method                    // CRUD operation
-  .get() // read
-  .post() // create
+  .get(loginController.getLogin) // read
+  .post(loginController.fillLogin) // create
   .patch() // update
   .delete(); // delete
 
