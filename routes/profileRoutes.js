@@ -1,18 +1,17 @@
 const express = require("express");
 const router = express.Router();
-const path = require("path");
-const fuelQuoteHistoryController = require("../controllers/profileController");
+const profileController = require("../controllers/profileController");
 
-router.get("^/$|/profile(.html)?", (req, res) => {
-  res.sendFile(path.join(__dirname, "..", "views", "profile.html"));
-});
+// router.get("^/$|/profile(.html)?", (req, res) => {
+//   res.sendFile(path.join(__dirname, "..", "views", "profile.html"));
+// });
 
 router
-  .route("/")
+  .route("/:id?")
   // HTTP method                    // CRUD operation
-  .get() // read
-  .post() // create
-  .patch() // update
-  .delete(); // delete
+  .get(profileController.getProfile) // read
+  .post(profileController.fillProfile) // create
+  .patch(profileController.changeProfile) // update
+  .delete(profileController.deleteProfile); // delete
 
 module.exports = router;
