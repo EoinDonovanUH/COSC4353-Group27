@@ -10,8 +10,11 @@ const corsOptions = require("./config/corsOptions");
 const connectDB = require("./config/dbConn");
 const mongoose = require("mongoose");
 const PORT = process.env.PORT || 3500;
+const NODE_ENV = (process.env.NODE_ENV = "test");
 
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+if (NODE_ENV != "test") {
+  app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+}
 
 // console.log(process.env.NODE_ENV);
 
@@ -31,9 +34,9 @@ app.use("/", express.static(path.join(__dirname, "/public")));
 
 app.use("/", require("./routes/root"));
 // UserCredentials
-app.use("/users", require("./routes/userRoutes"));
+// app.use("/users", require("./routes/userRoutes"));
 // ClientInformation
-app.use("/clients", require("./routes/clientRoutes"));
+// app.use("/clients", require("./routes/clientRoutes"));
 // TODO FuelQuote
 app.use("/profile", require("./routes/profileRoutes"));
 app.use("/register", require("./routes/registerRoutes"));
