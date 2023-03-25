@@ -9,22 +9,46 @@
 <body>
   <div class="center">
     <h1>Profile Management</h1>
-    <form>
+    <form method="post">
       <div class="txt_field">
-        <input type="text" required maxlength="50" placeholder="Full Name" />
+        <input
+          type="text"
+          name="fullName"
+          required
+          maxlength="50"
+          placeholder="Full Name"
+        />
       </div>
       <div class="txt_field">
-        <input type="text" required maxlength="100" placeholder="Address 1" />
+        <input
+          type="text"
+          name="address1"
+          required
+          maxlength="100"
+          placeholder="Address 1"
+        />
       </div>
       <div class="txt_field">
-        <input type="text" optional maxlength="100" placeholder="Address 2" />
+        <input
+          type="text"
+          name="address2"
+          optional
+          maxlength="100"
+          placeholder="Address 2"
+        />
       </div>
       <div class="txt_field">
-        <input type="text" required maxlength="100" placeholder="City" />
+        <input
+          type="text"
+          name="city"
+          required
+          maxlength="100"
+          placeholder="City"
+        />
       </div>
       <div>
         <label for="State-dropdown">Select State:</label>
-        <select name="State">
+        <select name="state">
           <option value="AL">Alabama</option>
           <option value="AK">Alaska</option>
           <option value="AZ">Arizona</option>
@@ -80,6 +104,7 @@
       <div class="txt_field">
         <input
           type="text"
+          name="zipCode"
           required
           maxlength="9"
           minlength="5"
