@@ -1,6 +1,5 @@
-require("dotenv").config();
-const express = require("express");
-const app = express();
+const express = require('express')
+const app = express()
 const path = require("path");
 const { logger, logEvents } = require("./middleware/logger");
 const errorHandler = require("./middleware/errorHandler");
@@ -8,17 +7,18 @@ const cookieParser = require("cookie-parser");
 const cors = require("cors");
 const corsOptions = require("./config/corsOptions");
 const connectDB = require("./config/dbConn");
-const mongoose = require("mongoose");
+const mongoose = require('mongoose')
+require("dotenv").config()
 const PORT = process.env.PORT || 3500;
+
 const NODE_ENV = process.env.NODE_ENV || "test";
+// if (NODE_ENV != "test") {
+//   app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+// }
 
-if (NODE_ENV != "test") {
-  app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
-}
+console.log(process.env.NODE_ENV);
 
-// console.log(process.env.NODE_ENV);
-
-// connectDB();
+connectDB();
 
 app.use(logger);
 
@@ -32,15 +32,16 @@ app.use("/", express.static(path.join(__dirname, "/public")));
 // could instead use
 // app.use(express.static('public'))
 
-app.use("/", require("./routes/root"));
+app.use('/', require('./routes/root'))
 // UserCredentials
-// app.use("/users", require("./routes/userRoutes"));
+app.use("/users", require("./routes/userRoutes"));
 // ClientInformation
-// app.use("/clients", require("./routes/clientRoutes"));
+app.use("/clients", require("./routes/clientRoutes"));
 // TODO FuelQuote
-app.use("/profile", require("./routes/profileRoutes"));
+
 app.use("/register", require("./routes/registerRoutes"));
 app.use("/login", require("./routes/loginRoutes"));
+app.use("/profile", require("./routes/profileRoutes"));
 app.use("/quoteform", require("./routes/fuelQuoteFormRoutes"));
 app.use("/quoteHistory", require("./routes/fuelQuoteHistoryRoutes"));
 
@@ -57,15 +58,15 @@ app.all("*", (req, res) => {
 
 app.use(errorHandler);
 
-// mongoose.connection.once("open", () => {
-//   console.log("Connected to MongoDB");
-//   app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
-// });
+mongoose.connection.once("open", () => {
+  console.log("Connected to MongoDB");
+  app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+});
 
-// mongoose.connection.on("err", (err) => {
-//   console.log(err);
-//   logEvents`${err.no}: ${err.code}\t${err.syscall}\t${err.hostname}`,
-//     "mongoErrLog.log";
-// });
+mongoose.connection.on("err", (err) => {
+  console.log(err);
+  logEvents`${err.no}: ${err.code}\t${err.syscall}\t${err.hostname}`,
+    "mongoErrLog.log";
+});
 
 module.exports = app;

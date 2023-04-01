@@ -1,3 +1,5 @@
+// TODO move since not model
+
 const mongoose = require('mongoose')
 
 class PricingModule{
