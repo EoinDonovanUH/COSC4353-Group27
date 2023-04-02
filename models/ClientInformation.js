@@ -7,13 +7,13 @@ const clientInformationSchema = mongoose.Schema({
     user_credentials: {
         type: mongoose.Schema.Types.ObjectId,
         required: true,
-        ref: 'UserCredentials'
+        //ref: 'UserCredentials'
     },
     fullname: {
         type: String,
         required: true,
         // only alphabet chars allowed
-        match: "[A-Za-z]",
+        //match: "[A-Za-z]",
         maxLength: [50, 'Enter up to 50 characters, got {VALUE}']
     },
     address1: {
@@ -32,14 +32,14 @@ const clientInformationSchema = mongoose.Schema({
         type: String,
         required: true,
         // only alphabet chars allowed
-        match: "[A-Za-z]",
+        // match: "[A-Za-z]",
         maxLength: [100, 'Enter up to 100 characters, got {VALUE}']
     },
     state: {
         type: String,
         required: true,
         // store 2 character state code
-        match: "[A-Z]",
+        // match: "[A-Z]",
         maxLength: 2,
         minLength: 2
     },
@@ -47,7 +47,7 @@ const clientInformationSchema = mongoose.Schema({
         type: String,
         required: true,
         // DDDDD-DDDD how to enforce this format?
-        match: "[0-9]",
+        //match: "[0-9]",
         maxLength: [9, 'Enter up to 9 digits, got {VALUE}'],
         minLength: [5, 'Enter at least 5 digits, got {VALUE}']
     },

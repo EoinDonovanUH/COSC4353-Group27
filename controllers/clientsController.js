@@ -28,7 +28,7 @@ const createNewClient = asyncHandler(async (req, res) => {
     const { user_credentials, fullname, address1, address2, city, state, zipcode } = req.body
 
     // confirm data
-    if (!user_credentials || !fullname || !address1 || !city || !state || !zipcode) {
+    if (!user_credentials|| !fullname || !address1 || !city || !state || !zipcode){
         return res.status(400).json({message: 'All fields except address2 are required'})
     }
 
@@ -37,9 +37,9 @@ const createNewClient = asyncHandler(async (req, res) => {
     const client = await ClientInformation.create({ user_credentials, fullname, address1, address2, city, state, zipcode })
     if (client) { // created
         return res.status(201).json({ message: 'New client created' })
-    } else {
+    } /*else {
         return res.status(400).json({ message: 'Invalid client data received' })
-    }
+    }*/
 })
 
 // @desc Update a client 
@@ -71,7 +71,8 @@ const updateClient = asyncHandler(async (req, res) => {
 
   const updatedClient = await client.save()
 
-  res.json(`'${updatedClient.fullname}' updated`)
+  //res.json(`'${updatedClient.fullname}' updated`)
+  return res.status(201).json({ message: 'client updated' })
 })
 
 // @desc Delete a client 
