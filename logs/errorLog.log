@@ -1,0 +1,996 @@
+20230401	14:29:20	8079da4f-926a-46a9-8f6d-5ffb09e9f374	SyntaxError: Unexpected string in JSON at position 57	POST	/users	undefined
+20230401	14:35:03	3131a098-171a-4c98-9240-c4e7cb1ec7e2	SyntaxError: Unexpected token } in JSON at position 42	PATCH	/users	undefined
+20230401	14:35:09	33cf014c-1f49-4cf5-b73b-d1d73751be4f	CastError: Cast to ObjectId failed for value "12" (type string) at path "_id" for model "UserCredentials"	PATCH	/users	undefined
+20230401	14:35:18	b9977124-ae4d-4f29-aa39-88d1d4de6248	CastError: Cast to ObjectId failed for value "12333212" (type string) at path "_id" for model "UserCredentials"	PATCH	/users	undefined
+20230401	14:36:33	72e2c0fb-be4d-4298-a512-cf4e47e11a44	CastError: Cast to ObjectId failed for value "6428862f5e4783a6c7e04fbi" (type string) at path "_id" for model "UserCredentials"	PATCH	/users	undefined
+20230401	14:40:07	32b9b511-0484-4df9-9ec8-1a8242b432ac	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230401	14:40:07	96ec7d91-7f11-4819-8896-0ba737140e49	MongooseError: Model.find() no longer accepts a callback	GET	/profile/2	undefined
+20230401	14:40:07	90ed8608-508c-47ec-bece-d53d4bb7ae5b	TypeError: users.some is not a function	POST	/register	undefined
+20230401	14:40:07	dac63f2c-27dc-49b9-b817-4fe4acd583d4	TypeError: users.some is not a function	POST	/login	undefined
+20230401	14:40:08	eca39532-dc85-4eff-abbb-c6386ad099cc	TypeError: users.some is not a function	POST	/register	undefined
+20230401	14:40:08	656969c5-45ab-4ff3-9fd0-8a6d7ce4818c	TypeError: users.some is not a function	POST	/login	undefined
+20230401	14:40:08	eb2875dc-e30d-45f2-98a5-622c45d78325	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230401	14:40:08	38e40eb9-8bde-4f39-9a3e-571c8a5e382d	TypeError: clients.push is not a function	POST	/profile/3	undefined
+20230401	14:40:08	8c683567-c21f-4d4e-a244-a62b27b2ac07	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	14:40:08	48e61d38-101c-4a65-a5a5-e09a8fb44a53	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/4	undefined
+20230401	14:40:08	5d6b250a-003a-4dd5-8de9-f12132b4c2f8	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	14:40:08	c7e138ae-c955-4e29-96dd-bbbdd73ddf0d	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	14:40:08	3ed6847e-4c93-4d22-a254-a61007fa6bca	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/2	undefined
+20230401	14:40:08	576f3674-7955-466b-9f61-c862cf8c6a52	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/4	undefined
+20230401	14:40:08	478facfa-a95d-4860-8778-27ec55bb2339	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230401	14:40:08	2ef351ee-bf55-4363-8feb-f2515da3f85f	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230401	14:47:37	425592c1-68ee-4861-b184-b4e1bc0c8892	ValidationError: ClientInformation validation failed: user_credentials: Cast to ObjectId failed for value "123" (type string) at path "user_credentials" because of "BSONError", fullname: Cannot create property 'lastIndex' on string '[A-Za-z]', city: Cannot create property 'lastIndex' on string '[A-Za-z]', state: Cannot create property 'lastIndex' on string '[A-Z]', zipcode: Cannot create property 'lastIndex' on string '[0-9]'	POST	/clients	undefined
+20230401	14:48:22	37aba6fa-9ff0-4b1e-8dbe-7a82b778ec3c	ValidationError: ClientInformation validation failed: user_credentials: Cast to ObjectId failed for value "1" (type number) at path "user_credentials" because of "BSONError", fullname: Cannot create property 'lastIndex' on string '[A-Za-z]', city: Cannot create property 'lastIndex' on string '[A-Za-z]', state: Cannot create property 'lastIndex' on string '[A-Z]', zipcode: Cannot create property 'lastIndex' on string '[0-9]'	POST	/clients	undefined
+20230401	14:49:37	86796863-219f-4ff9-aa61-0d43f7015a21	ValidationError: ClientInformation validation failed: user_credentials: Cast to ObjectId failed for value "1" (type number) at path "user_credentials" because of "BSONError", fullname: Cannot create property 'lastIndex' on string '[A-Za-z]', city: Cannot create property 'lastIndex' on string '[A-Za-z]', state: Cannot create property 'lastIndex' on string '[A-Z]', zipcode: Cannot create property 'lastIndex' on string '[0-9]'	POST	/clients	undefined
+20230401	14:53:18	e22185e9-8a36-424a-b4b2-d2a8c9a11662	SyntaxError: Unexpected token , in JSON at position 25	POST	/clients	undefined
+20230401	14:55:11	7fb25b7f-d507-4c35-bd62-13054feeea58	SyntaxError: Unexpected string in JSON at position 133	POST	/clients	undefined
+20230401	15:03:49	164856dd-1ea3-469d-9c41-b258a00e7cfb	ValidationError: ClientInformation validation failed: user_credentials: Cast to ObjectId failed for value "123456789" (type string) at path "user_credentials" because of "BSONError", fullname: Cannot create property 'lastIndex' on string '[A-Za-z]', city: Cannot create property 'lastIndex' on string '[A-Za-z]', state: Cannot create property 'lastIndex' on string '[A-Z]', zipcode: Cannot create property 'lastIndex' on string '[0-9]'	POST	/clients	undefined
+20230401	15:23:35	3eeb597a-e3af-498b-90ce-1fd2160b7003	ValidationError: ClientInformation validation failed: user_credentials: Path `user_credentials` is required., fullname: Cannot create property 'lastIndex' on string '[A-Za-z]', city: Cannot create property 'lastIndex' on string '[A-Za-z]', state: Cannot create property 'lastIndex' on string '[A-Z]', zipcode: Cannot create property 'lastIndex' on string '[0-9]'	POST	/clients	undefined
+20230401	15:24:27	16dbbe09-a895-4181-a87e-675f3407c23c	ReferenceError: user_credentials is not defined	POST	/clients	undefined
+20230401	15:24:37	d64da5d2-6ffc-414e-a183-b108b14886fd	ValidationError: ClientInformation validation failed: user_credentials: Path `user_credentials` is required., fullname: Cannot create property 'lastIndex' on string '[A-Za-z]', city: Cannot create property 'lastIndex' on string '[A-Za-z]', state: Cannot create property 'lastIndex' on string '[A-Z]', zipcode: Cannot create property 'lastIndex' on string '[0-9]'	POST	/clients	undefined
+20230401	15:25:19	c3e7f1a2-c9a5-4d6c-956f-c1052cf4bbb5	ValidationError: ClientInformation validation failed: fullname: Cannot create property 'lastIndex' on string '[A-Za-z]', city: Cannot create property 'lastIndex' on string '[A-Za-z]', state: Cannot create property 'lastIndex' on string '[A-Z]', zipcode: Cannot create property 'lastIndex' on string '[0-9]'	POST	/clients	undefined
+20230401	15:25:21	726d5343-9726-4cfb-b82c-30e73e6564fa	ValidationError: ClientInformation validation failed: fullname: Cannot create property 'lastIndex' on string '[A-Za-z]', city: Cannot create property 'lastIndex' on string '[A-Za-z]', state: Cannot create property 'lastIndex' on string '[A-Z]', zipcode: Cannot create property 'lastIndex' on string '[0-9]'	POST	/clients	undefined
+20230401	15:27:59	453106f6-e633-4569-b629-76965b132b9d	ValidationError: ClientInformation validation failed: fullname: Cannot create property 'lastIndex' on string '[A-Za-z]'	POST	/clients	undefined
+20230401	15:28:17	de4d8c38-fa97-4f02-9114-82e24b4f7ad9	ValidationError: ClientInformation validation failed: fullname: Cannot create property 'lastIndex' on string '[A-Za-z]'	POST	/clients	undefined
+20230401	15:30:24	72369163-9d4b-49c6-af3e-35f5cd98d78e	TypeError: Cannot read properties of null (reading 'username')	GET	/clients	undefined
+20230401	15:32:04	c0860a66-3fac-4d07-b26c-f93fbc8bfd80	CastError: Cast to ObjectId failed for value "John Doe" (type string) at path "_id" for model "UserCredentials"	GET	/clients	undefined
+20230401	15:32:21	bada764b-2ebc-4c7a-8fc3-3ecf72afec9c	CastError: Cast to ObjectId failed for value "John Doe" (type string) at path "_id" for model "UserCredentials"	GET	/clients	undefined
+20230401	15:32:45	89ab56c2-81c0-443d-a686-bb5e537d2ee5	ReferenceError: fullname is not defined	GET	/clients	undefined
+20230401	15:34:25	97e11e60-d8fe-4500-9b61-df8c8bc90da6	TypeError: Cannot read properties of null (reading 'username')	GET	/clients	undefined
+20230401	15:36:48	71b02e68-df0b-480b-8315-046e0d14135f	TypeError: Cannot read properties of null (reading 'username')	GET	/clients	undefined
+20230401	15:37:10	8bb9352b-bf8c-417c-bf81-9bbb2bac78b7	SyntaxError: Unexpected token { in JSON at position 6	POST	/clients	undefined
+20230401	15:37:13	a0d40d0a-d075-4b1c-9df8-0e710e3b3e9b	SyntaxError: Unexpected token { in JSON at position 6	POST	/clients	undefined
+20230401	15:42:15	f3ab87cc-11cc-4d08-a056-7491917cd91b	SyntaxError: Unexpected token , in JSON at position 25	GET	/users	undefined
+20230401	15:45:23	ecdd777d-becc-4f2b-a3d9-61f80a4c82ad	SyntaxError: Unexpected token : in JSON at position 38	POST	/clients	undefined
+20230401	15:53:18	a3087f3f-130d-410c-8aa8-5eafc8596ca1	SyntaxError: Unexpected token O in JSON at position 48	POST	/clients	undefined
+20230401	15:53:57	a2160218-13e7-4552-a7cc-35476dc24702	SyntaxError: Unexpected token O in JSON at position 47	POST	/clients	undefined
+20230401	15:54:02	30694897-102e-46cb-93b3-41af180b28f3	SyntaxError: Unexpected token ( in JSON at position 47	POST	/clients	undefined
+20230401	16:03:20	beafe345-61a6-4125-ba01-939b6afc3920	SyntaxError: Unexpected token ] in JSON at position 129	POST	/clients	undefined
+20230401	16:03:30	324bbc96-4092-4cbc-b581-7c1a0816487f	SyntaxError: Unexpected token { in JSON at position 285	POST	/clients	undefined
+20230401	16:04:02	5071188e-70a6-47a5-8028-b448bd5c23ca	SyntaxError: Unexpected token { in JSON at position 327	POST	/clients	undefined
+20230401	16:05:24	f5b08819-a8e6-4999-8793-000aa2daecd6	ValidationError: ClientInformation validation failed: user_credentials: Path `user_credentials` is required.	POST	/clients	undefined
+20230401	16:06:27	804b7f6b-b28c-4044-a898-f94ae1748755	ValidationError: ClientInformation validation failed: user_credentials: Cast to ObjectId failed for value "[
+  {
+    id: '6428862f5e4783a6c7e04fba',
+    username: 'Hank',
+    password: 'password',
+    __v: '0'
+  }
+]" (type Array) at path "user_credentials" because of "BSONError"	POST	/clients	undefined
+20230401	16:06:56	810fa197-67a4-4905-9000-d57f2b9daf2d	ValidationError: ClientInformation validation failed: user_credentials: Cast to ObjectId failed for value "{
+  _id: { '$oid': '6428862f5e4783a6c7e04fba' },
+  username: 'Hank',
+  password: '$2b$10$Ci1kPEu1dRZiG5Ox2uRfYOsFqf7df5nSOfm4GX/gBfRJF4/Oa/qCO',
+  __v: { '$numberInt': '0' }
+}" (type Object) at path "user_credentials" because of "BSONError"	POST	/clients	undefined
+20230401	16:07:05	1ccdf3d9-53ec-46da-adb2-3ce0fe905cc7	ValidationError: ClientInformation validation failed: user_credentials: Cast to ObjectId failed for value "[
+  {
+    _id: { '$oid': '6428862f5e4783a6c7e04fba' },
+    username: 'Hank',
+    password: '$2b$10$Ci1kPEu1dRZiG5Ox2uRfYOsFqf7df5nSOfm4GX/gBfRJF4/Oa/qCO',
+    __v: { '$numberInt': '0' }
+  }
+]" (type Array) at path "user_credentials" because of "BSONError"	POST	/clients	undefined
+20230401	16:07:16	6e6e172e-99bf-4c8b-9e8b-9325992f2aad	ValidationError: ClientInformation validation failed: user_credentials: Path `user_credentials` is required.	POST	/clients	undefined
+20230401	16:07:30	f960284f-471e-455f-b07c-739d954823c3	ValidationError: ClientInformation validation failed: user_credentials: Path `user_credentials` is required.	POST	/clients	undefined
+20230401	16:07:33	3b538fd5-814f-42a0-b37d-0b5cce1e5e47	ValidationError: ClientInformation validation failed: user_credentials: Path `user_credentials` is required.	POST	/clients	undefined
+20230401	16:09:01	0e25419e-34b1-41bf-94b7-b37f8189e6a1	SyntaxError: Unexpected token O in JSON at position 25	GET	/users	undefined
+20230401	16:10:32	b04c2321-1549-4354-b170-498753ca4119	SyntaxError: Unexpected token O in JSON at position 33	GET	/users	undefined
+20230401	16:10:46	08c5635c-2612-4008-8519-ac4b81bcbc1d	SyntaxError: Unexpected token O in JSON at position 33	GET	/users	undefined
+20230401	16:11:07	4686f379-5c3e-466d-8b4a-773b83da11bb	SyntaxError: Unexpected token ( in JSON at position 43	GET	/users	undefined
+20230401	16:11:14	34bdf33c-1d05-46b8-9b0c-4a8c69380c8e	SyntaxError: Unexpected token f in JSON at position 40	GET	/users	undefined
+20230401	16:12:18	6a5a6e8d-712b-4108-ab9a-32212add49c3	ValidationError: ClientInformation validation failed: user_credentials: Path `user_credentials` is required.	POST	/clients	undefined
+20230401	16:13:29	7cad210e-2c0b-46c5-a088-8a4bc364b437	SyntaxError: Unexpected token O in JSON at position 47	POST	/clients	undefined
+20230401	16:26:09	e62d0d47-0dd5-41ad-80ca-24fb20a50ce0	SyntaxError: Unexpected token { in JSON at position 231	POST	/clients	undefined
+20230401	16:26:43	2e6f642c-64e4-4a17-a2ab-b92fd795b197	SyntaxError: Unexpected token { in JSON at position 238	POST	/clients	undefined
+20230401	16:27:52	7072c9aa-3ac6-4aba-811a-ccb88166c861	SyntaxError: Unexpected token } in JSON at position 53	POST	/clients	undefined
+20230401	16:38:58	a76957f6-e5ba-414f-8f82-b361cbb7c7de	SyntaxError: Unexpected token } in JSON at position 203	PATCH	/clients	undefined
+20230401	18:03:02	2ff968cc-d7d3-4ed6-82c5-4bc642cb07d4	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230401	18:03:02	66617c87-97d1-4f5f-88bc-8896cf710c02	TypeError: users.some is not a function	POST	/login	undefined
+20230401	18:03:02	e3b0b3f1-d51d-4b6b-beb9-d289195a844f	MongooseError: Model.find() no longer accepts a callback	GET	/profile/2	undefined
+20230401	18:03:02	6ef6c3fc-0780-4266-b425-d1051dcd2c09	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230401	18:03:02	a785daf0-6df3-4ef1-8c1d-ed667da06d08	TypeError: users.some is not a function	POST	/register	undefined
+20230401	18:03:02	97e6c43b-12f0-4505-a0d2-8a28f3584883	TypeError: users.some is not a function	POST	/login	undefined
+20230401	18:03:02	105e8f2b-41e8-4fa3-b8d2-84862ac41eaf	TypeError: users.some is not a function	POST	/register	undefined
+20230401	18:03:02	19e7830d-706b-4a28-afd2-ca4ce4fc26bf	TypeError: clients.push is not a function	POST	/profile/3	undefined
+20230401	18:03:02	25561804-2af5-40fc-9a86-2bc64f1b5bb9	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	18:03:02	c54f88c1-78a3-4a45-b953-0e7d68cb8eb3	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/4	undefined
+20230401	18:03:02	0787ba2b-0c6b-4b6e-89ec-e53b989b149e	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	18:03:02	d3d2c913-e9f0-42ab-b50b-31473f418076	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	18:03:02	3dba92c4-0c48-484f-85ca-cb79180de483	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/2	undefined
+20230401	18:03:02	c38f9301-9d0f-4ddc-a628-5eade7fdafe7	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/4	undefined
+20230401	18:03:02	b58f8137-9b92-4573-b7d5-42a0ac1516fc	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230401	18:03:02	c2dc3002-0d51-4b8f-8d28-bc4c93bc1871	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230401	18:28:44	bc7079a7-145f-4236-899c-56664270ea31	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230401	18:28:44	788171e2-a15e-4cb9-8e92-388900f8aa0d	MongooseError: Model.find() no longer accepts a callback	GET	/profile/2	undefined
+20230401	18:28:44	baa43a33-12d9-4077-91bd-d34937b8ffad	TypeError: users.some is not a function	POST	/register	undefined
+20230401	18:28:44	8295970b-0b16-4986-a0e1-f432895f467c	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230401	18:28:44	fe01d3f8-392a-41d6-9ec9-8f74407a5cb7	TypeError: clients.push is not a function	POST	/profile/3	undefined
+20230401	18:28:44	1f57a92c-8ab7-4482-87f4-db03d4fecda8	TypeError: users.some is not a function	POST	/login	undefined
+20230401	18:28:44	187841f2-36a7-4906-9741-3f523ce8903a	TypeError: users.some is not a function	POST	/register	undefined
+20230401	18:28:44	5fd2537c-8e76-4abf-b281-c6af22dc6806	TypeError: users.some is not a function	POST	/login	undefined
+20230401	18:28:44	0d782234-1689-4f76-90ca-299101cb063d	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	18:28:44	7260b177-4899-41b9-b794-696251670bdc	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/4	undefined
+20230401	18:28:44	cd9659f0-27e6-4ac9-9939-9f3be6d6e7ac	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	18:28:44	d36a96f5-2f67-4378-8ff0-351f3f0d5a27	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	18:28:44	4bbc11dd-a453-4d9b-8ffb-7ef8c22e8aed	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/2	undefined
+20230401	18:28:44	e7f84b20-395a-486e-bbdf-409f699c526b	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/4	undefined
+20230401	18:28:45	56231ba1-232d-40d2-b5e8-91506dbac36f	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230401	18:28:45	11371684-1c8c-4c51-8268-9f3986be6a01	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230401	18:41:39	fffcd385-7fd0-4708-9a39-e4a50bf0a5fc	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230401	18:41:39	24ff9378-c6c0-43e5-871f-7acd50afcd0d	MongooseError: Model.find() no longer accepts a callback	GET	/profile/2	undefined
+20230401	18:41:39	84729a50-b0d4-430e-815a-9ca21876f30c	TypeError: clients.push is not a function	POST	/profile/3	undefined
+20230401	18:41:39	83add0ef-7301-4171-ae03-3a7d553dd0cc	TypeError: users.some is not a function	POST	/login	undefined
+20230401	18:41:39	0faee3e0-c071-4670-b783-696b4c238aaf	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230401	18:41:39	636a284a-a9dd-4193-8a25-61b70551f0c7	TypeError: users.some is not a function	POST	/register	undefined
+20230401	18:41:39	76c3dc9c-b4f8-4748-8058-63a85657240b	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	18:41:39	bd9310ff-09fb-4f5d-bd81-6b67216a6442	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/4	undefined
+20230401	18:41:39	a722f8e4-26bb-422c-b1d5-819f9b413bc4	TypeError: users.some is not a function	POST	/login	undefined
+20230401	18:41:39	fe78e1fd-bbae-4b34-85fa-59d88acb1d82	TypeError: users.some is not a function	POST	/register	undefined
+20230401	18:41:39	6fb32394-a96f-4544-b878-6c190ae69bff	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	18:41:39	9e51cc5a-72ba-491f-8797-e5d393501bf0	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	18:41:39	c2b39d32-9928-4517-9e45-cefa23aba73e	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/2	undefined
+20230401	18:41:39	d0db0b60-774b-444c-bd26-e53f5b01e34e	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/4	undefined
+20230401	18:41:39	43a4e770-1d65-4619-b189-1cd33d0ae998	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230401	18:41:39	7155dcdf-73ca-4a19-ab2c-04518b282dba	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230401	18:42:13	ea0a06db-acbb-4269-959e-485b9f3ba9f8	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230401	18:42:13	d74ae967-ade8-4a16-a66d-17ef7ddeabba	TypeError: clients.push is not a function	POST	/profile/3	undefined
+20230401	18:42:13	e09653c5-35b6-4b82-98cf-c05cd6dba648	TypeError: users.some is not a function	POST	/login	undefined
+20230401	18:42:13	50578a9d-89f8-4098-b31b-4530feefced1	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230401	18:42:13	e55b799a-09fb-4a2d-bdc5-4356d6e9d081	TypeError: users.some is not a function	POST	/register	undefined
+20230401	18:42:13	eef56e2d-a2d2-446e-bca6-b45ec4b8cad9	TypeError: users.some is not a function	POST	/login	undefined
+20230401	18:42:13	03222621-5b72-451c-90e3-1230b3174975	TypeError: users.some is not a function	POST	/register	undefined
+20230401	18:42:13	73d3e78c-9529-40cb-849e-ef35f31bf441	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	18:42:13	a1e61074-e2e0-4086-844f-7c5daf8e0561	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/4	undefined
+20230401	18:42:13	184ce2ac-32ee-491e-9a36-04d00c9c04a1	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	18:42:13	3915a8ea-fce6-4a0f-af01-04f36717d079	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	18:42:13	85d99261-b29d-43fe-8546-adec25236dfd	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/2	undefined
+20230401	18:42:13	22d7e88f-c635-4bd0-a584-ca5a56139b6d	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/4	undefined
+20230401	18:42:13	19248815-2d55-4ca7-80e9-64782d32dd48	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230401	18:42:14	523a6509-7443-4dd6-ab4a-191f4d28c46d	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230401	18:44:55	29a8682b-2ee0-4eb6-8ae1-fa3cd1cbb06d	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230401	18:44:55	162338bd-1cd3-4591-a7d4-4f614e4ac41c	TypeError: users.some is not a function	POST	/register	undefined
+20230401	18:44:55	2768b315-7f64-4ae9-aa37-a32c782bb3c3	TypeError: users.some is not a function	POST	/login	undefined
+20230401	18:44:55	923042de-c516-4a72-b79f-93b9b9207b84	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230401	18:44:55	ea972500-21e7-476a-a2a5-a189b1fd9da9	TypeError: users.some is not a function	POST	/register	undefined
+20230401	18:44:55	bb658eca-b3f8-402c-a029-6485bc2941e8	TypeError: users.some is not a function	POST	/login	undefined
+20230401	18:44:56	0fc85f23-79c8-492e-8aa9-70d40a0d3966	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230401	18:44:56	00335463-6971-4a4d-ac6c-99af132d8caf	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230401	18:44:56	9ad62f7d-ef9a-4688-8907-036209addedf	TypeError: clients.push is not a function	POST	/profile/3	undefined
+20230401	18:44:56	78577d89-25c9-48d6-9eed-05cbf8bfcdb7	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	18:44:56	f44d99c3-a1a4-4095-8201-fca44d11f525	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/4	undefined
+20230401	18:44:56	c39a3285-c5eb-4fc7-91e5-1f6e058369c9	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	18:44:56	989186f2-3e35-4f78-95b9-5fe8f2dba5c2	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	18:44:56	99c2d09f-fd25-41ba-81b9-bb98cfae4807	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/2	undefined
+20230401	18:44:56	f759c761-3530-4f39-9d21-26b3bc581cd7	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/4	undefined
+20230401	18:45:58	1dc4d545-0fbf-485e-b14a-ecb07ad749e1	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230401	18:45:58	bce27468-5c3c-4cbb-9b6b-b335bfcbafff	TypeError: users.some is not a function	POST	/register	undefined
+20230401	18:45:58	7299aa78-4b01-4eb7-a93f-ec0f31f72a6e	TypeError: users.some is not a function	POST	/login	undefined
+20230401	18:45:58	c793876c-0b1c-4d12-b31e-559e407106a7	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230401	18:45:58	d82680d3-57ed-40a3-9fd9-14ac6a8bb0ea	TypeError: users.some is not a function	POST	/register	undefined
+20230401	18:45:58	06b617a4-c259-490e-a2cc-efbdf2639936	TypeError: users.some is not a function	POST	/login	undefined
+20230401	18:45:58	15945f6b-19d7-4c4d-99f6-333495401afa	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230401	18:45:58	a343741b-201b-4ea3-b953-8ea25ac70ede	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230401	18:46:03	4f7d394a-2799-497f-9f78-3d915e6c107f	TypeError: clients.push is not a function	POST	/profile/3	undefined
+20230401	18:46:03	0bd09414-3420-4fef-864b-2c75a55b02ba	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	18:46:03	a4fd91a4-559d-484f-9829-5bd84bf8c21a	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/4	undefined
+20230401	18:46:03	191c16cf-11d8-4ca1-933e-05c0a2709406	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	18:46:03	57a083d2-4df7-47e1-ac2a-81723afc54f4	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	18:46:03	b725f6e3-fc35-45ef-b65e-79f03037a9be	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/2	undefined
+20230401	18:46:03	989d6181-b2d3-4104-87b0-404800794319	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/4	undefined
+20230401	18:46:30	ef339f8f-a493-43b5-8d0e-f5b94f9473f9	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230401	18:46:30	c4a65d28-404f-478d-81e3-7d08df5a89b8	TypeError: users.some is not a function	POST	/login	undefined
+20230401	18:46:30	6050b8ae-5bd4-4d01-a91b-d60fd6e8f2fa	TypeError: users.some is not a function	POST	/register	undefined
+20230401	18:46:30	3d3eca19-b35c-4299-9f08-8e243160c8e1	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230401	18:46:30	29c3b5a6-1157-4ced-b4ab-691b8d2d4236	TypeError: users.some is not a function	POST	/register	undefined
+20230401	18:46:30	153efc52-5baa-4a5b-b8ff-a29f8048dab4	TypeError: users.some is not a function	POST	/login	undefined
+20230401	18:46:31	99a4c045-e10f-46c4-8668-9665e8d88146	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230401	18:46:31	5639ee65-60ff-4c9c-9d03-5e90feeb345d	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230401	18:46:33	cd3301b4-8b8f-4e08-a865-82628027aa05	TypeError: clients.push is not a function	POST	/profile/3	undefined
+20230401	18:46:33	bdb03912-b336-43a1-bb53-1d6a5ecc1933	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	18:46:33	1a5449fc-5156-40ad-951a-0be049f2e57a	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/4	undefined
+20230401	18:46:33	e7675ff0-5773-474d-b758-7c0f841d0dd6	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	18:46:33	c6111bc6-c4cf-4285-aaf2-85099eba4f5d	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	18:46:33	e3adeac1-e68f-4cdb-944e-d5770b755f36	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/2	undefined
+20230401	18:46:33	342d3312-e6f3-492e-b572-44ea04657492	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/4	undefined
+20230401	18:47:31	0b4de96b-c34d-4401-b112-7a50e1feea36	TypeError: users.some is not a function	POST	/register	undefined
+20230401	18:47:31	a1ba85d7-ca43-46cd-ae14-890dfeaf47c9	TypeError: users.some is not a function	POST	/login	undefined
+20230401	18:47:31	dd9e722d-31df-45a0-9ed8-f1bde4131a7e	TypeError: users.some is not a function	POST	/login	undefined
+20230401	18:47:31	d5f8f46c-0ef3-4e37-8af9-3563d9a7c850	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230401	18:47:31	e979b386-2f78-4465-bcc3-c4c28a7f0d0e	TypeError: users.some is not a function	POST	/register	undefined
+20230401	18:47:31	6893db24-83bb-4f43-b00e-6c647ab7569e	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230401	18:47:31	e83f7716-47d9-4cab-86f4-603cf16b4f8d	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230401	18:47:31	82752edb-6895-4fc1-87be-a954d7f622c9	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230401	18:47:32	5c7a6c01-be6d-4ebe-b7ac-858f36ebeb5f	TypeError: clients.push is not a function	POST	/profile/3	undefined
+20230401	18:47:32	385678fd-8c3c-487a-b6b2-acbe59fff0cc	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	18:47:32	f2a02820-5515-4a69-8e38-30578b8ce5f8	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/4	undefined
+20230401	18:47:32	611e66be-6e9a-4875-8ceb-b9f5c061c84a	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	18:47:32	dd1ff38a-6e2a-477e-bad0-8dabdcfb1712	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	18:47:32	fcdc1bf5-ac2a-46a1-ae05-54e59f404765	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/2	undefined
+20230401	18:47:32	678734f7-5e65-40de-b5b5-5f36ea0e3daa	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/4	undefined
+20230401	18:47:59	87256c78-a235-4896-abc2-2c8f9506887f	TypeError: users.some is not a function	POST	/register	undefined
+20230401	18:47:59	00cba70b-a34d-43d7-a394-49f072150940	TypeError: users.some is not a function	POST	/login	undefined
+20230401	18:47:59	8347dcd8-5722-442b-9e65-f161b94e51c3	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230401	18:47:59	bf3ce812-51fd-4d8a-b152-5f6e4134746b	TypeError: users.some is not a function	POST	/register	undefined
+20230401	18:47:59	613d2804-c3b3-4e51-82f3-d2e91bbaa2f2	TypeError: users.some is not a function	POST	/login	undefined
+20230401	18:47:59	e9ae44cc-0c52-4715-a102-e95e287e729a	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230401	18:47:59	3fabd812-c06c-47e1-a65f-5b8360c9d439	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230401	18:47:59	e65a26ea-3c8f-4274-baea-935c3096f13e	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230401	18:48:00	b108e595-fbd3-4b0f-ac32-7a5c29b4c754	TypeError: clients.push is not a function	POST	/profile/3	undefined
+20230401	18:48:00	eb3d1c13-cf28-4689-87d4-e6493c6fbcb4	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	18:48:00	cdba3b4b-cfe5-4ac1-97a4-2609cd9510b0	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/4	undefined
+20230401	18:48:00	99f3082a-aabd-40a4-840a-1616377486b8	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	18:48:00	dd10e9f4-0b84-4645-98e4-4049798deda1	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	18:48:00	25dddab7-17bd-49a3-b26c-ed1952d57b25	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/2	undefined
+20230401	18:48:00	a759568d-957c-41c8-a1ad-e90ca096eaf9	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/4	undefined
+20230401	18:48:09	7a012d9d-eb9b-406f-ad2b-0c72083d99c2	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230401	18:48:09	3b2b2dac-372e-4033-af9f-c8b58296a405	TypeError: users.some is not a function	POST	/login	undefined
+20230401	18:48:09	376ac7be-c0ec-434d-bf46-30a538381469	TypeError: users.some is not a function	POST	/register	undefined
+20230401	18:48:09	ffad7a92-dc28-4152-a8d9-af308869b0b7	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230401	18:48:09	90002c65-d14f-45b6-9818-0d1ad93c6066	TypeError: users.some is not a function	POST	/register	undefined
+20230401	18:48:09	69f2dc69-37c9-49a6-8fb3-77de20ac4509	TypeError: users.some is not a function	POST	/login	undefined
+20230401	18:48:09	5127eb28-290b-4a97-8426-9e3282ebe460	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230401	18:48:09	122f4b48-1ef8-4d7d-ba09-6b5b0b56d29b	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230401	18:48:09	2a305897-895f-4923-8f8d-4f73f5d8b7dc	TypeError: clients.push is not a function	POST	/profile/3	undefined
+20230401	18:48:09	720fc8c2-5a8a-4fc4-9aea-11a8bff5b7f3	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	18:48:09	5440d4ed-6578-47b4-83f2-02319a401304	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/4	undefined
+20230401	18:48:09	678f5d6d-f19b-478f-80c9-d9bfe22e5ed4	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	18:48:09	a159ee69-e32e-419e-992a-f040c691683f	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	18:48:09	ad0ee9fe-a0a5-4773-b4dd-ae434a3f997a	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/2	undefined
+20230401	18:48:09	cb33a9fb-11fa-42e6-93fb-0ced6e1ac5ec	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/4	undefined
+20230401	18:53:26	57e4ea96-7727-4763-a158-e0018de3e7e1	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230401	18:53:26	c5526d4a-bf44-4775-a858-b2333269b22c	TypeError: users.some is not a function	POST	/login	undefined
+20230401	18:53:26	5ee0e273-e62a-4104-b003-b70348d140d8	TypeError: users.some is not a function	POST	/register	undefined
+20230401	18:53:26	44e8b4b8-66b4-41d7-aebf-8403580ef87e	TypeError: clients.push is not a function	POST	/profile/3	undefined
+20230401	18:53:26	17c22451-1034-4bc4-a27b-50835da64bb4	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230401	18:53:26	7973cd8e-fb29-4b44-ba12-bc9ef7f20cd3	TypeError: users.some is not a function	POST	/register	undefined
+20230401	18:53:26	b52bce13-e69e-4612-a368-784339a87647	TypeError: users.some is not a function	POST	/login	undefined
+20230401	18:53:26	7aa7cfbe-abbe-43a7-8703-922f7a4c412a	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	18:53:26	dcdc658d-73a3-4223-9e6a-c98904e4cc57	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/4	undefined
+20230401	18:53:26	961ae759-fcc6-409c-a83d-0e5db72ea300	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	18:53:27	de4b4185-b9e3-450b-aaeb-7e9c6e1b28c3	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	18:53:27	956ebd1b-1aed-4aba-a846-d01e7ba4e78c	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/2	undefined
+20230401	18:53:27	d8e911ec-35ab-4665-9bb9-7ccc83dcb062	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/4	undefined
+20230401	18:53:27	c1dfeb0b-22a9-4c36-829a-54c1aa300907	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230401	18:53:27	87ac3f4f-d615-44e5-85d1-b981affcfaf1	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230401	18:54:00	7167e71d-3498-4e79-98c7-6772ed704042	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230401	18:54:00	f08a2b7f-7ef6-4763-b4f8-ada954a20ca9	TypeError: users.some is not a function	POST	/register	undefined
+20230401	18:54:00	53a54010-8dd4-4065-b35d-95f9caaae839	TypeError: users.some is not a function	POST	/login	undefined
+20230401	18:54:00	4005b223-abe7-4a59-a56e-b3be6558f35c	TypeError: users.some is not a function	POST	/register	undefined
+20230401	18:54:00	56042ecb-e857-4500-aaca-c6ec85f015df	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230401	18:54:00	6460ee45-01bc-42b2-bd25-8347fba5fe9e	TypeError: users.some is not a function	POST	/login	undefined
+20230401	18:54:01	1e80f3e2-0ff9-4a3d-b002-be0bd73ecffe	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230401	18:54:01	591cc99a-6845-47d4-8c47-b14498b51485	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230401	18:54:01	a4e6a4ac-ebf3-4467-aa35-29f6f4ac7c06	TypeError: clients.push is not a function	POST	/profile/3	undefined
+20230401	18:54:01	5f3c0fe7-084b-46fa-9ef2-f9739e751b68	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	18:54:01	dc51bf9a-8bfb-4bdb-8618-b2425bea82dc	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/4	undefined
+20230401	18:54:01	643fc7ba-7ce3-4388-a986-b3f7ebf98b9c	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	18:54:01	3a1a92ef-077e-446b-b34c-35c04f566b26	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	18:54:01	4151075b-6236-40aa-8186-5b57860a5fd5	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/2	undefined
+20230401	18:54:01	7d03e7d1-4b8d-4632-9398-0f500cabd6d5	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/4	undefined
+20230401	18:54:07	21138d74-3443-4ed8-b141-48e0fefce062	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230401	18:54:07	95a02466-4193-4e0c-8ad7-b5f00f0cdeab	TypeError: users.some is not a function	POST	/login	undefined
+20230401	18:54:07	4cbf595f-b2e6-4720-acea-612c92f01030	TypeError: users.some is not a function	POST	/register	undefined
+20230401	18:54:07	539e344d-d5e7-4d26-8d62-84efe03e74b7	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230401	18:54:07	29dcbfc0-c104-418e-8063-345bf9b5c8da	TypeError: users.some is not a function	POST	/login	undefined
+20230401	18:54:07	a794a90a-98a5-4c68-a370-0611a575124b	TypeError: users.some is not a function	POST	/register	undefined
+20230401	18:54:07	a0e37db1-fe5e-4ea5-914d-f0a7535d869f	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230401	18:54:07	7e2a8ff3-f646-4ba5-8dfc-b487a0d75344	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230401	18:54:07	25cead30-5739-488c-86de-311f6ab08931	TypeError: clients.push is not a function	POST	/profile/3	undefined
+20230401	18:54:07	182d9f5f-b6de-4dbc-99db-27b8b617dd6f	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	18:54:07	c115c477-002e-45eb-bda8-26178c14ea27	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/4	undefined
+20230401	18:54:07	51d97016-63c2-4d07-ad8e-c5399b8de7f1	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	18:54:07	1c6dcf15-b664-4abb-9d1b-f6d131576fa2	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	18:54:07	60461f73-e9d5-4cd1-80b0-0b1b84922d99	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/2	undefined
+20230401	18:54:07	3c741165-2164-4004-8d8b-22255ff0da5b	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/4	undefined
+20230401	18:54:13	cd5d3e56-1475-4b69-8e1b-0dc0749f0483	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230401	18:54:13	68f04034-7858-47e4-93bb-7be16701067b	TypeError: users.some is not a function	POST	/register	undefined
+20230401	18:54:13	2d26fb99-b702-40d8-8c6c-39b1ba65f10b	TypeError: users.some is not a function	POST	/login	undefined
+20230401	18:54:13	bd1a7ece-4074-4cce-b417-37609adc5d60	TypeError: users.some is not a function	POST	/register	undefined
+20230401	18:54:13	28f96e08-5f67-4a42-8467-66acd2fd6ba8	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230401	18:54:13	34b6d2c9-556a-41f0-b473-6446c9ac326a	TypeError: users.some is not a function	POST	/login	undefined
+20230401	18:54:13	f562b4ab-957d-4035-af61-3cc3aef7e286	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230401	18:54:13	da6e4cb5-3c75-42ba-b03a-6d38087eea92	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230401	18:54:14	a0c05cb9-c52e-48cb-a476-201ffdb5594b	TypeError: clients.push is not a function	POST	/profile/3	undefined
+20230401	18:54:14	ea06e9e7-52c3-416c-8295-c4654375831a	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	18:54:14	ff2d92bb-88ec-437c-b3eb-5bf0b15875f2	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/4	undefined
+20230401	18:54:14	a64cb5b1-2379-4445-8af4-17df20c3b07a	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	18:54:14	9bd50171-e55f-423e-b64e-3f3c4666c921	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	18:54:14	6fe6cd32-ecda-4c01-8dc7-5aec51cb9164	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/2	undefined
+20230401	18:54:14	ecc19e2f-3ab7-4e78-8b90-2d86028f9a33	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/4	undefined
+20230401	18:55:02	75d302eb-aec7-44ea-8931-6b5c8f9185be	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230401	18:55:02	ae353ced-1815-4e7d-be48-c36a6b782aa4	TypeError: users.some is not a function	POST	/login	undefined
+20230401	18:55:02	55f33f9c-27d4-4870-b250-0af17962ae4f	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230401	18:55:02	f6da34f2-f781-41af-9b71-295cda50859b	TypeError: users.some is not a function	POST	/register	undefined
+20230401	18:55:02	7e595292-31b5-4210-a1c3-e4a9675e1f80	TypeError: users.some is not a function	POST	/login	undefined
+20230401	18:55:02	6cb8f4c5-48db-4a7f-ac3e-b9a743a34f74	TypeError: users.some is not a function	POST	/register	undefined
+20230401	18:55:02	ee37c195-af23-4c59-97f3-942ae33030a4	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230401	18:55:02	173a6161-e665-41d5-8ace-2c84890a34d7	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230401	18:55:03	56cdab0b-fb24-4d52-b8a1-b6d47d8dfebe	TypeError: clients.push is not a function	POST	/profile/3	undefined
+20230401	18:55:03	f8cc32e1-f349-42b5-83f5-67ae05595a38	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	18:55:03	23e886b9-71e9-4135-bfe9-27841c01826b	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/4	undefined
+20230401	18:55:03	84d16018-3b25-4706-bc24-ee11f8b852b1	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	18:55:03	92427102-c4f7-4852-881b-aa9c1ae5f7bc	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	18:55:03	4412622b-af1d-4a6d-b136-a660064cf018	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/2	undefined
+20230401	18:55:03	4f3e08bc-a68a-485f-a93a-2dcdef6dbeed	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/4	undefined
+20230401	18:55:43	1362c2ac-8132-4036-8184-c09dae448033	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230401	18:55:43	f48e4f43-f180-4c23-b609-99aa50ffa633	TypeError: users.some is not a function	POST	/login	undefined
+20230401	18:55:43	96712a0b-b73c-49ea-b948-ee58b1dc18dd	TypeError: users.some is not a function	POST	/register	undefined
+20230401	18:55:43	96aebc9c-a499-4933-b734-5d7e591a6f1d	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230401	18:55:43	3d993b97-9705-4752-8f4c-40c6ed27f4d3	TypeError: users.some is not a function	POST	/login	undefined
+20230401	18:55:43	c277c145-67a6-4960-ad72-fa4f858fba0c	TypeError: users.some is not a function	POST	/register	undefined
+20230401	18:55:44	78f42a1d-99b9-40f4-9908-5894c5c3118b	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230401	18:55:44	29e5725b-769b-44b9-b22b-18c4593592d2	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230401	18:55:44	d733583a-b373-4c12-8ffa-2f478e5b3e7a	TypeError: clients.push is not a function	POST	/profile/3	undefined
+20230401	18:55:44	23f7484d-b780-468f-95b8-69929513067a	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	18:55:44	18704fdc-3476-43ba-b956-afe04256a43f	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/4	undefined
+20230401	18:55:44	70d2dfe2-ad0b-4ef1-be49-122a87035c3e	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	18:55:44	73e373b0-9195-4836-8fe3-ef17957ae61e	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	18:55:44	12831d07-9c17-4b69-9ecd-7ae49b6f0f79	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/2	undefined
+20230401	18:55:44	04682ced-4f02-4756-8cb5-cdb12ed40011	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/4	undefined
+20230401	18:56:18	44a25301-4614-47b7-b654-51c0522329bc	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230401	18:56:18	4ddd9155-345d-4021-bb04-3da65d3b7eff	TypeError: users.some is not a function	POST	/register	undefined
+20230401	18:56:18	aeed8808-3a87-43a2-84f9-113c35caa81e	TypeError: users.some is not a function	POST	/login	undefined
+20230401	18:56:18	41d34fae-96da-4385-942f-1e7e17430b01	TypeError: users.some is not a function	POST	/register	undefined
+20230401	18:56:18	20bb4538-2845-41b9-8b8b-8d83150c4a8d	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230401	18:56:18	ffa7cce4-0447-44bd-a39d-4a0d054eae09	TypeError: clients.push is not a function	POST	/profile/3	undefined
+20230401	18:56:18	9cb2a43a-5df9-4e3a-b5aa-1753a34201f8	TypeError: users.some is not a function	POST	/login	undefined
+20230401	18:56:18	19e41eec-7739-45b4-83e5-2acb044c6bc9	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	18:56:18	43402868-395c-41ae-b03d-06189487d4e6	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/4	undefined
+20230401	18:56:18	85af9d51-7e87-4432-87f4-f18b96b91401	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	18:56:18	ec2be020-9369-44a5-90d3-26bd760c997a	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	18:56:18	dc1a6d04-a172-48f9-94d8-192b94e9a4ca	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/2	undefined
+20230401	18:56:18	79348ea2-a4cb-4dd3-9be8-4657e7430915	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/4	undefined
+20230401	18:56:18	da18b8fd-b9dc-412b-b37b-4722204944a6	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230401	18:56:18	bad85c6b-37e4-4234-bf46-fd4f2aee46d1	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230401	18:56:23	7115047d-8c55-4bba-919a-2cff527478c8	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230401	18:56:23	c6d18c7b-dcbd-4bc0-bc60-b1338ed8b5d6	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230401	18:56:23	092f2895-da41-4dba-b60c-28e506419e99	TypeError: users.some is not a function	POST	/register	undefined
+20230401	18:56:23	d74dd688-302b-4342-b34e-bd0c27dc7fa7	TypeError: users.some is not a function	POST	/login	undefined
+20230401	18:56:23	973b3c83-6115-4d32-8461-b4faf768f94e	TypeError: users.some is not a function	POST	/register	undefined
+20230401	18:56:23	e4bff204-7f11-48bc-956a-d6f7f33cec51	TypeError: clients.push is not a function	POST	/profile/3	undefined
+20230401	18:56:23	d2d8f21b-d968-412e-9fa6-283f56ef9147	TypeError: users.some is not a function	POST	/login	undefined
+20230401	18:56:23	ed26b33b-a764-4839-b2ab-e78e6aba55d9	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	18:56:23	9a292688-8fa4-43d6-bbcc-7ffc5d9840bc	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/4	undefined
+20230401	18:56:23	20d19db3-b762-408d-b3b0-59de80193578	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	18:56:23	4b85144f-0e37-4b8c-bbd3-aa01f4e81683	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	18:56:23	cc815612-73da-4dde-bda6-e1d733c00128	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/2	undefined
+20230401	18:56:23	2ab7a49a-5400-4c5e-9359-54a1f78d2d12	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/4	undefined
+20230401	18:56:23	e8f69345-c6d0-4be0-a33d-fc940e70074e	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230401	18:56:23	6e5ed208-4520-4463-893a-d86902089fce	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230401	18:56:29	2e6855e5-2b4d-4ae2-9764-69372bc821de	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230401	18:56:29	0c492213-d878-485c-ab28-a1acee94b66c	TypeError: users.some is not a function	POST	/register	undefined
+20230401	18:56:29	c15c3eac-4998-4b35-a26f-5a7254b8f646	TypeError: users.some is not a function	POST	/login	undefined
+20230401	18:56:29	2f60c474-c155-4700-851e-432e2291a7a3	TypeError: users.some is not a function	POST	/register	undefined
+20230401	18:56:29	b9c73866-6bd6-4e19-8d27-50b835033d58	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230401	18:56:29	9577325f-6f31-4d87-b5df-6f2455d5b66b	TypeError: users.some is not a function	POST	/login	undefined
+20230401	18:56:30	d7a65e08-a440-4c4a-a0d5-fd7da676c7f9	TypeError: clients.push is not a function	POST	/profile/3	undefined
+20230401	18:56:30	631a6026-50ef-4586-acc6-d787741afedb	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	18:56:30	9c2f9136-9349-4eda-bbeb-9ef0da9d568f	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/4	undefined
+20230401	18:56:30	d8a5e19c-3e7e-4465-8435-22fcdacdc6f0	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	18:56:30	efddea2b-5019-4e7c-b9ba-01558fba9829	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	18:56:30	a0641d70-bd5f-419f-a7aa-db03c50ad237	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/2	undefined
+20230401	18:56:30	522a04a2-f54d-4222-bc3d-0d60e48a3d12	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/4	undefined
+20230401	18:56:30	210a1121-bd60-4ac6-ad07-98e8d2a62989	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230401	18:56:30	9b6aee9e-341b-4214-a604-194a3cc89f36	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230401	18:56:43	55ae2160-1eb1-44ef-9437-c6e0cb93c2b2	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230401	18:56:43	eaf0f4c7-1518-41f1-9480-0a306445b529	TypeError: users.some is not a function	POST	/register	undefined
+20230401	18:56:43	47fa9731-59e4-4852-aa05-7d1dcca3c743	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230401	18:56:43	446944a2-d805-4efb-8c50-92046f515476	TypeError: users.some is not a function	POST	/login	undefined
+20230401	18:56:43	7d4131d0-3a44-4851-86c9-2c79258a4638	TypeError: users.some is not a function	POST	/login	undefined
+20230401	18:56:43	c9a5655e-91bc-4a6f-a38b-348f4c7afede	TypeError: clients.push is not a function	POST	/profile/3	undefined
+20230401	18:56:43	90bcaead-81cd-4da1-bcb4-5bdfaf486bee	TypeError: users.some is not a function	POST	/register	undefined
+20230401	18:56:43	8b8784c0-1b06-4853-b941-446aed9496b3	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	18:56:43	d419a51f-51e8-4b32-bbc9-61d69273d258	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/4	undefined
+20230401	18:56:43	28dc9570-1956-4c96-86ad-95ea6400b605	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	18:56:43	8de4c765-39e1-468f-9860-a9a4bc058d3c	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	18:56:43	3f0246a4-f5f5-479f-b82a-7c6d569934c1	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/2	undefined
+20230401	18:56:43	a47af7ec-8f9b-4e95-8b4c-a71b058b2d4e	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/4	undefined
+20230401	18:56:43	8f27e90c-de71-49c3-b293-8f35ad588e57	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230401	18:56:43	64312d63-9d04-4121-a0a7-0e1c74537084	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230401	18:56:47	92acc70c-8d28-4c34-86af-b99b62e627bc	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230401	18:56:47	3e1ce10e-39b4-401a-88fb-1bdeccd99385	TypeError: users.some is not a function	POST	/login	undefined
+20230401	18:56:47	d2d0675e-d56d-4666-94e4-18ed4d446f8b	TypeError: users.some is not a function	POST	/register	undefined
+20230401	18:56:47	2c0073fc-8b45-46c7-af43-4d9ae0e9eee4	TypeError: users.some is not a function	POST	/login	undefined
+20230401	18:56:47	da5a4993-18d6-4213-a274-423bec31a10e	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230401	18:56:47	51002976-e06f-4875-afea-be040390a3de	TypeError: users.some is not a function	POST	/register	undefined
+20230401	18:56:47	89f4022e-955a-49ab-9db4-1acc93fa3245	TypeError: clients.push is not a function	POST	/profile/3	undefined
+20230401	18:56:47	797dee0c-5eca-4991-bd0c-fe97689b7999	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	18:56:47	91d6125b-4e87-49d1-9088-01491d0ee6f8	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/4	undefined
+20230401	18:56:47	4036f00a-34ce-4672-b713-7488c281ed47	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	18:56:47	a3411152-45f7-41b8-a696-9dc7a6fc9107	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	18:56:47	eb2b1e8f-a9f5-4547-8dca-8eb9e9fa7c48	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/2	undefined
+20230401	18:56:47	76ec6a36-e94a-40a1-afd8-14192f8d6968	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/4	undefined
+20230401	18:56:47	9171c098-c694-4aca-a88e-59ec48de99db	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230401	18:56:47	643d2066-db2c-449a-9ad9-b53215d82566	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230401	18:58:25	93d72d9d-067a-44e4-b783-36ea843e93ff	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230401	18:58:25	886a4dd8-26e7-4215-89c3-2c5323955c05	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230401	18:58:25	b62e4375-fc06-4471-8457-1adf60ca8476	TypeError: users.some is not a function	POST	/register	undefined
+20230401	18:58:25	ab00dfdd-ea04-49c9-a90e-2f9781458fc3	TypeError: users.some is not a function	POST	/login	undefined
+20230401	18:58:25	1a1d1949-cf83-4b31-bd2c-ba607420d51d	TypeError: users.some is not a function	POST	/register	undefined
+20230401	18:58:25	34a423c2-f1cd-4624-8847-291e429a2b95	TypeError: users.some is not a function	POST	/login	undefined
+20230401	18:58:25	63d489b7-482d-4a7c-97ca-ebc973bed7b0	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230401	18:58:25	6dfbf4dc-18c1-4e97-8316-77faace55000	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230401	18:58:26	5a87b1a4-de0e-46d3-be08-0f6a03f273b6	TypeError: clients.push is not a function	POST	/profile/3	undefined
+20230401	18:58:26	1c0ea171-1c86-44bc-be7d-0013b93dcbe9	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	18:58:26	4a8cf939-632c-4d7c-923a-53a134e9c7e4	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/4	undefined
+20230401	18:58:26	fe309cb2-60e5-4b8f-8888-b4f8bc474b53	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	18:58:26	48604403-4fc1-4044-8260-fe9e8d0417a4	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	18:58:26	0c3e31f7-d32c-4976-ab8b-aed800c68a31	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/2	undefined
+20230401	18:58:26	9e7da4bd-ea9d-4113-9138-6a396a8de561	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/4	undefined
+20230401	18:58:37	00f250cb-40cf-45a4-9868-4dd96832d004	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230401	18:58:37	273a25c0-7dc6-48e5-9836-a0bed55a0041	TypeError: users.some is not a function	POST	/register	undefined
+20230401	18:58:37	e6ea37fb-9cef-469f-a9f0-b8631b7e1d0a	TypeError: users.some is not a function	POST	/login	undefined
+20230401	18:58:37	d01a24b7-29c8-451f-8007-8addd797653f	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230401	18:58:37	ee6fcb30-ea7c-4fc5-a864-40a4a873ec78	TypeError: users.some is not a function	POST	/login	undefined
+20230401	18:58:37	7775b3cd-0afd-4c34-9d8c-4bd62895a17a	TypeError: users.some is not a function	POST	/register	undefined
+20230401	18:58:38	c56d0278-0564-4f5c-95d5-86fc087ffa2d	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230401	18:58:38	502a8ff9-3497-419b-b0c8-5aef82bc6441	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230401	18:58:38	9c023a05-8a82-483b-a1ed-761494499114	TypeError: clients.push is not a function	POST	/profile/3	undefined
+20230401	18:58:38	ada99aec-4ead-4633-bbfe-f60c89915376	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	18:58:38	2201c74a-c5e8-47b3-bd4c-6271a6e8dc6e	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/4	undefined
+20230401	18:58:38	0e49b7c4-94a7-4d47-911c-8c647b1892b6	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	18:58:38	f6c8ddb4-d887-42da-bea0-29e8287e2348	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	18:58:38	ecd2f5f9-5cac-49a2-a887-720702940086	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/2	undefined
+20230401	18:58:38	0e9d5dd3-d1c4-4686-b15f-23352627bd00	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/4	undefined
+20230401	19:01:43	08881470-328d-4ed6-8eb8-a41a62e78c64	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230401	19:01:43	c5fc46b9-2cff-4cf8-8cda-044566f74d7c	TypeError: users.some is not a function	POST	/login	undefined
+20230401	19:01:43	30a36186-9738-4b8d-891c-62af4024caef	TypeError: users.some is not a function	POST	/register	undefined
+20230401	19:01:43	09483ab7-a2e2-4225-b648-26c5e4e54023	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230401	19:01:43	15f0f3ec-e3d3-4901-918e-b8dffcafc1dc	TypeError: users.some is not a function	POST	/login	undefined
+20230401	19:01:43	ded681c3-5402-444f-9b5b-6431d0b53f53	TypeError: users.some is not a function	POST	/register	undefined
+20230401	19:01:43	440518d2-64bc-4419-8c30-1b47c395cec8	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230401	19:01:43	8933e791-a6d4-4d1e-ab01-5a479285580d	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230401	19:01:44	e74e15c1-d0de-4b0a-a531-406b1542ebef	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	19:01:44	9699da83-8f63-4da1-b3b9-a2b384f3c359	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/4	undefined
+20230401	19:01:44	f1f75b95-04f6-479a-a78c-bbe16fdbcedf	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	19:01:44	516e20dc-59fa-4588-91a4-d933f9eb95fd	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	19:01:44	a6e1ac5e-be6d-4774-8aea-8314ebca67e7	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/2	undefined
+20230401	19:01:44	08c8edf3-1dd1-4cb9-8b4e-d028cee8922b	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/4	undefined
+20230401	19:02:14	b22f8f80-3262-4e46-93d7-ffec3c86dbc7	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230401	19:02:14	93f1d18c-4fbe-4fda-bc22-21d2ebb13138	TypeError: users.some is not a function	POST	/login	undefined
+20230401	19:02:14	ff711e4e-9576-4f0c-b9bb-d4e179ca709a	TypeError: users.some is not a function	POST	/register	undefined
+20230401	19:02:14	fb406eec-7a99-498d-8015-abc27712cb22	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230401	19:02:14	b3770cbb-e717-428f-97ed-aad201866f75	TypeError: users.some is not a function	POST	/register	undefined
+20230401	19:02:14	88d9412b-7432-47ff-b4e6-7b1ea9c39697	TypeError: users.some is not a function	POST	/login	undefined
+20230401	19:02:14	765b4649-42af-482a-b5e5-48c1142ce6b9	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230401	19:02:14	89aca5df-df56-4499-a496-70d7bc2e2474	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230401	19:02:15	5dd19327-ccc1-46a5-b4b8-0ee744b17060	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	19:02:15	bd9d7c2f-f7b1-4e1c-a9bb-357216e5db61	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/4	undefined
+20230401	19:02:15	0dc4c303-f399-4c7f-91c2-8fd53521178d	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	19:02:15	7489897f-3101-41a0-a943-242c0aeb1edd	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	19:02:15	677939e1-f33a-43fd-9dcb-9e2607d2acdf	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/2	undefined
+20230401	19:02:15	dd25546d-66b9-47b0-bff2-fd49a8f7690a	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/4	undefined
+20230401	19:02:32	9e63a6ee-4910-400b-b27b-f5d41fc71e24	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230401	19:02:32	87b6eb58-7dee-4d7d-86d5-b58e691f78c9	TypeError: users.some is not a function	POST	/login	undefined
+20230401	19:02:32	74a22db9-acb9-487b-8a10-a94460856c10	TypeError: users.some is not a function	POST	/register	undefined
+20230401	19:02:32	56e44a25-a522-47be-a4e0-3b54bf455e15	TypeError: users.some is not a function	POST	/login	undefined
+20230401	19:02:32	a8453aaa-b685-461d-9acf-1e841e143bb5	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230401	19:02:32	c7bb0b4c-bf4f-48ee-9838-60f9f4b622aa	TypeError: users.some is not a function	POST	/register	undefined
+20230401	19:02:32	6ab77008-f293-4587-957e-df83074b8dff	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230401	19:02:32	a157da8d-1961-4b9c-8a79-9716636ecca9	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230401	19:02:34	80209642-5449-4f02-b1fd-e046bfabf903	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	19:02:34	70f9ce40-ab0c-4124-9a57-4fdb9338580f	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/4	undefined
+20230401	19:02:34	3cd0c489-e9b6-44bf-ad7c-b9149c99316f	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	19:02:34	c9e9adfb-2533-4fb1-81d4-c087a0f6a293	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	19:02:34	ef8e9731-29d6-4018-8494-9242d6b0efe9	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/2	undefined
+20230401	19:02:34	9ad1479e-c0ae-4e95-8e76-eec3e14cba02	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/4	undefined
+20230401	19:03:02	96b28af1-91ea-4818-ae8b-3dfec7f72ab0	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230401	19:03:02	d28a12a6-6b3e-445e-8920-9db0b78b1f86	TypeError: users.some is not a function	POST	/register	undefined
+20230401	19:03:02	3ae5805f-9744-4884-b080-14f97adacbd7	TypeError: users.some is not a function	POST	/register	undefined
+20230401	19:03:02	aaf18b9d-b9cc-4a6a-9dda-eca2f6b6ded2	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230401	19:03:02	45d8c2c8-cb56-4ff8-aba2-df471fd4b43f	TypeError: users.some is not a function	POST	/login	undefined
+20230401	19:03:02	558bdffc-32e4-42b8-9ad6-4404f7642af0	TypeError: users.some is not a function	POST	/login	undefined
+20230401	19:03:02	e2830964-6bae-4a97-ad74-bf8f184a0e16	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230401	19:03:02	8a7debba-cc19-41a4-821f-536889ec9609	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230401	19:03:03	0260d69a-d9be-49c9-9fe5-4d1fd4020c3c	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	19:03:03	43f280de-dbae-4826-b3f8-2d3712fdd6d2	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/4	undefined
+20230401	19:03:03	cd324ff3-d227-4116-a73a-928b0a1b5d91	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	19:03:03	2e58a88c-3df5-46bf-93b3-d39ae113b734	MongooseError: Model.find() no longer accepts a callback	PATCH	/profile/2	undefined
+20230401	19:03:03	a2ca3e41-e547-4df8-b1c6-69c9b5c57ed3	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/2	undefined
+20230401	19:03:03	005c06f4-625b-41a1-b6ad-5c30c78d47f5	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/4	undefined
+20230401	19:04:28	52befa0e-9271-4512-a5c6-b7ea17a5392b	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230401	19:04:28	9f434cb9-a951-495c-bb0d-d433fb119861	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230401	19:04:28	8bd8009d-7443-491c-a4d6-63c156362f73	TypeError: users.some is not a function	POST	/login	undefined
+20230401	19:04:28	fc1880e3-43ec-4ead-9da1-6fbf994ba179	TypeError: users.some is not a function	POST	/register	undefined
+20230401	19:04:28	fa50abce-8d3b-47da-9db4-9b9a73f3ec0e	TypeError: users.some is not a function	POST	/login	undefined
+20230401	19:04:28	8b7b5e71-76f2-478e-8d3d-3b4c45b11182	TypeError: users.some is not a function	POST	/register	undefined
+20230401	19:04:28	e9fc4220-3df5-47f0-95f7-5018a7b93bb3	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230401	19:04:28	ec0e5d4f-24ea-4069-9952-464479103186	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230401	19:04:29	2da1a141-11c1-48c2-8aee-0252b8f9cd96	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/2	undefined
+20230401	19:04:29	76cdb4a5-1281-4e3c-ad17-b97e146703dd	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/4	undefined
+20230401	19:05:36	34c10d7f-53bb-4a85-9f59-ebeec67727a1	TypeError: users.some is not a function	POST	/register	undefined
+20230401	19:05:36	d7000cba-3604-4eb2-a718-168730d0a6e4	TypeError: users.some is not a function	POST	/login	undefined
+20230401	19:05:36	3b24bebe-e92e-41a8-8dbc-77d8c30fa1c5	TypeError: users.some is not a function	POST	/login	undefined
+20230401	19:05:36	406a0b91-6393-4edc-9f71-e974ab054c2c	TypeError: users.some is not a function	POST	/register	undefined
+20230401	19:05:36	6c9bd892-6f6f-46f7-a32e-e2d36be790a1	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230401	19:05:36	7c4cc55b-f82a-4c69-bbe4-a36f7ed62e49	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230401	19:05:37	37923eb5-ed1c-4c2c-a7a8-70a2d6a0c9a5	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/2	undefined
+20230401	19:05:37	ebce6bf9-7144-40db-9439-6147201d90cc	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/4	undefined
+20230401	19:05:55	d877ee04-6965-4c68-b1cf-ff894834bd42	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230401	19:05:55	21299c71-7bcb-4523-881c-046ae0f19d9e	TypeError: users.some is not a function	POST	/login	undefined
+20230401	19:05:55	9093a300-1042-4057-a85d-8142f7213f3c	TypeError: users.some is not a function	POST	/login	undefined
+20230401	19:05:55	1349152d-5f2e-42c2-ae24-4375d4501b91	TypeError: users.some is not a function	POST	/register	undefined
+20230401	19:05:55	1180d86c-860b-43af-ad40-a35a127ad8dd	TypeError: users.some is not a function	POST	/register	undefined
+20230401	19:05:55	125b4e03-156a-4dd6-94fa-0529c5637277	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230401	19:05:55	28040f85-2adb-4fcb-98b3-fac9ac026d76	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230401	19:05:55	81399105-6e21-4b7e-80e3-3a3e7c8e7325	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230401	19:05:57	3ac64472-097a-4d62-9c65-b7e8a7754007	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/2	undefined
+20230401	19:05:57	4e3a9de8-e223-48e3-8995-9913607079b4	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/4	undefined
+20230401	22:45:56	a8a5cb23-3fc6-497e-9b27-b80843c1159e	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230401	22:45:56	b25a31a2-f915-45da-9950-91840af5fe47	TypeError: users.some is not a function	POST	/login	undefined
+20230401	22:45:56	01713600-3b4e-4d1c-8752-d43982b6e32c	TypeError: users.some is not a function	POST	/login	undefined
+20230401	22:45:56	794047d0-5c2a-44e8-a8bc-99a38f3d8a87	TypeError: users.some is not a function	POST	/register	undefined
+20230401	22:45:56	aa0351f4-c883-4bdd-a58a-f07c4f12a0ad	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230401	22:45:56	189ced35-c7b2-466d-91a1-8d5184d7cacf	TypeError: users.some is not a function	POST	/register	undefined
+20230401	22:45:57	627efc58-a5e9-45a7-b9d4-37b87a2012a7	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230401	22:45:57	638c334f-798c-41ef-b880-26e65124f3d8	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230401	22:45:58	22c366ff-2310-4176-91f0-f687118f094a	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/2	undefined
+20230401	22:45:58	198fcaec-0a4f-42b5-b650-abeeba49209a	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/4	undefined
+20230401	22:46:34	6ccff1e5-ba8e-4580-b50a-22f6761ea4ce	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230401	22:46:34	24da0713-1e31-4bd5-aa36-204871b851eb	TypeError: users.some is not a function	POST	/login	undefined
+20230401	22:46:34	bedbc5fb-cef8-40f1-9ce8-82a2bf460cbf	TypeError: users.some is not a function	POST	/register	undefined
+20230401	22:46:34	26c218e5-55b9-4406-834f-08fdf62604be	TypeError: users.some is not a function	POST	/register	undefined
+20230401	22:46:34	492c57a0-602d-4d2f-9daf-7134af20e780	TypeError: users.some is not a function	POST	/login	undefined
+20230401	22:46:34	d84f2240-ed51-4ad1-b62d-7edaf3daaafb	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230401	22:46:34	f18451c0-20a5-46fa-9229-a308e2c4ebc8	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230401	22:46:34	a37eff9c-08be-4f9e-8717-c076cbaf256f	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230401	22:46:36	511e91eb-75bf-403d-af6d-859a6a1cb4a8	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/2	undefined
+20230401	22:46:36	df5a1c90-03d4-4399-8db7-7bee2867d054	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/4	undefined
+20230401	22:46:53	7762f040-d57d-45e9-9062-383ccdeaf2fb	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230401	22:46:53	bfe36cf4-7875-434d-8a8e-060504e3ed7e	TypeError: users.some is not a function	POST	/register	undefined
+20230401	22:46:53	654d5d6d-63f1-4348-b813-ae268bfb67ae	TypeError: users.some is not a function	POST	/register	undefined
+20230401	22:46:53	61b507c6-995d-4af1-a30f-cfa80e934c1c	TypeError: users.some is not a function	POST	/login	undefined
+20230401	22:46:53	fbf35d1f-b996-4783-9ea8-7d0b90e6bc8d	TypeError: users.some is not a function	POST	/login	undefined
+20230401	22:46:53	50bdb534-287c-4e2a-a44d-9391ecdb6d83	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230401	22:46:53	430d5835-1f12-46b5-9d1d-b80532573fc0	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230401	22:46:53	06bb69c0-39e1-48a7-b0f6-18036a3efa67	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230401	22:46:54	5e9089e7-03b8-4131-b57d-3de21b826d83	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/2	undefined
+20230401	22:46:54	ca2bfe04-a5f5-4505-83a4-809858d3e95b	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/4	undefined
+20230401	22:51:20	05779f5b-3143-492a-9d66-4b83fab536e3	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230401	22:51:20	ffea8778-85fa-41e8-ba0b-c579cf11614a	TypeError: users.some is not a function	POST	/register	undefined
+20230401	22:51:20	95d389de-a5e0-467d-a1ed-11014ca65c04	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230401	22:51:20	a88dfcdb-b9ea-447e-9112-cbe5ce223df3	TypeError: users.some is not a function	POST	/login	undefined
+20230401	22:51:20	430732c0-c5a3-409e-88b6-623709bc7900	TypeError: users.some is not a function	POST	/register	undefined
+20230401	22:51:20	a721317b-0308-494c-8d46-0707d216ae41	TypeError: users.some is not a function	POST	/login	undefined
+20230401	22:51:20	a97a2052-4b0e-47b6-b3b4-118101414f60	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230401	22:51:20	28fd4b01-36d5-45f8-8697-c81c86dd59dc	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230401	22:51:22	4c2c2be7-16c8-45d2-aa00-9c8f40a2306f	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/2	undefined
+20230401	22:51:22	3ea02858-5cc9-446c-a866-d83de872aa08	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/4	undefined
+20230401	22:51:56	484c2c7e-d132-4bb3-9972-77e3cd9f2e4f	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230401	22:51:56	80c9dfd8-2a57-4cbb-8a73-0e1745294f19	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230401	22:51:56	672a6103-2237-45ac-9c42-a986c75f41ac	TypeError: users.some is not a function	POST	/register	undefined
+20230401	22:51:56	26668c4f-10fb-4a71-8923-a6285ac9a4d8	TypeError: users.some is not a function	POST	/login	undefined
+20230401	22:51:56	e1058124-0133-4c43-85a2-41e5da848470	TypeError: users.some is not a function	POST	/register	undefined
+20230401	22:51:56	1d8731c9-9d64-4e6f-88f1-39f582ee4c78	TypeError: users.some is not a function	POST	/login	undefined
+20230401	22:51:56	d231f188-d8dd-4825-ab67-c88a15e4a3de	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230401	22:51:56	4f3c0b16-84db-4d3f-95ae-63186f3cc03a	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230401	22:51:57	150e04ec-5150-4a18-9745-ecf273608d13	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/2	undefined
+20230401	22:51:57	233cc449-2f36-4747-9d29-745a4ee99f29	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/4	undefined
+20230401	22:52:10	13fa4354-43da-428f-8e12-a2a92ef35604	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230401	22:52:10	4cbdcad3-861a-4b8b-8249-2e00c97c6e86	TypeError: users.some is not a function	POST	/register	undefined
+20230401	22:52:10	44f4eb8c-6c16-425d-8e76-576d655373c7	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230401	22:52:10	061cb13a-5b3c-4c88-8d92-0fd0bffeeda4	TypeError: users.some is not a function	POST	/login	undefined
+20230401	22:52:10	11db3136-6de7-47a7-a0b0-9ebe832fdbc9	TypeError: users.some is not a function	POST	/register	undefined
+20230401	22:52:10	b7d318ef-23e4-477e-8ec8-089277e0becc	TypeError: users.some is not a function	POST	/login	undefined
+20230401	22:52:11	ec1147e8-ad3d-4520-a877-404eb102b641	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230401	22:52:11	c8bee9e4-c83d-4e92-a4a6-461a33e8e854	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230401	22:52:12	3274e245-5df8-4682-bbde-cfdf954bb67b	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/2	undefined
+20230401	22:52:12	525c2dfa-9895-4707-86e8-d520ed468f3c	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/4	undefined
+20230401	22:52:50	d1a1db41-af1d-4680-9889-17a4e9e97f6e	TypeError: users.some is not a function	POST	/login	undefined
+20230401	22:52:50	8cfc0b6f-ce22-45ef-96da-8325a4d8fb53	TypeError: users.some is not a function	POST	/register	undefined
+20230401	22:52:50	43ced642-fb4a-408d-b2c5-a6418f0b4f3c	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230401	22:52:50	5c1d6d08-cd75-4668-ad58-064f2753cc4f	TypeError: users.some is not a function	POST	/login	undefined
+20230401	22:52:50	ff79a323-6bfd-48e9-ad8c-b56d767345b3	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230401	22:52:50	c67201b6-dea6-475f-a772-d73bdb2e1b7c	TypeError: users.some is not a function	POST	/register	undefined
+20230401	22:52:50	e33370cf-007b-4767-be4b-385f3ae5a9ae	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230401	22:52:50	daa1dfd3-707f-42da-8895-c3cdd3274131	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230401	22:52:51	a5067a76-08b0-46dd-a4b6-612a14c4fc9c	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/2	undefined
+20230401	22:52:51	48766d27-a9bf-4f60-aa77-71302db81218	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/4	undefined
+20230401	22:53:34	a13228f4-6bf5-4690-8112-debb347b0745	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230401	22:53:34	8b312440-fb62-4502-b0c3-44aaf801cc66	TypeError: users.some is not a function	POST	/register	undefined
+20230401	22:53:34	7d8a7633-c73b-4ffa-ab98-98cf42bc4fb6	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230401	22:53:34	f45ca57d-bb05-4032-9650-1d5bbd348595	TypeError: users.some is not a function	POST	/register	undefined
+20230401	22:53:34	21a0e9e7-cbc7-4c51-bfd8-b72675ad3e7d	TypeError: users.some is not a function	POST	/login	undefined
+20230401	22:53:34	701d725d-e2eb-4628-b108-3cfd2df9ce19	TypeError: users.some is not a function	POST	/login	undefined
+20230401	22:53:34	90bcf39d-ebc6-45a1-bc30-b461558412bf	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230401	22:53:34	4016184f-7cfd-4e32-981d-e7f066cbe5da	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230401	22:53:36	433289af-0679-4c91-aec9-f5a5d6528607	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/2	undefined
+20230401	22:53:36	7de240b8-eb99-4758-98b3-b0e1cd5a669a	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/4	undefined
+20230401	22:54:08	c3e341c1-b37d-41f1-9c3a-2a78cc2f11bc	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230401	22:54:08	db720f81-a4d8-4af8-9ce4-dff329398b52	TypeError: users.some is not a function	POST	/register	undefined
+20230401	22:54:08	6deeb072-8801-4da2-93e3-e4d55ad80ad4	TypeError: users.some is not a function	POST	/register	undefined
+20230401	22:54:08	acd6c7c1-25c6-4a83-8618-da9ecba9162b	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230401	22:54:08	d297bfe2-4814-4945-bd3b-e1ac7f0004c2	TypeError: users.some is not a function	POST	/login	undefined
+20230401	22:54:08	4f31ce43-3fc8-4968-b5e7-3f72fbb72cd7	TypeError: users.some is not a function	POST	/login	undefined
+20230401	22:54:09	988575c1-9d83-414b-ba6b-d2a29e700cc9	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230401	22:54:09	ed19898d-c2f3-4ecb-95e8-601acad87a81	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230401	22:54:10	e4c02c31-1647-4030-8805-54cdf7e158fa	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/2	undefined
+20230401	22:54:10	f665faa6-9c06-4601-9abc-d8689d0c1fd7	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/4	undefined
+20230401	22:55:40	a9395dc1-831f-4ede-94d6-55e767855046	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230401	22:55:40	51b3a8a1-e98f-40a1-93bc-3262a9207ee3	TypeError: users.some is not a function	POST	/register	undefined
+20230401	22:55:40	9b59bc89-b058-46b5-844d-f2aa78b8b58b	TypeError: users.some is not a function	POST	/login	undefined
+20230401	22:55:40	7cae98d9-b087-4f81-bc4a-d7939dbfff7d	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230401	22:55:40	ea9eb96c-b4e0-4629-bd34-d60db030b441	TypeError: users.some is not a function	POST	/register	undefined
+20230401	22:55:40	6678377c-649c-4502-b7d5-c02b1dfa374a	TypeError: users.some is not a function	POST	/login	undefined
+20230401	22:55:40	84b08151-e7a4-4163-8693-9822ef9f34fa	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230401	22:55:40	fa8fe2b6-0554-4dc1-873f-088f8657e356	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230401	22:55:42	82d5755d-d45a-495c-a4bf-0c46844b3771	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/2	undefined
+20230401	22:55:42	10c8ffe0-c7fb-41f6-8ca0-148f6172a56e	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/4	undefined
+20230401	22:57:00	c3fb08c4-ad4b-4a67-9d51-295bdfbdb460	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230401	22:57:00	dbc2655c-e65d-41be-aa96-8834f660de8e	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230401	22:57:00	640be53c-f0cf-4bea-9c20-cac167e849fd	TypeError: users.some is not a function	POST	/register	undefined
+20230401	22:57:00	796dd020-a29e-4d12-8047-7e2dfe26fdd3	TypeError: users.some is not a function	POST	/login	undefined
+20230401	22:57:00	b723d849-9cfe-4147-8e2e-9916a426e9f6	TypeError: users.some is not a function	POST	/register	undefined
+20230401	22:57:00	1eb6fa70-f100-4bb5-8e7c-1f48a14fecf3	TypeError: users.some is not a function	POST	/login	undefined
+20230401	22:57:00	1af9dc00-0a54-4406-ae00-86fd860ccf5a	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230401	22:57:00	c40e179b-efaa-4c2a-9a8e-8ec00aa108b2	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230401	22:57:02	632519f2-43fc-4277-a41a-151ab1237cee	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/2	undefined
+20230401	22:57:02	261e21fc-80ce-4423-ba23-ad8fb1efe062	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/4	undefined
+20230401	22:58:27	433c768e-a92b-4225-adb7-f51f6f087440	TypeError: users.some is not a function	POST	/register	undefined
+20230401	22:58:27	c79c0340-30f8-4cac-912e-5af4b49319ba	TypeError: users.some is not a function	POST	/login	undefined
+20230401	22:58:27	4c1d16f1-63cc-465d-98db-ec327a36f7b2	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230401	22:58:27	25b1520c-cb4b-4c43-9789-c33edff346ea	TypeError: users.some is not a function	POST	/login	undefined
+20230401	22:58:27	8835f470-e5eb-45cc-a3e0-058affde1eda	TypeError: users.some is not a function	POST	/register	undefined
+20230401	22:58:27	aff793da-b600-4b57-8e32-fafc3041a64a	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230401	22:58:27	5da3346f-05af-4a17-b2b0-3d850ce09586	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230401	22:58:27	06227ab0-8a93-4069-a446-d8f26cf24da6	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230401	22:58:29	05ae12bd-8f65-46a3-ba2a-b4527e5b4c3a	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/2	undefined
+20230401	22:58:29	58401939-3a0e-49f4-a059-755165b4152c	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/4	undefined
+20230401	22:59:38	5f905262-2b93-464c-81b9-fa0acf1b1f31	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230401	22:59:38	c94b37d1-27f8-46df-a41c-5dec4416a5ce	TypeError: users.some is not a function	POST	/register	undefined
+20230401	22:59:38	6745e65e-062c-4c43-87b4-748fd25459ca	TypeError: users.some is not a function	POST	/login	undefined
+20230401	22:59:38	f7068007-3898-4534-87c9-95930ceb072b	TypeError: users.some is not a function	POST	/register	undefined
+20230401	22:59:38	3f09d7dd-ae34-42fb-b451-4ba36ffd3039	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230401	22:59:38	5ffd805d-3a34-48db-87c1-100cea49e4a2	TypeError: users.some is not a function	POST	/login	undefined
+20230401	22:59:38	c1588c48-f42f-4f5b-afaa-f516fc6e0de2	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230401	22:59:38	0326fcb4-0842-4ced-afec-ab247d7e24cf	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230401	22:59:39	d440b5be-e04a-4aa7-8fbe-0c1e1ac1eed9	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/2	undefined
+20230401	22:59:39	0f8494aa-a330-474c-ae86-5da964ce9a51	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/4	undefined
+20230401	23:00:33	0bcc4d75-5826-4038-bab2-70adbcbacc5f	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230401	23:00:33	d90edd66-8089-4e8c-a125-3a147e15ebfb	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230401	23:00:33	33d4744f-8936-43e5-a8f3-af635183b885	TypeError: users.some is not a function	POST	/login	undefined
+20230401	23:00:33	585e1530-8cc4-49e3-bb73-a4e4bc164006	TypeError: users.some is not a function	POST	/register	undefined
+20230401	23:00:33	fd3716c1-e69d-4f36-9c7d-77ec94300e81	TypeError: users.some is not a function	POST	/register	undefined
+20230401	23:00:33	6ef186a5-0c99-467f-8655-4b79d121c2e7	TypeError: users.some is not a function	POST	/login	undefined
+20230401	23:00:33	4b2aa43e-6058-4daf-b3eb-b9c0b7fa0e3c	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230401	23:00:33	d7e4e9a5-eda6-4a6c-8c21-4b191b71b9af	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230401	23:00:34	e92d37b1-4cd0-43e5-82e4-ccfdff630217	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/2	undefined
+20230401	23:00:35	a3190af1-04f9-4414-80a0-bddaaa654451	MongooseError: Model.find() no longer accepts a callback	DELETE	/profile/4	undefined
+20230401	23:01:46	0bcba770-507f-49f2-be68-217d11273c62	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230401	23:01:46	46388232-9cd9-49cf-b918-f5fb054b7306	TypeError: users.some is not a function	POST	/register	undefined
+20230401	23:01:46	7485d09c-653c-4c49-95e9-c079bca669e3	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230401	23:01:46	e60c9ea0-b013-42f5-829d-a784eaecc67e	TypeError: users.some is not a function	POST	/register	undefined
+20230401	23:01:46	3fac1cb1-ccf8-426b-aec4-1a63d84ff2e8	TypeError: users.some is not a function	POST	/login	undefined
+20230401	23:01:46	641e754e-7fb3-4241-84c7-ac0882bc593e	TypeError: users.some is not a function	POST	/login	undefined
+20230401	23:01:47	87618518-66ab-4542-8564-31918870df85	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230401	23:01:47	227c9fa2-5a44-4322-be40-9559f7ac502b	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230401	23:05:20	7f13f59b-1e48-4765-bd20-4b2736eae63b	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230401	23:05:20	507d4d8e-848d-4461-a495-08d12f5f585b	TypeError: users.some is not a function	POST	/login	undefined
+20230401	23:05:20	beb7680a-3cae-4537-ad38-5943ee6c6c4c	TypeError: users.some is not a function	POST	/register	undefined
+20230401	23:05:20	d5edd439-bb05-42b2-a071-c585fe80d0ac	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230401	23:05:20	0e633d1c-94a3-4234-82ce-7d91fa081691	TypeError: users.some is not a function	POST	/login	undefined
+20230401	23:05:20	0a17e1dc-7dc2-4f4d-8a44-b83dcd54906c	TypeError: users.some is not a function	POST	/register	undefined
+20230401	23:05:20	329d39db-892f-4828-8566-188931df0c8b	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230401	23:05:20	a62f1641-424a-4e53-a2cc-bc627eb7ad68	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230401	23:05:52	6a67c72f-ee85-498b-a6dd-ee96f8454401	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230401	23:05:52	de4f3b60-da18-4553-b3a2-a57befb1a7fd	TypeError: users.some is not a function	POST	/register	undefined
+20230401	23:05:52	a5fc68f4-b197-4330-83a2-1d1366a62e1b	TypeError: users.some is not a function	POST	/login	undefined
+20230401	23:05:52	578c9307-1a10-48c1-a6c5-ce611507ebcc	TypeError: users.some is not a function	POST	/register	undefined
+20230401	23:05:52	8d3e6d94-23da-422f-b775-06f9668aac3a	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230401	23:05:52	d4b9fd19-71a2-41a3-af0c-f03a8b296602	TypeError: users.some is not a function	POST	/login	undefined
+20230401	23:05:52	f223029d-47c6-42a6-8153-588835c074e6	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230401	23:05:52	3315b529-47e9-4c7d-9a4a-eeb6e838063c	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230401	23:06:24	fd850fe3-d36a-438c-b662-d30d09c9ddc1	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230401	23:06:24	9fd793ff-a959-430d-8322-4628f3336c73	TypeError: users.some is not a function	POST	/login	undefined
+20230401	23:06:24	b52dccf1-72c1-4d8f-9681-2f6df7cba448	TypeError: users.some is not a function	POST	/login	undefined
+20230401	23:06:24	e41a671f-cbe9-4c31-a67d-a505e6657c6b	TypeError: users.some is not a function	POST	/register	undefined
+20230401	23:06:24	a9fb81bc-eb62-4898-ae48-a8ed709ef267	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230401	23:06:24	c1aa4686-7c1b-4868-bd63-ccbb6fc97c2f	TypeError: users.some is not a function	POST	/register	undefined
+20230401	23:06:25	a8b82673-0708-49e2-8f4f-d392db8fc3f4	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230401	23:06:25	692f3395-43ee-4edf-b27e-f32cadac68c4	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230401	23:06:53	02a49c3d-ffbc-4773-a79f-b1e9c0f4960a	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230401	23:06:53	3b4ac4f0-9a15-47b6-bb9b-a888b0ad1b55	TypeError: users.some is not a function	POST	/login	undefined
+20230401	23:06:53	f97aa7d9-5223-4667-af09-e5895e9895dd	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230401	23:06:53	4c25931a-b714-43c1-8a55-e50f3ff18abe	TypeError: users.some is not a function	POST	/register	undefined
+20230401	23:06:53	51cdad8d-978e-4bef-a4ae-6113d45cb7d4	TypeError: users.some is not a function	POST	/login	undefined
+20230401	23:06:53	91653516-2267-40dd-a4fa-a2f8e9ea10a4	TypeError: users.some is not a function	POST	/register	undefined
+20230401	23:06:54	155e7401-93f0-41b3-aa14-5a3291471ea4	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230401	23:06:54	29023057-8753-43ff-8ac9-c466565d5324	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230401	23:07:54	430aac52-cd58-40f7-9639-5178aa1a91b7	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230401	23:07:54	9a8c7aac-3c55-4965-96fd-52ed235a85fd	TypeError: users.some is not a function	POST	/login	undefined
+20230401	23:07:54	092a00ea-9a5e-490f-846f-845a942df178	TypeError: users.some is not a function	POST	/register	undefined
+20230401	23:07:54	77b4d7d1-7322-4017-bec9-c874e618ba09	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230401	23:07:54	c0b98a27-1c60-47c8-964f-98212c4a567c	TypeError: users.some is not a function	POST	/login	undefined
+20230401	23:07:54	60e72d20-6a12-43d3-b193-f27857b1d2aa	TypeError: users.some is not a function	POST	/register	undefined
+20230401	23:07:54	564778ea-e042-45ae-b33a-84aeb7ff0354	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230401	23:07:54	18752024-51d0-4e9f-9421-158b4535db65	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230401	23:08:16	75794bf5-b85f-426b-8f5c-13ee4ee35fdb	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230401	23:08:16	8bb6e5a3-fc69-4db0-bece-62d31e216d67	TypeError: users.some is not a function	POST	/register	undefined
+20230401	23:08:16	736d9b4e-eb46-40f3-b826-a6696a9ccf6b	TypeError: users.some is not a function	POST	/login	undefined
+20230401	23:08:16	6df8d882-cddb-4e0f-9039-d9566b85b5b2	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230401	23:08:16	b651d34e-ff3f-43b7-9841-def9e79834a3	TypeError: users.some is not a function	POST	/register	undefined
+20230401	23:08:16	4a4559a6-7d00-40d2-b5cf-9e8ce6afc86f	TypeError: users.some is not a function	POST	/login	undefined
+20230401	23:08:16	1ba99a0d-274a-4536-b9a6-10328e56176f	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230401	23:08:16	a095e780-b8f9-4e95-a9fc-4b60ec422ed0	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230401	23:09:09	43aff30d-e695-411d-b558-be3b3cce3edb	TypeError: users.some is not a function	POST	/register	undefined
+20230401	23:09:09	def1fb32-1b0e-4c3b-8167-acc15237192a	TypeError: users.some is not a function	POST	/register	undefined
+20230401	23:09:09	5a693e9f-20cf-4090-8d55-02ff80ade59c	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230401	23:09:09	3f48d01b-1938-4d07-ad0c-0d02ac393b34	TypeError: users.some is not a function	POST	/login	undefined
+20230401	23:09:09	77226e5f-8a18-42af-aab5-e13dcf7eaf07	TypeError: users.some is not a function	POST	/login	undefined
+20230401	23:09:09	14f8b37e-b939-4ae2-b457-aadb266fef4b	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230401	23:09:09	d3065e9f-7dd6-45e2-8bb2-a996703f7af2	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230401	23:09:09	384d4c5f-29d9-40af-8788-ed9437abb186	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230401	23:10:40	3240dc6d-704e-47ba-a321-af58b03f4f53	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230401	23:10:41	56876099-8b12-4191-a803-84ec2928ee1d	TypeError: users.some is not a function	POST	/login	undefined
+20230401	23:10:41	ae937be6-8dac-4bde-a8e3-c2066cc84fa6	TypeError: users.some is not a function	POST	/register	undefined
+20230401	23:10:41	710bd6a5-397b-4d9d-923a-43af43e3b251	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230401	23:10:41	caede983-ea06-4a6a-9404-57060030e2b8	TypeError: users.some is not a function	POST	/register	undefined
+20230401	23:10:41	4321baca-373e-45a1-a882-c565ddd43bae	TypeError: users.some is not a function	POST	/login	undefined
+20230401	23:10:41	3dc0be45-ddb1-49d4-a74b-f11fd4435da7	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230401	23:10:41	b4e72f8a-2453-4632-baef-6e61de683834	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230401	23:11:35	3b615638-2451-4b30-96bc-4d64906e501e	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230401	23:11:35	dd45c291-8a73-45cb-8c11-617d0f82234b	TypeError: users.some is not a function	POST	/login	undefined
+20230401	23:11:35	a8eb2144-dc82-41f8-b552-a3be786be95b	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230401	23:11:35	23601cdc-55ff-4ee5-b8c4-6af103aea4ce	TypeError: users.some is not a function	POST	/register	undefined
+20230401	23:11:35	b0858732-2711-48ad-b99d-2058ca331671	TypeError: users.some is not a function	POST	/login	undefined
+20230401	23:11:35	2ac81a5b-c399-4d0b-87f8-681f0d4ee302	TypeError: users.some is not a function	POST	/register	undefined
+20230401	23:11:35	f3e1c2cd-6cb4-49b6-95fe-50f5a7dcb82b	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230401	23:11:35	fbadaa4c-bdd5-41fd-9c0d-94d24474443e	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230401	23:12:59	ef34a2d9-5475-4556-8895-a259656500ae	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230401	23:12:59	09e723cb-49ad-4cb0-a3f1-46f0fbb8e5a3	TypeError: users.some is not a function	POST	/register	undefined
+20230401	23:12:59	e11bbbe9-08f5-4714-9093-452f57e4ac24	TypeError: users.some is not a function	POST	/login	undefined
+20230401	23:12:59	3b65c4a1-426f-41dc-ad5f-8a5ad0023c10	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230401	23:12:59	edfb0a36-c72f-495d-a078-eaef4c714953	TypeError: users.some is not a function	POST	/register	undefined
+20230401	23:12:59	b59ceefe-f4fe-405a-827e-8ac75c919ae7	TypeError: users.some is not a function	POST	/login	undefined
+20230401	23:12:59	c5264bff-56fa-4e00-b845-77702c66409d	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230401	23:12:59	e261ef99-e79b-49a9-b7be-6fc9601230ec	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230401	23:13:17	55a65d51-2ff7-4dc2-8fef-54f8d1f260dc	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230401	23:13:17	1b76c935-800d-4d2d-b80f-b772ddc7171e	TypeError: users.some is not a function	POST	/register	undefined
+20230401	23:13:17	244ac58d-3d6c-4ad8-a7fe-efd4d17bd0c4	TypeError: users.some is not a function	POST	/login	undefined
+20230401	23:13:17	b9f5a691-3acd-4b27-837c-e0d600ec6338	TypeError: users.some is not a function	POST	/register	undefined
+20230401	23:13:17	f881dfcd-c2b9-4f78-949e-b6e3a60555ec	TypeError: users.some is not a function	POST	/login	undefined
+20230401	23:13:17	c92329b4-15bd-47d5-968a-10110446beaf	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230401	23:13:17	406577c3-6d73-4bd9-8815-dbce99965faf	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230401	23:13:17	242f8f68-e404-46a0-9870-fd4229974689	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230401	23:14:50	02204fb4-8025-46dc-8690-b2cdf0d5f0cb	TypeError: users.some is not a function	POST	/login	undefined
+20230401	23:14:50	fbfe6429-7944-405a-aaa1-243287fdbbe7	TypeError: users.some is not a function	POST	/register	undefined
+20230401	23:14:50	5f4ba504-ce8e-43fd-8269-b3965e610e76	TypeError: users.some is not a function	POST	/login	undefined
+20230401	23:14:50	4267ea09-1f73-4940-9bc3-e24441147e43	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230401	23:14:50	6e0ea904-c3d5-4f92-b591-3030d5323749	TypeError: users.some is not a function	POST	/register	undefined
+20230401	23:14:50	7c934133-45f1-44f1-a88d-f792eac96ec4	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230401	23:14:50	3681f820-dab7-471f-879e-13881ad1e572	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230401	23:14:50	29350f6b-bf3d-4ac5-a309-c3f89816d616	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230401	23:15:37	1bde6bd9-a032-4da0-9f3d-643381bce73e	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230401	23:15:37	391ed63b-3106-4900-a6cd-2491b99e199d	TypeError: users.some is not a function	POST	/login	undefined
+20230401	23:15:37	4fc41ec5-f9fd-4325-b259-49c4eb87a7ce	TypeError: users.some is not a function	POST	/login	undefined
+20230401	23:15:37	ac28bbc9-fcd0-460f-8833-aec2490fd00a	TypeError: users.some is not a function	POST	/register	undefined
+20230401	23:15:37	054420e9-55b7-47bf-be96-f6f25d042090	TypeError: users.some is not a function	POST	/register	undefined
+20230401	23:15:37	17725dc7-ba10-44e8-aff4-f04e919aedc7	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230401	23:15:38	29b71750-40cc-470f-884f-506c255ff0ed	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230401	23:15:38	a6c316eb-92fc-4543-b00f-b5c323c85631	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230402	10:49:54	37847081-9ad8-4191-94ca-7836619eed84	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230402	10:49:54	ffab4d8b-5587-4f65-a907-38fbe9604dfc	TypeError: users.some is not a function	POST	/register	undefined
+20230402	10:49:54	00409596-fc19-4be0-b35b-2097aac0136b	TypeError: users.some is not a function	POST	/login	undefined
+20230402	10:49:54	8ce713cd-381a-4ad4-a521-273c013e1206	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230402	10:49:54	e9479e31-930f-44f7-a25e-bdb8cf1b84d1	TypeError: users.some is not a function	POST	/register	undefined
+20230402	10:49:54	da08ae23-5f70-41cb-a1e8-76d81136f529	TypeError: users.some is not a function	POST	/login	undefined
+20230402	10:49:54	56666f0e-e1c6-4439-8a0c-1ce4fa3aec4a	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230402	10:49:54	f0239fdf-a955-4a98-b9cb-ee323ff37979	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230402	10:53:12	819c72b2-c48d-4c8d-8971-e7483d9fa1fd	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230402	10:53:12	27c954e6-9172-4825-adb1-b4f1f77ca74c	TypeError: users.some is not a function	POST	/login	undefined
+20230402	10:53:12	59f90eb8-3f7f-4b4b-b06a-818833ca3551	TypeError: users.some is not a function	POST	/register	undefined
+20230402	10:53:12	bac04575-9580-4afa-8e2c-83ab06de7f07	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230402	10:53:12	99cfee18-9673-426b-bd73-e236e904f10a	TypeError: users.some is not a function	POST	/register	undefined
+20230402	10:53:12	53985dce-93eb-404d-859c-3f6706f712e0	TypeError: users.some is not a function	POST	/login	undefined
+20230402	10:53:12	961875cf-39e9-4af1-85f3-3d024ffe0f24	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230402	10:53:12	45b12728-5a93-425d-8265-41b3792386d1	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230402	11:02:50	284a4d98-0915-428f-9ccf-9e1152ac012e	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230402	11:02:50	82345030-1215-40fa-91ec-199958a9ecaa	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230402	11:02:50	0c989696-2648-43c1-baf9-c9742c87e657	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230402	11:02:50	d79a7ee1-7d75-478c-b35e-1d86f78d6ae2	TypeError: users.some is not a function	POST	/login	undefined
+20230402	11:02:50	e79f885e-d6d1-471b-95d1-ef3de5f48117	TypeError: users.some is not a function	POST	/register	undefined
+20230402	11:02:50	16246dcc-06b4-4367-9c40-912891733d41	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230402	11:02:50	4397a0e0-f314-44bc-862c-e7d4344adea8	TypeError: users.some is not a function	POST	/login	undefined
+20230402	11:02:50	de8643d8-0742-49e7-be3b-e2b7496855d2	TypeError: users.some is not a function	POST	/register	undefined
+20230402	11:04:51	22df81fb-23ff-4e80-93a0-3cf6046eff90	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230402	11:04:51	4e9da534-1a61-4ab3-b298-00213e9c2437	TypeError: users.some is not a function	POST	/login	undefined
+20230402	11:04:51	a1709077-9c0b-4450-9bbe-be59ef30d298	TypeError: users.some is not a function	POST	/register	undefined
+20230402	11:04:51	9480d14c-77e9-4e16-a78a-9ca7880e6f0d	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230402	11:04:51	ce811bb3-f2e4-461a-89c7-2a86d78499e0	TypeError: users.some is not a function	POST	/login	undefined
+20230402	11:04:51	5d323c78-609f-44dc-8afa-fb351b5a4b45	TypeError: users.some is not a function	POST	/register	undefined
+20230402	11:04:51	d8f50d62-10a3-44d7-a3a4-3a38c918aa09	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230402	11:04:51	7e9080b4-1842-4894-83f1-36eb08253e86	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230402	11:11:33	7b9865f0-5503-4f71-beb2-910d09ba0e97	TypeError: users.some is not a function	POST	/login	undefined
+20230402	11:11:33	81c053a5-5ba2-4ca7-ac70-f971fe241805	TypeError: users.some is not a function	POST	/register	undefined
+20230402	11:11:33	30cfb4dd-64e1-474e-924a-4bf8c0d7c343	TypeError: users.some is not a function	POST	/login	undefined
+20230402	11:11:33	46f404b6-20af-455e-9dd1-e204560537f8	TypeError: users.some is not a function	POST	/register	undefined
+20230402	11:11:33	b1c1542d-db02-4121-af85-068c4bd2bb5a	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230402	11:11:33	258091dd-1fb8-4937-89df-d757ec4d5ef9	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230402	11:11:33	16328deb-87d6-4b4b-924d-e6914b32a827	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230402	11:11:33	3d56866f-940f-4d7f-91eb-c46be495fb34	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230402	11:40:34	d6fb6ce7-92b3-4f4c-9715-6155b85571bc	TypeError: users.some is not a function	POST	/login	undefined
+20230402	11:40:34	f52cef39-cf02-42cf-b462-1bdc30421a41	TypeError: users.some is not a function	POST	/login	undefined
+20230402	11:40:34	a88289ce-2180-4e43-89d2-f83f180f1bb1	TypeError: users.some is not a function	POST	/register	undefined
+20230402	11:40:34	1d6c70d9-e8ad-4074-b439-bbe8054e706f	TypeError: users.some is not a function	POST	/register	undefined
+20230402	11:40:34	77ff5d08-0df1-4b87-986f-b3c1f9bb1e5d	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230402	11:40:34	364deb31-2935-4bdb-bc97-56c6bb7832c6	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230402	11:40:34	e484cda4-a437-4b36-bd6e-796d814fc49b	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230402	11:40:34	a9677f43-ff23-402a-86c7-2168be3b8955	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230402	11:44:11	6ef78386-8213-4f6e-8262-56a2713c525b	TypeError: users.some is not a function	POST	/login	undefined
+20230402	11:44:11	5699e4fc-75c0-4242-b9a0-6d688279ffa9	TypeError: users.some is not a function	POST	/register	undefined
+20230402	11:44:11	a244bc7e-f4c6-4e17-9a52-69de6be3ed04	TypeError: users.some is not a function	POST	/register	undefined
+20230402	11:44:11	8a7d7a1e-1073-49f2-90b3-ce18f036d1d7	TypeError: users.some is not a function	POST	/login	undefined
+20230402	11:44:11	dbef8be6-e9d3-4217-b5c1-1ef0fea67554	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230402	11:44:11	36d2fd20-c71f-46ba-b899-c1a685160d6c	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230402	11:44:11	956c4bf3-b68f-4206-8f21-08ef0c64b30c	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230402	11:44:11	168d43aa-3907-4137-b915-b019dd0b9b8a	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230402	11:45:01	e3a39b04-a5bb-4246-afbd-861bcc54d5d6	TypeError: users.some is not a function	POST	/register	undefined
+20230402	11:45:01	ada40a18-5af3-490d-8573-01c34208f466	TypeError: users.some is not a function	POST	/login	undefined
+20230402	11:45:01	a7eec885-f95d-496c-8570-d85bc5bc3118	TypeError: users.some is not a function	POST	/register	undefined
+20230402	11:45:01	847ffa8f-a096-44bf-a010-947410b74a00	TypeError: users.some is not a function	POST	/login	undefined
+20230402	11:45:01	36900d32-7fef-483a-bcf3-ce49db13d93a	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230402	11:45:01	ad540aa6-d15d-40e8-9f2d-a6f1d4c5bf23	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230402	11:45:01	2f180901-d40b-4466-9ebf-3a0ba7bcd963	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230402	11:45:01	3214f81c-8685-4161-bd42-25848b2e8c4d	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230402	11:46:34	570251b5-0acf-4146-a74c-daccff550b21	TypeError: users.some is not a function	POST	/register	undefined
+20230402	11:46:34	1d74d3a5-4d97-4a1d-b3cc-ca40c19ca752	TypeError: users.some is not a function	POST	/login	undefined
+20230402	11:46:34	708bacc9-b8fd-4ae1-b689-409398a8bd0f	TypeError: users.some is not a function	POST	/register	undefined
+20230402	11:46:34	c15c2ff5-842a-4f70-b55a-fb2fdf66f05e	TypeError: users.some is not a function	POST	/login	undefined
+20230402	11:46:35	ab48e891-418e-477f-bf6a-f1223d6600d9	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230402	11:46:35	9850e7b2-0a8d-4ed9-9eff-f04ca32b06c0	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230402	11:46:35	147c40c2-9f1a-403d-9e74-6aea250a0f41	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230402	11:46:35	0a62247b-4f97-44b6-aa29-c34449c6b42e	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230402	11:59:58	3ec65f0b-b8d6-4eef-95b8-a73db1f64f5c	TypeError: users.some is not a function	POST	/register	undefined
+20230402	11:59:58	6a55df00-d56a-43a4-a96a-689de55961ab	TypeError: users.some is not a function	POST	/login	undefined
+20230402	11:59:58	7a0b85d9-c271-46d3-a2d1-68792f181ec8	TypeError: users.some is not a function	POST	/register	undefined
+20230402	11:59:58	b278cfa3-e32c-46eb-a982-8a2de0a504c4	TypeError: users.some is not a function	POST	/login	undefined
+20230402	11:59:59	1bf4113c-4de1-4c5e-8c8d-dc641146ed13	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230402	11:59:59	c26e124e-f6b4-4488-a167-3af4718eef69	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230402	11:59:59	a100df14-32f9-4637-b22a-f0ed91414342	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230402	11:59:59	f0f01874-21ec-424f-a22d-ddd2ba3f86ba	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230402	12:01:08	cdc810a8-a140-4f91-8dfa-d3096621a884	TypeError: users.some is not a function	POST	/login	undefined
+20230402	12:01:08	50610526-ee5b-4250-97d0-b68c85b2727c	TypeError: users.some is not a function	POST	/login	undefined
+20230402	12:01:08	27a4d636-4dbd-452a-9692-32345bab0a7d	TypeError: users.some is not a function	POST	/register	undefined
+20230402	12:01:08	871d6e37-7282-4772-b667-6c1c19fced03	TypeError: users.some is not a function	POST	/register	undefined
+20230402	12:01:09	351b8154-db4d-4c76-b8fc-517807ed6015	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230402	12:01:09	643460a3-4090-4440-b3d9-bda51fc6a5f4	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230402	12:01:09	9eb4a257-8520-4b3a-8e65-c3cef3b1281a	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230402	12:01:09	a740c69e-2b7a-4971-8718-18f8b3ce1729	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230402	12:01:37	287d3792-496e-4588-9258-a0b377327c41	TypeError: users.some is not a function	POST	/login	undefined
+20230402	12:01:37	0669964d-197f-4f55-b7b1-d983e2fb83be	TypeError: users.some is not a function	POST	/register	undefined
+20230402	12:01:37	37b1b59b-8772-4370-ae43-54eae3db248a	TypeError: users.some is not a function	POST	/login	undefined
+20230402	12:01:37	6c2a6081-2bc6-4bc1-97a7-24b1f2f9c8a4	TypeError: users.some is not a function	POST	/register	undefined
+20230402	12:01:37	9d8c1b6b-6c5d-4ce8-b0a6-40c880ce019e	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230402	12:01:37	5c548a2b-e323-4d7f-b965-7421b70a822e	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230402	12:01:37	aba5451d-c071-4984-a564-72d40754c803	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230402	12:01:37	60c7fa7a-c591-4086-bbff-43463c017565	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230402	12:04:02	76923329-9d84-483d-b093-39f40ed40209	TypeError: users.some is not a function	POST	/register	undefined
+20230402	12:04:02	40f16e63-e1db-42de-b23c-ca52978cd421	TypeError: users.some is not a function	POST	/login	undefined
+20230402	12:04:02	7e771266-7e76-4ac9-b64e-0918129cad8c	TypeError: users.some is not a function	POST	/login	undefined
+20230402	12:04:02	3cd6fae5-748b-4b7c-a4d0-b8ddf082920b	TypeError: users.some is not a function	POST	/register	undefined
+20230402	12:04:02	ed92c1d7-767d-455f-b553-edaa1150c70e	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230402	12:04:02	76368b21-c9d3-4b51-a92a-c840fc778630	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230402	12:04:02	f1c22b9c-46f1-4eb3-93fd-c2093d004175	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230402	12:04:02	0f2429c2-44a2-47bc-92a9-9d1b66c2bfdf	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230402	12:04:55	d7efb070-42f9-4747-a5c2-d0bd1c4f7b6d	TypeError: users.some is not a function	POST	/register	undefined
+20230402	12:04:55	4e04e49e-6a18-412e-b78c-54cc154f067a	TypeError: users.some is not a function	POST	/login	undefined
+20230402	12:04:55	b3f991e1-9101-45e1-98b0-cb5f38c7c2ff	TypeError: users.some is not a function	POST	/register	undefined
+20230402	12:04:55	48136208-4ddc-48fe-a9f1-ab73c3c15838	TypeError: users.some is not a function	POST	/login	undefined
+20230402	12:04:55	fd43c673-e16b-40e3-881f-43483cfbd8ea	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230402	12:04:55	16a552e7-c016-497b-87d0-48abb11cb1c7	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230402	12:04:55	a2005fe6-0b99-44cf-9381-d069b37259a4	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230402	12:04:55	93f4bdb1-6f7f-4208-8766-f6ca2ed3e8ff	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230402	12:04:56	5645222a-93a6-47f0-8cfe-83dc2c852db1	CastError: Cast to ObjectId failed for value "6428862f5e4783a6c7e04f" (type string) at path "_id" for model "UserCredentials"	PATCH	/users	undefined
+20230402	12:05:37	b217c1a6-3073-46f8-acdd-326f429d1e74	TypeError: users.some is not a function	POST	/register	undefined
+20230402	12:05:37	e41efe44-3fb3-44ba-846e-815a490ede4d	TypeError: users.some is not a function	POST	/login	undefined
+20230402	12:05:37	858e4ab5-b417-4bb6-9773-8a6785f936f4	TypeError: users.some is not a function	POST	/login	undefined
+20230402	12:05:37	3aae8388-787a-462f-a716-6f8e9029fe8e	TypeError: users.some is not a function	POST	/register	undefined
+20230402	12:05:37	536fd8bb-e5ed-44fb-8485-0dec9dc8361d	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230402	12:05:37	e2df661d-0596-44d6-b65c-431be36ecff7	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230402	12:05:37	554e79fd-9a90-46f8-b014-af8f01b754a4	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230402	12:05:37	b897dead-9b32-42d3-bb21-d5f8da562b29	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230402	12:06:43	3e2bb0e7-e25d-41ad-970a-8cf0c14a5442	TypeError: users.some is not a function	POST	/register	undefined
+20230402	12:06:43	4264c4c0-8dd9-44aa-b320-46fe958953d1	TypeError: users.some is not a function	POST	/login	undefined
+20230402	12:06:43	b21f9a3d-f1bb-4d5c-ba82-54c3ce0d1d28	TypeError: users.some is not a function	POST	/login	undefined
+20230402	12:06:43	6180b64e-191a-473a-9e4a-7620b9c75a1c	TypeError: users.some is not a function	POST	/register	undefined
+20230402	12:06:43	487769dd-0812-4a28-b78a-8e1ee8e34c39	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230402	12:06:43	e8be660b-7304-40bf-aa87-a4a25cb823d6	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230402	12:06:43	d5935f07-129d-4855-8e3f-c92b44b326db	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230402	12:06:43	7c2f1d64-5348-40fa-a5cc-560414edc650	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230402	12:06:47	61dc2e16-4da7-4a1b-bfe1-d29028857fcc	CastError: Cast to ObjectId failed for value "642" (type string) at path "_id" for model "UserCredentials"	PATCH	/users	undefined
+20230402	12:07:01	f9335b88-691a-406b-aba0-076a3498f863	TypeError: users.some is not a function	POST	/register	undefined
+20230402	12:07:01	007db37f-cb5f-4a1f-a2e4-ee8c6a2435c7	TypeError: users.some is not a function	POST	/login	undefined
+20230402	12:07:01	7afde21b-0d5a-42af-8d42-59f0bed696d1	TypeError: users.some is not a function	POST	/login	undefined
+20230402	12:07:01	f8e25771-58ec-49bd-bde4-ad6e73345348	TypeError: users.some is not a function	POST	/register	undefined
+20230402	12:07:02	da678d12-0379-4984-a1e4-58dcb7dc4265	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230402	12:07:02	2c035062-95c1-45d3-beec-2a12ba655a70	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230402	12:07:02	6f81aa10-5878-4c3b-a70a-eebf44091cd6	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230402	12:07:02	79d4a75d-9e67-4b2d-ae68-90a7b5075247	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230402	12:07:03	19d15ace-95e3-47f3-aff4-da133a8016ad	CastError: Cast to ObjectId failed for value "642" (type string) at path "_id" for model "UserCredentials"	PATCH	/users	undefined
+20230402	12:07:40	ee0e1b3c-7974-4efa-bce5-c06cad71bab6	TypeError: users.some is not a function	POST	/login	undefined
+20230402	12:07:40	eb91d5ae-d750-444f-9cff-3268691d3da6	TypeError: users.some is not a function	POST	/login	undefined
+20230402	12:07:40	599b96fd-3433-47a4-a7a1-f943e6f98138	TypeError: users.some is not a function	POST	/register	undefined
+20230402	12:07:40	b8d90609-1341-4313-bdee-934c8bf26b2d	TypeError: users.some is not a function	POST	/register	undefined
+20230402	12:07:40	39e426e4-45c0-4361-a4c6-41a81c1dbed5	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230402	12:07:40	ec56e0aa-413a-47ee-9877-f5e78b3f51f0	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230402	12:07:40	3bb8195e-1d64-462c-a1e7-3526cebc18b6	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230402	12:07:40	22fcee68-0035-4a6d-ad6c-620637b24397	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230402	12:08:46	2f18a898-502b-4b18-8fdc-3a9c4f93fce4	TypeError: users.some is not a function	POST	/register	undefined
+20230402	12:08:46	c3e1a10b-5a89-4418-88ac-9b3dba085799	TypeError: users.some is not a function	POST	/register	undefined
+20230402	12:08:46	822e24ea-284b-430b-8571-06d07035d72c	TypeError: users.some is not a function	POST	/login	undefined
+20230402	12:08:46	fc9be49b-fc36-4631-9c3b-6ab820a0e4f6	TypeError: users.some is not a function	POST	/login	undefined
+20230402	12:08:46	888b332c-40d9-40a7-99db-a8824e511a18	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230402	12:08:46	a513f04f-b673-446c-b013-6bc144cf18ed	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230402	12:08:46	961b5db9-c541-451b-80f6-8317c39f2f5b	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230402	12:08:46	295c1c77-199e-45b3-8af4-95c9e6ee7951	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230402	12:09:00	2e9d0189-0bd2-4033-bf24-bf159a537dc8	TypeError: users.some is not a function	POST	/login	undefined
+20230402	12:09:00	9e404e1b-75de-4721-bd55-c01e768dc5e6	TypeError: users.some is not a function	POST	/register	undefined
+20230402	12:09:00	c2bc5c0d-f596-45e1-bfe8-a5deb82bdd8b	TypeError: users.some is not a function	POST	/login	undefined
+20230402	12:09:00	2022f997-526c-40ab-9496-e98267899f9d	TypeError: users.some is not a function	POST	/register	undefined
+20230402	12:09:01	0a375e6a-446d-4bc9-aba2-f90f00379843	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230402	12:09:01	23107652-9a51-42eb-bc3f-8e86871aa707	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230402	12:09:01	16181ce3-830f-4a20-a3ae-a51fd9b15898	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230402	12:09:01	45f12d79-6aab-45ee-807a-de03bf48ea51	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230402	12:09:02	a9718d21-80c4-40d9-903a-6d0c7dc86f70	CastError: Cast to ObjectId failed for value "1" (type string) at path "_id" for model "UserCredentials"	PATCH	/users	undefined
+20230402	12:10:03	c0be6ec1-83e0-492a-a82a-80ee2f1ddfce	TypeError: users.some is not a function	POST	/login	undefined
+20230402	12:10:03	267297ec-7e8f-4718-b179-70326f31fa04	TypeError: users.some is not a function	POST	/register	undefined
+20230402	12:10:03	af1de6ae-9d64-49c9-a7e6-f4532d8de03a	TypeError: users.some is not a function	POST	/login	undefined
+20230402	12:10:03	038ea60b-ea08-4865-a859-7e5d6e08c9fc	TypeError: users.some is not a function	POST	/register	undefined
+20230402	12:10:03	f35517ab-9f7a-4149-8353-df121c30da16	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230402	12:10:03	806044fd-6d62-49a2-9d50-ebee1ff2e99c	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230402	12:10:03	2c6c4c41-09ec-4231-ac67-e7b87f6ad178	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230402	12:10:03	e86f2e2d-cdc6-4161-8f64-ba27fd8ef0a5	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230402	12:10:29	96f628e1-f4aa-4d66-a2d7-ce883406e686	TypeError: users.some is not a function	POST	/register	undefined
+20230402	12:10:29	8075d887-235c-403c-8957-9139c1ea3f76	TypeError: users.some is not a function	POST	/login	undefined
+20230402	12:10:29	62731257-c024-4c65-a9de-7de8d3a779ee	TypeError: users.some is not a function	POST	/login	undefined
+20230402	12:10:29	fbe094d0-ba52-47f8-a2c5-7a04899fea51	TypeError: users.some is not a function	POST	/register	undefined
+20230402	12:10:29	d47c9cdb-59b6-491b-acde-423a63f90ca3	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230402	12:10:29	cb9ea9af-d84a-4597-a9a5-206b80823caf	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230402	12:10:29	d0318e39-bf05-4369-af71-f1e97e47c72c	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230402	12:10:29	9b62cf3f-87ba-4027-b96b-e3bb177aca19	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230402	12:12:36	3764de34-5d52-4352-839c-8c47a014da35	TypeError: users.some is not a function	POST	/login	undefined
+20230402	12:12:36	0a7dc618-e457-4ee1-81ad-3b2e361d6637	TypeError: users.some is not a function	POST	/register	undefined
+20230402	12:12:36	332d8244-9876-44df-a793-241d859612b1	TypeError: users.some is not a function	POST	/login	undefined
+20230402	12:12:36	49e7d823-feeb-43bb-bacf-b14d634efb0a	TypeError: users.some is not a function	POST	/register	undefined
+20230402	12:12:36	2e56112c-a316-49e6-9313-e6ee4faa8f23	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230402	12:12:36	e07b74f4-d470-4251-b3d4-92abc6a4d4a3	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230402	12:12:36	3a05113a-c6e5-45e3-8493-e31a5564cc01	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230402	12:12:36	fa1ad149-c5ed-4132-92b5-facf4501e4c9	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230402	12:14:51	562a985e-2ad8-4d06-ac76-9ea19510d79d	TypeError: users.some is not a function	POST	/register	undefined
+20230402	12:14:51	cd1e8e38-92ec-46db-a5fb-7849eb8f6d9c	TypeError: users.some is not a function	POST	/login	undefined
+20230402	12:14:51	97d64fa7-e758-4e29-93df-e6eca6f8be5d	TypeError: users.some is not a function	POST	/login	undefined
+20230402	12:14:51	048f878a-ee62-409f-ad99-5f9141ab4520	TypeError: users.some is not a function	POST	/register	undefined
+20230402	12:14:51	e74598c9-669b-4f37-94bb-62ac732ad0a5	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230402	12:14:51	04fc12cf-25bb-41a7-9994-96e0fc7ac22a	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230402	12:14:51	5b117ebb-303e-4130-8e89-88ba3cf676ad	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230402	12:14:51	e1204770-defe-48be-b116-e81d4db54700	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230402	12:14:53	8ef2b18f-ee27-43b7-961a-a1ef9363113b	CastError: Cast to ObjectId failed for value "6429b4d5" (type string) at path "_id" for model "UserCredentials"	DELETE	/users	undefined
+20230402	12:15:59	d92955c8-93a0-412f-ad4f-7fd2b8e3396d	TypeError: users.some is not a function	POST	/register	undefined
+20230402	12:15:59	ca77fccd-9f17-4b6a-be77-33510547f024	TypeError: users.some is not a function	POST	/login	undefined
+20230402	12:15:59	f15d4cb1-66fb-4084-8b6e-e8a5bb12984b	TypeError: users.some is not a function	POST	/register	undefined
+20230402	12:15:59	33b505d3-89f6-4f0a-990b-935ca77caf11	TypeError: users.some is not a function	POST	/login	undefined
+20230402	12:15:59	aed5da16-c75b-4ba9-b5b3-53d071fb78bc	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230402	12:15:59	777c917c-263a-4064-a4c9-d51ca099f650	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230402	12:15:59	130eb20b-ae2f-442e-8532-a8154eb8097a	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230402	12:15:59	c02ca711-acab-44c1-be68-5169c713ca66	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230402	12:16:00	180ef1d1-a485-4fd0-9f81-cae195684957	CastError: Cast to ObjectId failed for value "6429b4d5" (type string) at path "_id" for model "UserCredentials"	DELETE	/users	undefined
+20230402	12:16:50	204ec638-8ad5-4221-a5a6-ed76c658852d	TypeError: users.some is not a function	POST	/login	undefined
+20230402	12:16:50	c3b64fc6-4474-4a35-b31d-abff0cda6d09	TypeError: users.some is not a function	POST	/login	undefined
+20230402	12:16:50	02c926c8-2dea-4c7a-bc87-a56438d6be50	TypeError: users.some is not a function	POST	/register	undefined
+20230402	12:16:50	56d50705-6132-40ca-b090-9823b034d499	TypeError: users.some is not a function	POST	/register	undefined
+20230402	12:16:50	83f7a862-6cfb-462f-af2a-05f682653de7	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230402	12:16:50	555ffe5b-a216-4f70-8af6-7ffde69f59ab	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230402	12:16:50	40451359-5756-4d08-85d1-4bea21ca742b	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230402	12:16:50	9b1a09ae-55b6-440e-b818-00c697ba55b8	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230402	12:16:51	0108df02-a3e5-4808-bd34-02bd34f81951	CastError: Cast to ObjectId failed for value "6429b4d5" (type string) at path "_id" for model "UserCredentials"	DELETE	/users	undefined
+20230402	12:18:36	eff30691-7831-497a-8e5e-6c3e85d1767e	TypeError: users.some is not a function	POST	/register	undefined
+20230402	12:18:36	6a0dd7ac-98f5-4d9f-8e3e-608877288c92	TypeError: users.some is not a function	POST	/login	undefined
+20230402	12:18:36	6a00b7b0-ab9e-482a-914c-ce75fbdd816f	TypeError: users.some is not a function	POST	/login	undefined
+20230402	12:18:36	774afd8c-97a0-45fe-a429-f88b7929f78f	TypeError: users.some is not a function	POST	/register	undefined
+20230402	12:18:37	8b4fd00f-1c3a-440e-92b9-01129e969acb	TypeError: quotes.filter is not a function	GET	/quotehistory/1	undefined
+20230402	12:18:37	37f41c66-87ca-4417-b009-91182acd6fd9	MongooseError: Model.find() no longer accepts a callback	GET	/quoteform/1	undefined
+20230402	12:18:37	cf3e762c-f205-4c43-a10b-8793744391d2	TypeError: quotes.filter is not a function	GET	/quotehistory/2	undefined
+20230402	12:18:37	287cab02-be1f-4fc3-81cc-08c22be247d5	TypeError: quotes.push is not a function	POST	/quoteform/1	undefined
+20230402	12:18:38	b52bb057-c8e9-4764-9868-25a9cf93a8f3	TypeError: Cannot read properties of null (reading 'username')	GET	/clients	undefined
+20230402	12:18:38	5b418980-3286-4edb-ad17-43b4be7ab606	CastError: Cast to ObjectId failed for value "6429b4d5" (type string) at path "_id" for model "UserCredentials"	DELETE	/users	undefined
