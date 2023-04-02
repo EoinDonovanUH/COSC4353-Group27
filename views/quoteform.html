@@ -1,0 +1,66 @@
+<!-- - Gallons Requested (numeric, required)
+
+	- Delivery Address (Non-editable, comes from client profile)
+
+	- Delivery Date (Calender, date picker)
+
+	- Suggested Price / gallon (numeric non-editable, price will be calculated 
+        by Pricing Module - we are not building pricing module yet)
+
+	- Total Amount Due (numeric non-editable, calculated (gallons * price)) -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <div id="wrapper">
+    <head>
+      <meta charset="UTF-8" />
+      <link rel="stylesheet" href="../public/css/style.css" />
+      <header><title>Quote Form</title></header>
+      <img
+        src="/img/fuel-pump.png"
+        alt="fuel"
+        width="175"
+        height="100"
+        id="truck"
+      />
+    </head>
+    <body>
+      <main>
+        <h1>Fuel Quote Form</h1>
+        <fieldset>
+          <form method="post">
+            <p>
+              <label for="galsReqd"><b>Gallons Requested:</b> </label>
+              <input
+                type="number"
+                name="gallons"
+                id="galsReqd"
+                max="11,000"
+                min="2500"
+                required
+              />
+              <label for="delivDate"><b>Delivery Date:</b></label>
+              <input
+                type="date"
+                name="date"
+                id="delivDate"
+                min="2023-2-22"
+                max="2023-12-31"
+                required
+              />
+            </p>
+            <p class="button">
+              <input type="submit" value="Submit" id="hoverYes" />
+            </p>
+          </form>
+        </fieldset>
+        <p><br /></p>
+        <fieldset>
+          <p><b id="address">Address: output here</b></p>
+          <p><b>Suggested price:</b></p>
+          <p><b>Total:</b></p>
+        </fieldset>
+      </main>
+    </body>
+  </div>
+</html>
