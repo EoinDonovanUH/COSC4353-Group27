@@ -1,6 +1,7 @@
 const ClientInformation = require("../models/ClientInformation");
 const FuelQuote = require("../models/FuelQuote");
 const asyncHandler = require("express-async-handler");
+const Pricing = require("../modules/Pricing");
 
 // TODO use models/Pricing.js to get suggested_price, total_amount_due
 
@@ -31,9 +32,12 @@ const createNewFuelQuote = asyncHandler(async (req, res) => {
     // HTTP status 400 = bad request
     return res.status(400).json({ message: "All fields are required" });
   }
- 
+
   // TODO implement price module
-  let suggested_price = 2.89;
+  history = true
+  const pricingModuleObject = new Pricing(_state, history, gallons_requested);
+  let suggested_price = pricingModuleObject.get_suggested_price();
+  // let suggested_price = 2.89;
 
   let total_amount_due = gallons_requested * suggested_price;
 
@@ -55,16 +59,21 @@ const createNewFuelQuote = asyncHandler(async (req, res) => {
   // quote.save()
   if (quote) {
     // HTTP status 201 = created
-    res.status(201).json({ message: "New quote created", _sP: quote.suggested_price, _tA: quote.total_amount_due });
+    res
+      .status(201)
+      .json({
+        message: "New quote created",
+        _sP: quote.suggested_price,
+        _tA: quote.total_amount_due,
+      });
   } else {
     // HTTP status 400 = bad request
     res.status(400).json({ message: "Invalid quote data received" });
   }
 });
 
-const getHistory = asyncHandler(async(req, res) => {
-  const { user_credentials } = req.body
-
+const getHistory = asyncHandler(async (req, res) => {
+  const { user_credentials } = req.body;
 });
 
 module.exports = { createNewFuelQuote, getHistory };

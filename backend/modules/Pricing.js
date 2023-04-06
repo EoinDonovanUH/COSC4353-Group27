@@ -2,6 +2,7 @@ const fuelQuoteHistoryController = require("../controllers/fuelQuoteHistoryContr
 class Pricing {
   #currentPricePerGallon;
   #locationFactor;
+  #rateHistoryFactor;
   #companyProfitFactor;
   #gallonsRequestedFactor;
   #margin;
@@ -22,7 +23,7 @@ class Pricing {
         this.#gallonsRequestedFactor +
         this.#companyProfitFactor);
 
-    this.#suggestedPrice = this.#currentPricePerGallon = this.#margin;
+    this.#suggestedPrice = this.#currentPricePerGallon + this.#margin;
   }
   get_suggested_price() {
     return this.#suggestedPrice;
