@@ -1,6 +1,6 @@
-const mongoose = require("mongoose");
+const mongoose = require("mongoose")
 
-const fuelQutoeSchema = mongoose.Schema({
+const fuelQuoteSchema = mongoose.Schema({
   user_credentials: {
     type: mongoose.Schema.Types.ObjectId,
     required: true,
@@ -49,6 +49,6 @@ const fuelQutoeSchema = mongoose.Schema({
     type: Number,
     required: true,
   },
-});
+})
 
-module.exports = mongoose.model("FuelQuote", fuelQutoeSchema)
+module.exports = mongoose.model("FuelQuote", fuelQuoteSchema)
