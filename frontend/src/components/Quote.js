@@ -1,13 +1,14 @@
-function Quote({
-  gallons_requested,
-  delivery_date,
-  address1,
-  city,
-  _state,
-  zipcode,
-  suggested_price,
-  total_amount_due,
-}) {
+function Quote({ quoteProps }) {
+  const {
+    gallons_requested,
+    address1,
+    city,
+    _state,
+    zipcode,
+    delivery_date,
+    suggested_price,
+    total_amount_due,
+  } = quoteProps
   return (
     <tr className="row">
       <td>{gallons_requested}</td>

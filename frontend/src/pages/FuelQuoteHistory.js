@@ -1,8 +1,39 @@
-import { useSelector } from "react-redux"
+import { useEffect } from "react"
+import { useSelector, useDispatch } from "react-redux"
 import Quote from "../components/Quote"
+import { setQuotes } from "../redux/features/fuelQuote"
 
 const FuelQuoteHistory = () => {
+  const userId = useSelector((state) => state.user.userId)
   const fuelQuotes = useSelector((state) => state.fuelQuotes.quotes)
+
+  const dispatch = useDispatch()
+
+  useEffect(() => {
+    const getQuotes = async () => {
+      try {
+        const response = await fetch(
+          "http://localhost:3500/fuel-quote-history",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ user_credentials: userId }),
+          }
+        )
+        const { message, history } = await response.json()
+        if (response.status === 200 || response.status === 201) {
+          dispatch(setQuotes(history))
+        } else alert(message)
+      } catch (error) {
+        console.error(error)
+        alert("Unable to complete request")
+      }
+    }
+    getQuotes()
+    return () => dispatch(setQuotes([]))
+  }, [dispatch, userId])
 
   return (
     <div className="center">
@@ -18,19 +49,15 @@ const FuelQuoteHistory = () => {
           </tr>
         </thead>
         <tbody>
-          {fuelQuotes.map((quote) => (
-            <Quote
-              key={quote._id}
-              gallons_requested={quote.gallons_requested}
-              delivery_date={quote.delivery_date}
-              address1={quote.address1}
-              city={quote.city}
-              _state={quote._state}
-              zipcode={quote.zipcode}
-              suggested_price={quote.suggested_price}
-              total_amount_due={quote.total_amount_due}
-            />
-          ))}
+          {!fuelQuotes.length ? (
+            <tr>
+              <td>empty</td>
+            </tr>
+          ) : (
+            fuelQuotes.map(({ _id, ...rest }) => (
+              <Quote key={_id} quoteProps={rest} />
+            ))
+          )}
         </tbody>
       </table>
     </div>
