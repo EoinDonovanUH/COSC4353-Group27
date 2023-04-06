@@ -1,5 +1,4 @@
-const mongoose = require("mongoose");
-
+const fuelQuoteHistoryController = require("../controllers/fuelQuoteHistoryController");
 class Pricing {
   #currentPricePerGallon;
   #locationFactor;
@@ -8,12 +7,11 @@ class Pricing {
   #margin;
   #suggestedPrice;
 
-  constructor(_stateCode, _gallonsRequested) {
+  constructor(_stateCode, _history, _gallonsRequested) {
     this.#currentPricePerGallon = 1.5;
 
     this.#locationFactor = _stateCode === "TX" ? 0.02 : 0.04;
-    // TODO call history to check if any rows
-    this.#rateHistoryFactor; // = history ? 0.01 : 0;
+    this.#rateHistoryFactor = _history ? 0.01 : 0;
     this.#companyProfitFactor = 0.1;
     this.#gallonsRequestedFactor = _gallonsRequested >= 1000 ? 0.02 : 0.03;
 
@@ -30,3 +28,5 @@ class Pricing {
     return this.#suggestedPrice;
   }
 }
+
+module.exports = Pricing;
