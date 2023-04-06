@@ -1,15 +1,32 @@
-const mongoose = require('mongoose')
+const mongoose = require("mongoose");
 
 class Pricing {
-    //placeholder values for the pricing module to calculate a price to return.
-    constructor(distance,fuelPrice,gallonsRec)
-    {
-        /*
-        set varibales here for cost calcualtion
-        use APIs to set variables for price calculation
-        */
-    }
-    calcCost(){
-        //using user input calculate and return price to be charged
-    }
+  #currentPricePerGallon;
+  #locationFactor;
+  #companyProfitFactor;
+  #gallonsRequestedFactor;
+  #margin;
+  #suggestedPrice;
+
+  constructor(_stateCode, _gallonsRequested) {
+    this.#currentPricePerGallon = 1.5;
+
+    this.#locationFactor = _stateCode === "TX" ? 0.02 : 0.04;
+    // TODO call history to check if any rows
+    this.#rateHistoryFactor; // = history ? 0.01 : 0;
+    this.#companyProfitFactor = 0.1;
+    this.#gallonsRequestedFactor = _gallonsRequested >= 1000 ? 0.02 : 0.03;
+
+    this.#margin =
+      this.#currentPricePerGallon *
+      (this.#locationFactor -
+        this.#rateHistoryFactor +
+        this.#gallonsRequestedFactor +
+        this.#companyProfitFactor);
+
+    this.#suggestedPrice = this.#currentPricePerGallon = this.#margin;
+  }
+  get_suggested_price() {
+    return this.#suggestedPrice;
+  }
 }
