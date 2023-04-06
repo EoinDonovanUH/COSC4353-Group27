@@ -1,22 +1,20 @@
-import React from "react";
-import { useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
+import React from "react"
+import { useSelector } from "react-redux"
+import { useNavigate } from "react-router-dom"
 
 const NewFuelQuote = () => {
-  
-  const navigate = useNavigate();
+  const navigate = useNavigate()
 
-  const id = useSelector((state) => state.user.userId);
+  const id = useSelector((state) => state.user.userId)
   const { address1, address2, city, stateCode, zipcode } = useSelector(
     (state) => state.client
-  );
+  )
 
   async function handleOnSubmit(e) {
-    
-    e.preventDefault();
-    
+    e.preventDefault()
+
     // console.log(document.getElementById("delivDate").value);
-    
+
     const formData = {
       user_credentials: id,
       gallons_requested: document.getElementById("galsReqd").value,
@@ -26,7 +24,7 @@ const NewFuelQuote = () => {
       city: city,
       _state: stateCode,
       zipcode: zipcode,
-    };
+    }
     try {
       const response = await fetch("http://localhost:3500/new-fuel-quote", {
         method: "POST",
@@ -34,15 +32,16 @@ const NewFuelQuote = () => {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(formData),
-      });
-      const { message, suggested_price, total_amount_due } = await response.json();
+      })
+      const { message, suggested_price, total_amount_due } =
+        await response.json()
 
       if (response.status === 200 || response.status === 201) {
         navigate("/user/fuel-quote-history")
-      } else alert(message);
+      } else alert(message)
     } catch (error) {
-      console.error(error);
-      alert("Unable to complete request");
+      console.error(error)
+      alert("Unable to complete request")
     }
   }
 
@@ -52,16 +51,11 @@ const NewFuelQuote = () => {
       <fieldset>
         <form onSubmit={handleOnSubmit}>
           <p>
-            <label for="galsReqd">
+            <label htmlFor="galsReqd">
               <b>Gallons Requested:</b>{" "}
             </label>
-            <input
-              type="number"
-              name="gallons"
-              id="galsReqd"
-              required
-            />
-            <label for="delivDate">
+            <input type="number" name="gallons" id="galsReqd" required />
+            <label htmlFor="delivDate">
               <b>Delivery Date:</b>
             </label>
             <input
@@ -97,7 +91,7 @@ const NewFuelQuote = () => {
         </p>
       </fieldset>
     </div>
-  );
-};
+  )
+}
 
-export default NewFuelQuote;
+export default NewFuelQuote

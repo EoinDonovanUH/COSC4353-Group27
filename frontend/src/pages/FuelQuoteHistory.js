@@ -1,29 +1,8 @@
-import React from "react";
-import { useSelector } from "react-redux";
+import { useSelector } from "react-redux"
+import Quote from "../components/Quote"
 
 const FuelQuoteHistory = () => {
-  const id = useSelector((state) => state.user.userId);
-  const formData = { user_credentials: id };
-
-  // try {
-  //   const response = await fetch("http://localhost:3500/fuel-quote-history", {
-  //     method: "GET",
-  //     headers: {
-  //       "Content-Type": "application/json",
-  //     },
-  //     body: JSON.stringify(formData),
-  //   });
-  //   const { message, history } = await response.json();
-
-  //   if (response.status === 200 || response.status === 201) {
-  //   } else alert(message);
-  // } catch (error) {
-  //   console.error(error);
-  //   alert("Unable to complete request");
-  // }
-
-  // const historyList = history.value
-  // const listQuotes = history.map(history => <li>{history}</li>)
+  const fuelQuotes = useSelector((state) => state.fuelQuotes.quotes)
 
   return (
     <div className="center">
@@ -35,16 +14,27 @@ const FuelQuoteHistory = () => {
             <th>Delivery Address</th>
             <th>Delivery Date</th>
             <th>Suggested Price per Gallon</th>
+            <th>Total Amount Due</th>
           </tr>
         </thead>
         <tbody>
-          <tr className="row">
-            <td>{}</td>
-          </tr>
+          {fuelQuotes.map((quote) => (
+            <Quote
+              key={quote._id}
+              gallons_requested={quote.gallons_requested}
+              delivery_date={quote.delivery_date}
+              address1={quote.address1}
+              city={quote.city}
+              _state={quote._state}
+              zipcode={quote.zipcode}
+              suggested_price={quote.suggested_price}
+              total_amount_due={quote.total_amount_due}
+            />
+          ))}
         </tbody>
       </table>
     </div>
-  );
-};
+  )
+}
 
-export default FuelQuoteHistory;
+export default FuelQuoteHistory

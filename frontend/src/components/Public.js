@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
-
-import React from "react";
+import React from "react"
+import { NavLink } from "react-router-dom"
+import { activeLink } from "../App"
 
 const Public = () => {
   const content = (
@@ -16,11 +16,13 @@ const Public = () => {
         <p>Owner: Group 27</p>
       </main>
       <footer>
-        <Link to="/login">Login</Link>
+        <NavLink to="/login" className={activeLink}>
+          Login
+        </NavLink>
       </footer>
     </section>
-  );
-  return content;
-};
+  )
+  return content
+}
 
-export default Public;
+export default Public

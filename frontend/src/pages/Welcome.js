@@ -1,9 +1,10 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { useSelector } from "react-redux";
+import React from "react"
+import { NavLink } from "react-router-dom"
+import { useSelector } from "react-redux"
+import { activeLink } from "../App"
 
 const Welcome = () => {
-  const name = useSelector((state) => state.user.userName);
+  const name = useSelector((state) => state.user.userName)
 
   const content = (
     <section className="public">
@@ -19,17 +20,22 @@ const Welcome = () => {
       </main>
       <footer>
         {name ? (
-          <Link to="/logout">Logout</Link>
+          <NavLink to="logout" className={activeLink}>
+            Logout
+          </NavLink>
         ) : (
-          <Link to="/login">Login</Link>
+          <NavLink to="login" className={activeLink}>
+            Login
+          </NavLink>
         )}
-
         <br />
-        <Link to="/register">Register</Link>
+        <NavLink to="register" className={activeLink}>
+          Register
+        </NavLink>
       </footer>
     </section>
-  );
-  return content;
-};
+  )
+  return content
+}
 
-export default Welcome;
+export default Welcome

@@ -1,4 +1,4 @@
-body{
+body {
   --color-primary: #009579;
   --color-primary-dark: #007f67;
   --color-secondary: #252c6a;
@@ -16,7 +16,7 @@ body{
   justify-content: center;
 }
 
-.container{
+.container {
   width: 400px;
   max-width: 400px;
   margin: 1rem;
@@ -28,42 +28,41 @@ body{
 
 .container,
 .form__input,
-.form_button{
+.form_button {
   font-size: 20px;
   font-family: "Arial", "Sans-serif";
 }
 
-.form > *:first-child{
+.form > *:first-child {
   margin-top: 0;
 }
 
-.form > *:last-child{
+.form > *:last-child {
   margin-bottom: 0;
 }
 
-.form__title{
+.form__title {
   margin-bottom: 2rem;
   text-align: center;
 }
 
-.form__message{
+.form__message {
   text-align: center;
   margin-bottom: 1rem;
-
 }
 
-.form__message--succes{
+.form__message--succes {
   color: var(--color-success);
 }
 
-.form__message--error{
+.form__message--error {
   color: var(--color-error);
 }
-.form__input-group{
+.form__input-group {
   margin-bottom: 1rem;
 }
 
-.form__input{
+.form__input {
   display: block;
   width: 100%;
   padding: 0.75rem;
@@ -72,26 +71,26 @@ body{
   border: 1px solid #dddddd;
   outline: none;
   background: #eeeeee;
-  transition: background 0.2s,border-color 0.2s;
+  transition: background 0.2s, border-color 0.2s;
 }
 
-.form__input:focus{
+.form__input:focus {
   border-color: var(--color-primary);
   background: #ffffff;
 }
 
-.form__input--error{
+.form__input--error {
   color: var(--color-error);
   border-color: var(--color-error);
 }
 
-.form__input-error-message{
+.form__input-error-message {
   margin-top: 0.5rem;
   font-size: 0.85rem;
   color: var(--color-error);
 }
 
-.form__button{
+.form__button {
   width: 100%;
   padding: 1rem 2rem;
   font-weight: bold;
@@ -104,24 +103,32 @@ body{
   background: var(--color-primary);
 }
 
-.form__button:hover{
+.form__button:hover {
   background: var(--color-primary-dark);
 }
 
-.form__button:active{
+.form__button:active {
   transform: scale(0.98);
 }
 
-.form__text{
+.form__text {
   text-align: center;
 }
 
-.form__link{
+.form__link {
   color: var(--color-secondary);
   text-decoration: none;
   cursor: pointer;
 }
 
-.form__link:hover{
+.form__link:hover {
   text-decoration: underline;
+}
+
+.link {
+  color: #fff;
+}
+
+.link:active {
+  color: var(--color-secondary);
 }

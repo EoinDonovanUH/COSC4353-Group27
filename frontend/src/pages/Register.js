@@ -1,16 +1,18 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
+import React from "react"
+import { useNavigate } from "react-router-dom"
+import { NavLink } from "react-router-dom"
+import { activeLink } from "../App"
 
 const Register = () => {
-  const navigate = useNavigate();
+  const navigate = useNavigate()
 
   async function handleOnSubmit(e) {
-    e.preventDefault();
+    e.preventDefault()
 
     const formData = {
       username: document.getElementById("username_input").value,
       password: document.getElementById("password_input").value,
-    };
+    }
 
     try {
       const response = await fetch("http://localhost:3500/register", {
@@ -19,15 +21,15 @@ const Register = () => {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(formData),
-      });
-      const { message } = await response.json();
+      })
+      const { message } = await response.json()
 
       if (response.status === 200 || response.status === 201) {
-        navigate("/login");
-      } else alert(message);
+        navigate("/login")
+      } else alert(message)
     } catch (error) {
-      console.error(error);
-      alert("Error registering account");
+      console.error(error)
+      alert("Error registering account")
     }
   }
 
@@ -70,16 +72,19 @@ const Register = () => {
         <button className="form__button" type="submit">
           Continue
         </button>
-        <a
-          href="/login"
+        <NavLink to="login" className={activeLink}>
+          Already User? Login
+        </NavLink>
+        {/* <a
+          href="login"
           className="form__text"
           style={{ textAlign: "center", margin: "auto" }}
         >
           Already User? Login
-        </a>
+        </a> */}
       </form>
     </div>
-  );
-};
+  )
+}
 
-export default Register;
+export default Register
