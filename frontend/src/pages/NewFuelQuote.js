@@ -107,7 +107,7 @@ const NewFuelQuote = () => {
             <label htmlFor="galsReqd">
               <b>Gallons Requested:</b>{" "}
             </label>
-            <input type="number" name="gallons" id="galsReqd" required />
+            <input type="number" name="gallons" id="galsReqd" required autoFocus/>
             <label htmlFor="delivDate">
               <b>Delivery Date:</b>
             </label>

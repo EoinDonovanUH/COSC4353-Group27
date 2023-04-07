@@ -1,6 +1,6 @@
-import React from "react"
-import { useSelector, useDispatch, batch } from "react-redux"
-import { useNavigate } from "react-router-dom"
+import React from "react";
+import { useSelector, useDispatch, batch } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import {
   setClientId,
   setFullname,
@@ -9,16 +9,16 @@ import {
   setCity,
   setStateCode,
   setZipCode,
-} from "../redux/features/client"
+} from "../redux/features/client";
 
 const ProfileManagement = () => {
-  const dispatch = useDispatch()
-  const navigate = useNavigate()
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
 
-  const id = useSelector((state) => state.user.userId)
+  const id = useSelector((state) => state.user.userId);
 
   async function handleOnSubmit(e) {
-    e.preventDefault()
+    e.preventDefault();
 
     const formData = {
       user_credentials: id,
@@ -28,7 +28,7 @@ const ProfileManagement = () => {
       city: document.getElementById("city_input").value,
       _state: document.getElementById("stateCode_selection").value,
       zipcode: document.getElementById("zipcode_input").value,
-    }
+    };
     try {
       const response = await fetch("http://localhost:3500/profile-management", {
         // TODO change method depending on client
@@ -38,7 +38,7 @@ const ProfileManagement = () => {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(formData),
-      })
+      });
       const {
         message,
         _uC,
@@ -48,24 +48,24 @@ const ProfileManagement = () => {
         _city,
         __state,
         _zipcode,
-      } = await response.json()
+      } = await response.json();
 
       batch(() => {
-        dispatch(setClientId(_uC))
-        dispatch(setFullname(_fullname))
-        dispatch(setAddress1(_address1))
-        dispatch(setAddress2(_address2))
-        dispatch(setCity(_city))
-        dispatch(setStateCode(__state))
-        dispatch(setZipCode(_zipcode))
-      })
+        dispatch(setClientId(_uC));
+        dispatch(setFullname(_fullname));
+        dispatch(setAddress1(_address1));
+        dispatch(setAddress2(_address2));
+        dispatch(setCity(_city));
+        dispatch(setStateCode(__state));
+        dispatch(setZipCode(_zipcode));
+      });
 
       if (response.status === 200 || response.status === 201) {
-        navigate("/user/new-fuel-quote")
-      } else alert(message)
+        navigate("/user/new-fuel-quote");
+      } else alert(message);
     } catch (error) {
-      console.error(error)
-      alert("Unable to create client")
+      console.error(error);
+      alert("Unable to create client");
     }
   }
 
@@ -184,7 +184,7 @@ const ProfileManagement = () => {
         </button>
       </form>
     </div>
-  )
-}
+  );
+};
 
-export default ProfileManagement
+export default ProfileManagement;

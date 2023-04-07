@@ -101,16 +101,6 @@ const Login = () => {
         <button className="form__button" type="submit">
           Continue
         </button>
-        <NavLink to="register" className={activeLink}>
-          New User? Register
-        </NavLink>
-        {/* <a
-          href="/register"
-          className="form__text"
-          style={{ textAlign: "center", margin: "auto" }}
-        >
-          New User? Register
-        </a> */}
       </form>
     </div>
   )

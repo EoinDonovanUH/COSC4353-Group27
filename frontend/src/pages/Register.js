@@ -1,7 +1,5 @@
 import React from "react"
 import { useNavigate } from "react-router-dom"
-import { NavLink } from "react-router-dom"
-import { activeLink } from "../App"
 
 const Register = () => {
   const navigate = useNavigate()
@@ -60,28 +58,11 @@ const Register = () => {
           <div className="form__input-error-message"></div>
         </div>
         <div className="form__input-group">
-          {/* <input
-            type="password"
-            id="retype_password"
-            className="form__input"
-            autoFocus
-            placeholder="Confirm Password"
-          /> */}
           <div className="form__input-error-message"></div>
         </div>
         <button className="form__button" type="submit">
           Continue
         </button>
-        <NavLink to="login" className={activeLink}>
-          Already User? Login
-        </NavLink>
-        {/* <a
-          href="login"
-          className="form__text"
-          style={{ textAlign: "center", margin: "auto" }}
-        >
-          Already User? Login
-        </a> */}
       </form>
     </div>
   )
