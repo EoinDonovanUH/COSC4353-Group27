@@ -1,5 +1,5 @@
 import React from "react"
-import { useDispatch } from "react-redux"
+import { batch, useDispatch } from "react-redux"
 import { useNavigate, NavLink } from "react-router-dom"
 import { setUserId, setUserName } from "../redux/features/user"
 import {
@@ -9,7 +9,7 @@ import {
   setAddress2,
   setCity,
   setStateCode,
-  setZipcode,
+  setZipCode,
 } from "../redux/features/client"
 import { activeLink } from "../App"
 
@@ -38,19 +38,23 @@ const Login = () => {
 
       // console.log(response)
 
-      dispatch(setUserId(_user_id))
-      dispatch(setUserName(_user_name))
+      batch(() => {
+        dispatch(setUserId(_user_id))
+        dispatch(setUserName(_user_name))
+      })
 
       if (_client_schema) {
         // working, but not setting client slice attributes
 
-        dispatch(setClientId(_client_schema.user_credentials))
-        dispatch(setFullname(_client_schema.fullname))
-        dispatch(setAddress1(_client_schema.address1))
-        dispatch(setAddress2(_client_schema.address2))
-        dispatch(setCity(_client_schema.city))
-        dispatch(setStateCode(_client_schema._state))
-        dispatch(setZipcode(_client_schema.zipcode))
+        batch(() => {
+          dispatch(setClientId(_client_schema.user_credentials))
+          dispatch(setFullname(_client_schema.fullname))
+          dispatch(setAddress1(_client_schema.address1))
+          dispatch(setAddress2(_client_schema.address2))
+          dispatch(setCity(_client_schema.city))
+          dispatch(setStateCode(_client_schema._state))
+          dispatch(setZipCode(_client_schema.zipcode))
+        })
       }
 
       if (response.status === 200 || response.status === 201) {

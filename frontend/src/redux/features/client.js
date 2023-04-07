@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit"
 
 export const clientSlice = createSlice({
   name: "client",
@@ -13,28 +13,28 @@ export const clientSlice = createSlice({
   },
   reducers: {
     setClientId: (state, action) => {
-      state.clientId = action.payload;
+      state.clientId = action.payload
     },
     setFullname: (state, action) => {
-      state.fullname = action.payload;
+      state.fullname = action.payload
     },
     setAddress1: (state, action) => {
-      state.address1 = action.payload;
+      state.address1 = action.payload
     },
     setAddress2: (state, action) => {
-      state.address2 = action.payload;
+      state.address2 = action.payload
     },
     setCity: (state, action) => {
-      state.city = action.payload;
+      state.city = action.payload
     },
     setStateCode: (state, action) => {
-      state.stateCode = action.payload;
+      state.stateCode = action.payload
     },
-    setZipcode: (state, action) => {
-      state.zipcode = action.payload;
+    setZipCode: (state, action) => {
+      state.zipcode = action.payload
     },
   },
-});
+})
 
 // Action creators are generated for each case reducer function
 export const {
@@ -44,7 +44,7 @@ export const {
   setAddress2,
   setCity,
   setStateCode,
-  setZipcode,
-} = clientSlice.actions;
+  setZipCode,
+} = clientSlice.actions
 
-export default clientSlice.reducer;
+export default clientSlice.reducer

@@ -1,5 +1,5 @@
 import React from "react"
-import { useSelector, useDispatch } from "react-redux"
+import { useSelector, useDispatch, batch } from "react-redux"
 import { useNavigate } from "react-router-dom"
 import {
   setClientId,
@@ -8,7 +8,7 @@ import {
   setAddress2,
   setCity,
   setStateCode,
-  setZipcode,
+  setZipCode,
 } from "../redux/features/client"
 
 const ProfileManagement = () => {
@@ -50,13 +50,15 @@ const ProfileManagement = () => {
         _zipcode,
       } = await response.json()
 
-      dispatch(setClientId(_uC))
-      dispatch(setFullname(_fullname))
-      dispatch(setAddress1(_address1))
-      dispatch(setAddress2(_address2))
-      dispatch(setCity(_city))
-      dispatch(setStateCode(__state))
-      dispatch(setZipcode(_zipcode))
+      batch(() => {
+        dispatch(setClientId(_uC))
+        dispatch(setFullname(_fullname))
+        dispatch(setAddress1(_address1))
+        dispatch(setAddress2(_address2))
+        dispatch(setCity(_city))
+        dispatch(setStateCode(__state))
+        dispatch(setZipCode(_zipcode))
+      })
 
       if (response.status === 200 || response.status === 201) {
         navigate("/user/new-fuel-quote")
