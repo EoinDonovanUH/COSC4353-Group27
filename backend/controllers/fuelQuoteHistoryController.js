@@ -2,19 +2,17 @@ const FuelQuote = require("../models/FuelQuote")
 const asyncHandler = require("express-async-handler")
 
 // @desc Get fuel quote history for user
-// @route POST /fuel-quote-history
+// @route GET /fuel-quote-history
 const getFuelQuoteHistory = asyncHandler(async (req, res) => {
-  const { user_credentials } = req.body
+  // const { user_credentials } = req.body
 
-  // confirm data
-  if (!user_credentials) {
-    // HTTP status 400 = bad request
-    return res.status(400)
-  }
+  // // confirm data
+  // if (!user_credentials) {
+  //   // HTTP status 400 = bad request
+  //   return res.status(400)
+  // }
 
-  const history = await FuelQuote.find({
-    user_credentials: user_credentials,
-  }).exec()
+  const history = await FuelQuote.find()
 
   // TODO process/cleanup history before sending to frontend
 

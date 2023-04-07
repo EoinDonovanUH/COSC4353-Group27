@@ -1,39 +1,47 @@
-import { useEffect } from "react"
 import { useSelector, useDispatch } from "react-redux"
 import Quote from "../components/Quote"
 import { setQuotes } from "../redux/features/fuelQuote"
+import { useLoaderData } from "react-router-dom"
 
 const FuelQuoteHistory = () => {
   const userId = useSelector((state) => state.user.userId)
-  const fuelQuotes = useSelector((state) => state.fuelQuotes.quotes)
 
   const dispatch = useDispatch()
 
-  useEffect(() => {
-    const getQuotes = async () => {
-      try {
-        const response = await fetch(
-          "http://localhost:3500/fuel-quote-history",
-          {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify({ user_credentials: userId }),
-          }
-        )
-        const { message, history } = await response.json()
-        if (response.status === 200 || response.status === 201) {
-          dispatch(setQuotes(history))
-        } else alert(message)
-      } catch (error) {
-        console.error(error)
-        alert("Unable to complete request")
-      }
-    }
-    getQuotes()
-    return () => dispatch(setQuotes([]))
-  }, [dispatch, userId])
+  const allQuotes = useLoaderData()
+  const userQuotes = allQuotes.history.filter(
+    (quote) => quote.user_credentials === userId
+  )
+
+  dispatch(setQuotes(userQuotes))
+
+  const fuelQuotes = useSelector((state) => state.fuelQuotes.quotes)
+
+  // useEffect(() => {
+  //   const getQuotes = async () => {
+  //     try {
+  //       const response = await fetch(
+  //         "http://localhost:3500/fuel-quote-history",
+  //         {
+  //           method: "POST",
+  //           headers: {
+  //             "Content-Type": "application/json",
+  //           },
+  //           body: JSON.stringify({ user_credentials: userId }),
+  //         }
+  //       )
+  //       const { message, history } = await response.json()
+  //       if (response.status === 200 || response.status === 201) {
+  //         dispatch(setQuotes(history))
+  //       } else alert(message)
+  //     } catch (error) {
+  //       console.error(error)
+  //       alert("Unable to complete request")
+  //     }
+  //   }
+  //   getQuotes()
+  //   return () => dispatch(setQuotes([]))
+  // }, [dispatch, userId])
 
   return (
     <div className="center">
@@ -49,19 +57,24 @@ const FuelQuoteHistory = () => {
           </tr>
         </thead>
         <tbody>
-          {!fuelQuotes.length ? (
-            <tr>
-              <td>empty</td>
-            </tr>
-          ) : (
-            fuelQuotes.map(({ _id, ...rest }) => (
-              <Quote key={_id} quoteProps={rest} />
-            ))
-          )}
+          {fuelQuotes.map(({ _id, ...rest }) => (
+            <Quote key={_id} quoteProps={rest} />
+          ))}
         </tbody>
       </table>
     </div>
   )
 }
 
+const quoteHistoryLoader = async () => {
+  const response = await fetch("http://localhost:3500/fuel-quote-history", {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json",
+    },
+  })
+  return response.json()
+}
+
+export { quoteHistoryLoader }
 export default FuelQuoteHistory
