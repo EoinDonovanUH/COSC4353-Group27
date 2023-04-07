@@ -71,7 +71,7 @@ const createNewFuelQuote = asyncHandler(async (req, res) => {
 });
 
 // @desc Get new fuel quote
-// GET /new-fuel-quote
+// PUT /new-fuel-quote
 const getNewFuelQuote = asyncHandler(async (req, res) => {
   const { user_credentials, gallons_requested, _state } = req.body;
 
@@ -99,7 +99,7 @@ const getNewFuelQuote = asyncHandler(async (req, res) => {
 
   if (priceData) {
     // HTTP status 200 = OK
-    res.status(201).json({
+    res.status(200).json({
       message: "Here is your free quote! Click submit to save",
       _sP: priceData._suggested_price,
       _tA: priceData._total_amount_due,

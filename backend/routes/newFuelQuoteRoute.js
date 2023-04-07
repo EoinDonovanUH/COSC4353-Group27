@@ -6,6 +6,7 @@ router
   .route("/")
   // HTTP method                                    // CRUD operation
   .post(newFuelQuoteController.createNewFuelQuote)  // create
-  .get(newFuelQuoteController.getNewFuelQuote);     // read (doesn't store in db)
+  .put(newFuelQuoteController.getNewFuelQuote);     // read (doesn't store in db) PUT?
+  // .get(newFuelQuoteController.getNewFuelQuote);     // read (doesn't store in db)
   
 module.exports = router;

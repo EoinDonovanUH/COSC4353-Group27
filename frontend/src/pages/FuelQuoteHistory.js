@@ -15,7 +15,7 @@ const FuelQuoteHistory = () => {
 
   dispatch(setQuotes(userQuotes))
 
-  const fuelQuotes = useSelector((state) => state.fuelQuotes.quotes)
+  const fuelQuotes = useSelector((state) => state.fuelQuote.quotes)
 
   // useEffect(() => {
   //   const getQuotes = async () => {

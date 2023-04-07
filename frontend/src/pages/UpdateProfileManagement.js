@@ -1,6 +1,6 @@
-import React from "react"
-import { useSelector, useDispatch, batch } from "react-redux"
-import { useNavigate } from "react-router-dom"
+import React from "react";
+import { useSelector, useDispatch, batch } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import {
   setClientId,
   setFullname,
@@ -9,19 +9,21 @@ import {
   setCity,
   setStateCode,
   setZipCode,
-} from "../redux/features/client"
+} from "../redux/features/client";
 
 const ProfileManagement = () => {
-  const dispatch = useDispatch()
-  const navigate = useNavigate()
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
 
-  const id = useSelector((state) => state.user.userId)
-  // const client = useSelector((state) => state.client);
+  const id = useSelector((state) => state.user.userId);
+
+  const { userId, fullname, address1, address2, city, stateCode, zipcode } =
+    useSelector((state) => state.client);
 
   async function handleOnSubmit(e) {
-    e.preventDefault()
+    e.preventDefault();
 
-    console.log(id)
+    console.log(id);
 
     const formData = {
       user_credentials: id,
@@ -31,8 +33,8 @@ const ProfileManagement = () => {
       city: document.getElementById("city_input").value,
       _state: document.getElementById("stateCode_selection").value,
       zipcode: document.getElementById("zipcode_input").value,
-    }
-    console.log(JSON.stringify(formData))
+    };
+    console.log(JSON.stringify(formData));
     try {
       const response = await fetch("http://localhost:3500/profile-management", {
         method: "PUT",
@@ -40,7 +42,7 @@ const ProfileManagement = () => {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(formData),
-      })
+      });
       const {
         message,
         _uC,
@@ -50,25 +52,25 @@ const ProfileManagement = () => {
         _city,
         __state,
         _zipcode,
-      } = await response.json()
-      console.log(message)
+      } = await response.json();
+      console.log(message);
 
       batch(() => {
-        dispatch(setClientId(_uC))
-        dispatch(setFullname(_fullname))
-        dispatch(setAddress1(_address1))
-        dispatch(setAddress2(_address2))
-        dispatch(setCity(_city))
-        dispatch(setStateCode(__state))
-        dispatch(setZipCode(_zipcode))
-      })
+        dispatch(setClientId(_uC));
+        dispatch(setFullname(_fullname));
+        dispatch(setAddress1(_address1));
+        dispatch(setAddress2(_address2));
+        dispatch(setCity(_city));
+        dispatch(setStateCode(__state));
+        dispatch(setZipCode(_zipcode));
+      });
 
       if (response.status === 200 || response.status === 201) {
-        navigate("/user/new-fuel-quote")
-      } else alert(message)
+        navigate("/user/new-fuel-quote");
+      } else alert(message);
     } catch (error) {
-      console.error(error)
-      alert("Unable to create client")
+      console.error(error);
+      alert("Unable to create client");
     }
   }
 
@@ -83,7 +85,7 @@ const ProfileManagement = () => {
             className="form_input"
             required={true}
             maxLength="50"
-            placeholder="Full Name"
+            defaultValue={fullname}
           />
         </div>
         <div className="txt_field">
@@ -93,7 +95,7 @@ const ProfileManagement = () => {
             className="form_input"
             required={true}
             maxLength="100"
-            placeholder="Address 1"
+            defaultValue={address1}
           />
         </div>
         <div className="txt_field">
@@ -103,6 +105,7 @@ const ProfileManagement = () => {
             className="form_input"
             optional="true"
             maxLength="100"
+            defaultValue={address2}
             placeholder="Address 2"
           />
         </div>
@@ -113,12 +116,12 @@ const ProfileManagement = () => {
             className="form_input"
             required={true}
             maxLength="100"
-            placeholder="City"
+            defaultValue={city}
           />
         </div>
         <div>
           <label htmlFor="State-dropdown">Select State:</label>
-          <select name="state" id="stateCode_selection">
+          <select defaultValue={stateCode} name="state" id="stateCode_selection">
             <option value="AL">Alabama</option>
             <option value="AK">Alaska</option>
             <option value="AZ">Arizona</option>
@@ -179,7 +182,7 @@ const ProfileManagement = () => {
             required={true}
             maxLength="9"
             minLength="5"
-            placeholder="Zipcode"
+            defaultValue={zipcode}
           />
         </div>
         <button className="form__button" type="submit">
@@ -187,7 +190,7 @@ const ProfileManagement = () => {
         </button>
       </form>
     </div>
-  )
-}
+  );
+};
 
-export default ProfileManagement
+export default ProfileManagement;

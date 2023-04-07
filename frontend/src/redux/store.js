@@ -5,7 +5,7 @@ import clientReducer from "./features/client"
 
 export default configureStore({
   reducer: {
-    fuelQuotes: fuelQuoteReducer,
+    fuelQuote: fuelQuoteReducer,
     user: userReducer,
     client: clientReducer,
   },
