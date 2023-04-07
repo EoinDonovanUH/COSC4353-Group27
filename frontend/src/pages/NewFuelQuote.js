@@ -91,6 +91,8 @@ const NewFuelQuote = () => {
       if (response.status === 200 || response.status === 201) {
         navigate("/user/fuel-quote-history");
         dispatch(setIsComponentRendered(false));
+        dispatch(setSuggestedPrice(undefined))
+        dispatch(setTotalAmountDue(undefined))
       } else alert(message);
     } catch (error) {
       console.error(error);

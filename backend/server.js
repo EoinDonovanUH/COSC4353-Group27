@@ -31,19 +31,15 @@ app.use(cookieParser()) // TODO I don't think we need this
 
 app.use("/", express.static(path.join(__dirname, "/public")))
 
-// TODO use in frontend
 app.use("/", require("./routes/root"))
 
 // routes & controllers working
 app.use("/register", require("./routes/registerRoutes"))
 app.use("/login", require("./routes/loginRoutes"))
 app.use("/profile-management", require("./routes/profileManagementRoutes"))
-
-// TODO finish routes & controllers
 app.use("/new-fuel-quote", require("./routes/newFuelQuoteRoute"))
 app.use("/fuel-quote-history", require("./routes/fuelQuoteHistoryRoutes"))
 
-// TODO use in frontend
 app.all("*", (req, res) => {
   res.status(404)
   if (req.accepts("html")) {
