@@ -5,7 +5,7 @@ const newFuelQuoteController = require("../controllers/newFuelQuoteController");
 router
   .route("/")
   // HTTP method                                    // CRUD operation
-  .post(newFuelQuoteController.createNewFuelQuote) // create
-  .get(newFuelQuoteController.getHistory);
+  .post(newFuelQuoteController.createNewFuelQuote)  // create
+  .get(newFuelQuoteController.getNewFuelQuote);     // read (doesn't store in db)
   
 module.exports = router;

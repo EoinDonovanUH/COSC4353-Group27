@@ -1,10 +1,6 @@
 const FuelQuote = require("../models/FuelQuote")
 const asyncHandler = require("express-async-handler")
 
-// TODO rewrite to work with MongoDB
-// only GET quotes corresponding to user logged in
-// test in Postman
-
 // @desc Get fuel quote history for user
 // @route POST /fuel-quote-history
 const getFuelQuoteHistory = asyncHandler(async (req, res) => {

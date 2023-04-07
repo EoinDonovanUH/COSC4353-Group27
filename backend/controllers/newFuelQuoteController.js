@@ -35,7 +35,7 @@ const createNewFuelQuote = asyncHandler(async (req, res) => {
   const jsonObject = await FuelQuote.find({
     user_credentials: user_credentials,
   }).exec();
-  
+
   history = jsonObject?.length ? true : false;
   const pricingModuleObject = new Pricing(_state, history, gallons_requested);
   let suggested_price = pricingModuleObject.get_suggested_price();
@@ -70,8 +70,50 @@ const createNewFuelQuote = asyncHandler(async (req, res) => {
   }
 });
 
-const getHistory = asyncHandler(async (req, res) => {
-  const { user_credentials } = req.body;
+// @desc Get new fuel quote
+// GET /new-fuel-quote
+const getNewFuelQuote = asyncHandler(async (req, res) => {
+  const { user_credentials, gallons_requested, _state } = req.body;
+
+  // confirm data
+  if (!user_credentials || !gallons_requested || !_state) {
+    // HTTP status 400 = bad request
+    return res.status(400).json({ message: "All fields are required" });
+  }
+
+  // query history
+  const jsonObject = await FuelQuote.find({
+    user_credentials: user_credentials,
+  }).exec();
+
+  history = jsonObject?.length ? true : false;
+  const pricingModuleObject = new Pricing(_state, history, gallons_requested);
+  let suggested_price = pricingModuleObject.get_suggested_price();
+  let total_amount_due = gallons_requested * suggested_price;
+
+  const priceData = {
+    _suggested_price: suggested_price,
+    _total_amount_due: total_amount_due
+  }
+  JSON.stringify(priceData)
+
+  if (priceData) {
+    // HTTP status 200 = OK
+    res.status(201).json({
+      message: "Here is your free quote! Click submit to save",
+      _sP: priceData._suggested_price,
+      _tA: priceData._total_amount_due,
+    });
+  } else {
+    // HTTP status 400 = bad request
+    res.status(400).json({ message: "Invalid quote data received" });
+  }
 });
 
-module.exports = { createNewFuelQuote, getHistory };
+// TODO remove these comments below
+// const getHistory = asyncHandler(async (req, res) => {
+//   const { user_credentials } = req.body;
+// });
+
+module.exports = { createNewFuelQuote, getNewFuelQuote };
+// module.exports = { createNewFuelQuote, getHistory };
