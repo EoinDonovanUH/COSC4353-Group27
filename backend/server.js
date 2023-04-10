@@ -11,11 +11,11 @@ const mongoose = require("mongoose")
 require("dotenv").config()
 const PORT = process.env.PORT || 3500
 
-// TODO setup logic to avoid need for comment/uncomment during testing
-// const NODE_ENV = process.env.NODE_ENV || "test";
-// if (NODE_ENV != "test") {
-//   app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
-// }
+//TODO setup logic to avoid need for comment/uncomment during testing
+/*const NODE_ENV = process.env.NODE_ENV || "test";
+if (NODE_ENV != "test") {
+  app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+}*/
 
 console.log(process.env.NODE_ENV)
 
