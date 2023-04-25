@@ -2,53 +2,52 @@ const request = require("supertest");
 const app = require("../server");
 
 describe("Fuel Quote Form Tests", () => {
-  test("GET /", async () => {
-    const res = await request(app).get("/quoteform/1");
-    expect(res.statusCode).toBe(200);
-    expect(res.body.id).toBe("1");
-    expect(res.body.address).toBe("200 Main St");
-  });
-
-  test("POST / valid data", async () => {
-    const res = await request(app).post("/quoteform/1").send({
-      gallons: "5000",
-      date: "2023-5-21",
-    });
-    expect(res.statusCode).toBe(200);
-    expect(res.body.data.length).toEqual(2);
-    expect(res.body.data[1].clientID).toEqual(1);
-    expect(res.body.data[1].gallons).toEqual(5000);
-    expect(res.body.data[1].date).toEqual("2023-5-21");
-  });
-
-  test("POST / empty fields", async () => {
-    const res = await request(app).post("/quoteform/1").send({
-      gallons: "",
-      date: "",
+  test("post invalid data", async () => {
+    const res = await request(app).post("/new-fuel-quote").send({
+      user_credentials: "6434369bf92d1cbc8822a694",
+      gallons_requested: 2500,
+      delivery_date:"",
+      address1: "22018 Treesdale Ln",
+      address2:"",
+      city:"Katy",
+      _state: "Tx",
+      zipcode: "77450",
     });
     expect(res.statusCode).toBe(400);
-    expect(res.body.message).toBe("All fields are required");
+    expect(res.body.message).toBe("All fields are required")
   });
 
-  test("POST / invalid gallons", async () => {
-    const res = await request(app).post("/quoteform/1").send({
-      gallons: "100",
-      date: "2023-5-21",
+  test("create quote", async () => {
+    const res = await request(app).post("/new-fuel-quote").send({
+      user_credentials: "6434369bf92d1cbc8822a694",
+      gallons_requested: 2500,
+      delivery_date:"2023-04-21",
+      address1: "22018 Treesdale Ln",
+      address2:"",
+      city:"Katy",
+      _state: "Tx",
+      zipcode: "77450",
+      suggested_price: "1.71",
+      total_amount_due: "4275" 
     });
-    expect(res.statusCode).toBe(400);
-    expect(res.body.message).toBe(
-      "Gallons requested must be between 2,500 and 11,000"
-    );
+    expect(res.statusCode).toBe(201);
+    expect(res.body.message).toBe("New quote created");
   });
 
-  test("POST / invalid date", async () => {
-    const res = await request(app).post("/quoteform/1").send({
-      gallons: "5000",
-      date: "2024-5-21",
+  test("invalid quote", async () => {
+    const res = await request(app).put("/new-fuel-quote").send({
+      user_credentials: "6434369bf92d1cbc8822a694",
+      gallons_requested: 2500,
+      delivery_date:"",
+      address1: "22018 Treesdale Ln",
+      address2:"",
+      city:"Katy",
+      _state: "Tx",
+      zipcode: "77450",
+      suggested_price: "1.71",
+      total_amount_due: "0" 
     });
     expect(res.statusCode).toBe(400);
-    expect(res.body.message).toBe(
-      "Delivery date must be between 2023-2-22 and 2023-12-31"
-    );
+    expect(res.body.message).toBe("Invalid quote data received");
   });
 });
