@@ -53,14 +53,14 @@ const createNewClient = asyncHandler(async (req, res) => {
     // HTTP status 201 = created
     return res.status(201).json({
       message: "New client created",
-      /*id: client._id,
+      id: client._id,
       _uC: client.user_credentials,
       _fullname: client.fullname,
       _address1: client.address1,
       _address2: client.address2,
       _city: client.city,
       __state: client._state,
-      _zipcode: client.zipcode,*/
+      _zipcode: client.zipcode,
     })
   } else {
     // HTTP status 400 = bad request
