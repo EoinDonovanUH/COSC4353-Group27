@@ -54,23 +54,6 @@ function Navbar() {
         | FuelMule |
       </NavLink>
       {userName ? (
-<<<<<<< Updated upstream
-        <>
-        <NavLink to="logout" className={activeLink} onClick={logOut}>
-          Logout |
-        </NavLink>
-        {/* <a href="/user/profile-management" style={{ color: 'white', marginRight: '20px' }}>Profile</a> */}
-        <NavLink to="/user/profile-management" className={activeLink}>
-          | Manage Profile |
-        </NavLink>
-        <NavLink to="/user/new-fuel-quote" className={activeLink}>
-          | New Quote |
-        </NavLink>
-        <NavLink to="/user/fuel-quote-history" className={activeLink}>
-          | History
-        </NavLink>
-        </>
-=======
         <div style={{ display: "flex", alignItems: "center" }}>
           <NavLink to="/user/profile-management" className={activeLink}>
             | Manage Profile |
@@ -85,7 +68,6 @@ function Navbar() {
             | Logout |
           </NavLink>
         </div>
->>>>>>> Stashed changes
       ) : (
         <>
           <NavLink to="login" className={activeLink}>
@@ -96,10 +78,9 @@ function Navbar() {
           </NavLink>
         </>
       )}
-<<<<<<< Updated upstream
-      <NavLink to="/" className={activeLink}>
+      {/* <NavLink to="/" className={activeLink}>
         | FuelMule |
-      </NavLink>
+      </NavLink> */}
       {/* <div style={{ display: "flex", alignItems: "center" }}>
         {/* <a href="/user/profile-management" style={{ color: 'white', marginRight: '20px' }}>Profile</a> 
         <NavLink to="/user/profile-management" className={activeLink}>
@@ -112,8 +93,6 @@ function Navbar() {
           | History
         </NavLink>
       </div> */}
-=======
->>>>>>> Stashed changes
     </nav>
   )
 }
