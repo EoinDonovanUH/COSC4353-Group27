@@ -43,7 +43,7 @@ const FuelQuoteHistory = () => {
   //   return () => dispatch(setQuotes([]))
   // }, [dispatch, userId])
 
-  return (
+  return fuelQuotes.length ? (
     <div className="center">
       <h1>Fuel Quote History</h1>
       <table>
@@ -63,6 +63,8 @@ const FuelQuoteHistory = () => {
         </tbody>
       </table>
     </div>
+  ) : (
+    <h1>No Fuel Quotes Yet!</h1>
   )
 }
 
