@@ -1,43 +1,43 @@
-import React from "react";
-import { useSelector, useDispatch, batch } from "react-redux";
+import React from "react"
+import { useSelector, useDispatch, batch } from "react-redux"
 import {
   setSuggestedPrice,
   setTotalAmountDue,
   setIsComponentRendered,
-} from "../redux/features/fuelQuote";
-import { useNavigate } from "react-router-dom";
+} from "../redux/features/fuelQuote"
+import { useNavigate } from "react-router-dom"
 
 const NewFuelQuote = () => {
-  const navigate = useNavigate();
-  const dispatch = useDispatch();
+  const navigate = useNavigate()
+  const dispatch = useDispatch()
 
-  const id = useSelector((state) => state.user.userId);
+  const id = useSelector((state) => state.user.userId)
 
   const { address1, address2, city, stateCode, zipcode } = useSelector(
     (state) => state.client
-  );
+  )
 
   const suggested_price = useSelector((state) => {
     if (state.fuelQuote.isComponentRendered) {
-      return state.fuelQuote.suggested_price;
+      return state.fuelQuote.suggested_price
     }
-    return null;
-  });
+    return null
+  })
 
   const total_amount_due = useSelector((state) => {
     if (state.fuelQuote.isComponentRendered) {
-      return state.fuelQuote.total_amount_due;
+      return state.fuelQuote.total_amount_due
     }
-    return null;
-  });
-  
+    return null
+  })
+
   async function handleGetQuote(e) {
-    e.preventDefault();
+    e.preventDefault()
     const formData = {
       user_credentials: id,
       gallons_requested: document.getElementById("galsReqd").value,
       _state: stateCode,
-    };
+    }
     try {
       const response = await fetch("http://localhost:3500/new-fuel-quote", {
         method: "PUT",
@@ -45,26 +45,26 @@ const NewFuelQuote = () => {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(formData),
-      });
-      const { message, _sP, _tA } = await response.json();
+      })
+      const { message, _sP, _tA } = await response.json()
 
       if (response.status === 200) {
-        alert(message);
+        alert(message)
         batch(() => {
-          dispatch(setSuggestedPrice(_sP));
-          dispatch(setTotalAmountDue(_tA));
-          dispatch(setIsComponentRendered(true));
-        });
+          dispatch(setSuggestedPrice(_sP))
+          dispatch(setTotalAmountDue(_tA))
+          dispatch(setIsComponentRendered(true))
+        })
         // update slice
         // navigate("/user/fuel-quote-history")
-      } else alert(message);
+      } else alert(message)
     } catch (error) {
-      console.error(error);
-      alert("Unable to complete request");
+      console.error(error)
+      alert("Unable to complete request")
     }
   }
   async function handleOnSubmit(e) {
-    e.preventDefault();
+    e.preventDefault()
 
     // console.log(document.getElementById("delivDate").value);
 
@@ -77,7 +77,7 @@ const NewFuelQuote = () => {
       city: city,
       _state: stateCode,
       zipcode: zipcode,
-    };
+    }
     try {
       const response = await fetch("http://localhost:3500/new-fuel-quote", {
         method: "POST",
@@ -85,18 +85,18 @@ const NewFuelQuote = () => {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(formData),
-      });
-      const { message } = await response.json();
+      })
+      const { message } = await response.json()
 
       if (response.status === 200 || response.status === 201) {
-        navigate("/user/fuel-quote-history");
-        dispatch(setIsComponentRendered(false));
+        navigate("/user/fuel-quote-history")
+        dispatch(setIsComponentRendered(false))
         dispatch(setSuggestedPrice(undefined))
         dispatch(setTotalAmountDue(undefined))
-      } else alert(message);
+      } else alert(message)
     } catch (error) {
-      console.error(error);
-      alert("Unable to complete request");
+      console.error(error)
+      alert("Unable to complete request")
     }
   }
 
@@ -109,7 +109,13 @@ const NewFuelQuote = () => {
             <label htmlFor="galsReqd">
               <b>Gallons Requested:</b>{" "}
             </label>
-            <input type="number" name="gallons" id="galsReqd" required autoFocus/>
+            <input
+              type="number"
+              name="gallons"
+              id="galsReqd"
+              required
+              autoFocus
+            />
             <label htmlFor="delivDate">
               <b>Delivery Date:</b>
             </label>
@@ -147,15 +153,15 @@ const NewFuelQuote = () => {
         </div>
         <p>
           <b>Suggested price:</b>
-          {suggested_price || ""}
+          {suggested_price ? "$" + suggested_price : ""}
         </p>
         <p>
           <b>Total:</b>
-          {total_amount_due || ""}
+          {total_amount_due ? "$" + total_amount_due : ""}
         </p>
       </fieldset>
     </div>
-  );
-};
+  )
+}
 
-export default NewFuelQuote;
+export default NewFuelQuote

@@ -16,8 +16,8 @@ function Quote({ quoteProps }) {
         {address1} {city} {_state} {zipcode}
       </td>
       <td>{delivery_date}</td>
-      <td>{suggested_price}</td>
-      <td>{total_amount_due}</td>
+      <td>{"$" + suggested_price}</td>
+      <td>{"$" + total_amount_due}</td>
     </tr>
   )
 }

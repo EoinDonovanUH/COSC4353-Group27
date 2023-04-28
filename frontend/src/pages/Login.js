@@ -48,11 +48,11 @@ const Login = () => {
             dispatch(setStateCode(_client_schema._state))
             dispatch(setZipCode(_client_schema.zipcode))
           })
-        } else {
-          dispatch(setFullname(_client_schema.fullname))
         }
+        // } else {
+        //   dispatch(setFullname(_client_schema.fullname))
+        // }
       })
-
       if (response.status === 200 || response.status === 201) {
         if (_client_schema) {
           navigate("/user/new-fuel-quote")
