@@ -1,5 +1,5 @@
 function Quote({ quoteProps }) {
-  const {
+  let {
     gallons_requested,
     address1,
     city,
@@ -9,6 +9,12 @@ function Quote({ quoteProps }) {
     suggested_price,
     total_amount_due,
   } = quoteProps
+  suggested_price = (
+    Math.round((suggested_price + Number.EPSILON) * 100) / 100
+  ).toFixed(2)
+  total_amount_due = (
+    Math.round((total_amount_due + Number.EPSILON) * 100) / 100
+  ).toFixed(2)
   return (
     <tr className="row">
       <td>{gallons_requested}</td>

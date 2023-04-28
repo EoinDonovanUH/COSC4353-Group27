@@ -153,11 +153,21 @@ const NewFuelQuote = () => {
         </div>
         <p>
           <b>Suggested price:</b>
-          {suggested_price ? "$" + suggested_price : ""}
+          {suggested_price
+            ? "$" +
+              (
+                Math.round((suggested_price + Number.EPSILON) * 100) / 100
+              ).toFixed(2)
+            : ""}
         </p>
         <p>
           <b>Total:</b>
-          {total_amount_due ? "$" + total_amount_due : ""}
+          {total_amount_due
+            ? "$" +
+              (
+                Math.round((total_amount_due + Number.EPSILON) * 100) / 100
+              ).toFixed(2)
+            : ""}
         </p>
       </fieldset>
     </div>
