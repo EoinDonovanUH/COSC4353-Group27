@@ -1,6 +1,6 @@
 import React from "react"
 import { batch, useDispatch } from "react-redux"
-import { useNavigate, NavLink } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 import { setUserId, setUserName } from "../redux/features/user"
 import {
   setClientId,
@@ -11,7 +11,6 @@ import {
   setStateCode,
   setZipCode,
 } from "../redux/features/client"
-import { activeLink } from "../App"
 
 const Login = () => {
   const dispatch = useDispatch()
@@ -36,26 +35,23 @@ const Login = () => {
       const { message, _user_id, _user_name, _client_schema } =
         await response.json()
 
-      // console.log(response)
-
       batch(() => {
         dispatch(setUserId(_user_id))
         dispatch(setUserName(_user_name))
-      })
-
-      if (_client_schema) {
-        // working, but not setting client slice attributes
-
-        batch(() => {
-          dispatch(setClientId(_client_schema.user_credentials))
+        if (_client_schema) {
+          batch(() => {
+            dispatch(setClientId(_client_schema.user_credentials))
+            dispatch(setFullname(_client_schema.fullname))
+            dispatch(setAddress1(_client_schema.address1))
+            dispatch(setAddress2(_client_schema.address2))
+            dispatch(setCity(_client_schema.city))
+            dispatch(setStateCode(_client_schema._state))
+            dispatch(setZipCode(_client_schema.zipcode))
+          })
+        } else {
           dispatch(setFullname(_client_schema.fullname))
-          dispatch(setAddress1(_client_schema.address1))
-          dispatch(setAddress2(_client_schema.address2))
-          dispatch(setCity(_client_schema.city))
-          dispatch(setStateCode(_client_schema._state))
-          dispatch(setZipCode(_client_schema.zipcode))
-        })
-      }
+        }
+      })
 
       if (response.status === 200 || response.status === 201) {
         if (_client_schema) {
@@ -66,7 +62,7 @@ const Login = () => {
       } else alert(message)
     } catch (error) {
       console.error(error)
-      alert("Error signing in")
+      alert(error)
     }
   }
 

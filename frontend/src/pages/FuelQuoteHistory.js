@@ -9,7 +9,7 @@ const FuelQuoteHistory = () => {
   const dispatch = useDispatch()
 
   const allQuotes = useLoaderData()
-  const userQuotes = allQuotes.history.filter(
+  const userQuotes = allQuotes.history?.filter(
     (quote) => quote.user_credentials === userId
   )
 
@@ -57,7 +57,7 @@ const FuelQuoteHistory = () => {
           </tr>
         </thead>
         <tbody>
-          {fuelQuotes.map(({ _id, ...rest }) => (
+          {fuelQuotes?.map(({ _id, ...rest }) => (
             <Quote key={_id} quoteProps={rest} />
           ))}
         </tbody>
