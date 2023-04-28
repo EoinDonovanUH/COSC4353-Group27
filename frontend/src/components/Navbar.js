@@ -48,9 +48,21 @@ function Navbar() {
       }}
     >
       {userName ? (
+        <>
         <NavLink to="logout" className={activeLink} onClick={logOut}>
           Logout |
         </NavLink>
+        {/* <a href="/user/profile-management" style={{ color: 'white', marginRight: '20px' }}>Profile</a> */}
+        <NavLink to="/user/profile-management" className={activeLink}>
+          | Manage Profile |
+        </NavLink>
+        <NavLink to="/user/new-fuel-quote" className={activeLink}>
+          | New Quote |
+        </NavLink>
+        <NavLink to="/user/fuel-quote-history" className={activeLink}>
+          | History
+        </NavLink>
+        </>
       ) : (
         <>
           <NavLink to="login" className={activeLink}>
@@ -64,8 +76,8 @@ function Navbar() {
       <NavLink to="/" className={activeLink}>
         | FuelMule |
       </NavLink>
-      <div style={{ display: "flex", alignItems: "center" }}>
-        {/* <a href="/user/profile-management" style={{ color: 'white', marginRight: '20px' }}>Profile</a> */}
+      {/* <div style={{ display: "flex", alignItems: "center" }}>
+        {/* <a href="/user/profile-management" style={{ color: 'white', marginRight: '20px' }}>Profile</a> 
         <NavLink to="/user/profile-management" className={activeLink}>
           | Manage Profile |
         </NavLink>
@@ -75,7 +87,7 @@ function Navbar() {
         <NavLink to="/user/fuel-quote-history" className={activeLink}>
           | History
         </NavLink>
-      </div>
+      </div> */}
     </nav>
   );
 }
